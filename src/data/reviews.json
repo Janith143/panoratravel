@@ -1,0 +1,22 @@
+[
+    {
+        "id": "rev_default_1",
+        "userId": "user_demo_1",
+        "userName": "Sarah Jenkins",
+        "userImage": "",
+        "rating": 5,
+        "text": "Absolutely breathtaking experience! The driver was so knowledgeable and the vehicle was pristine. Highly recommend Panora Travels.",
+        "photos": [],
+        "date": "2024-01-15T09:00:00Z"
+    },
+    {
+        "id": "rev_default_2",
+        "userId": "user_demo_2",
+        "userName": "Michael Chen",
+        "userImage": "",
+        "rating": 4,
+        "text": "Great service and very punctual. The suggested itinerary for Ella was perfect.",
+        "photos": [],
+        "date": "2024-01-20T14:30:00Z"
+    }
+]

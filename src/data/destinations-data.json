@@ -1,0 +1,2800 @@
+{
+  "provinces": [
+    {
+      "id": "western",
+      "name": "Western Province"
+    },
+    {
+      "id": "southern",
+      "name": "Southern Province"
+    },
+    {
+      "id": "central",
+      "name": "Central Province"
+    },
+    {
+      "id": "north-central",
+      "name": "North Central Province"
+    },
+    {
+      "id": "north-western",
+      "name": "North Western Province"
+    },
+    {
+      "id": "eastern",
+      "name": "Eastern Province"
+    },
+    {
+      "id": "northern",
+      "name": "Northern Province"
+    },
+    {
+      "id": "uva",
+      "name": "Uva Province"
+    },
+    {
+      "id": "sabaragamuwa",
+      "name": "Sabaragamuwa Province"
+    }
+  ],
+  "districts": [
+    {
+      "id": "colombo",
+      "name": "Colombo",
+      "province": "western"
+    },
+    {
+      "id": "gampaha",
+      "name": "Gampaha",
+      "province": "western"
+    },
+    {
+      "id": "kalutara",
+      "name": "Kalutara",
+      "province": "western"
+    },
+    {
+      "id": "galle",
+      "name": "Galle",
+      "province": "southern"
+    },
+    {
+      "id": "matara",
+      "name": "Matara",
+      "province": "southern"
+    },
+    {
+      "id": "hambantota",
+      "name": "Hambantota",
+      "province": "southern"
+    },
+    {
+      "id": "kandy",
+      "name": "Kandy",
+      "province": "central"
+    },
+    {
+      "id": "matale",
+      "name": "Matale",
+      "province": "central"
+    },
+    {
+      "id": "nuwara-eliya",
+      "name": "Nuwara Eliya",
+      "province": "central"
+    },
+    {
+      "id": "anuradhapura",
+      "name": "Anuradhapura",
+      "province": "north-central"
+    },
+    {
+      "id": "polonnaruwa",
+      "name": "Polonnaruwa",
+      "province": "north-central"
+    },
+    {
+      "id": "kurunegala",
+      "name": "Kurunegala",
+      "province": "north-western"
+    },
+    {
+      "id": "puttalam",
+      "name": "Puttalam",
+      "province": "north-western"
+    },
+    {
+      "id": "trincomalee",
+      "name": "Trincomalee",
+      "province": "eastern"
+    },
+    {
+      "id": "batticaloa",
+      "name": "Batticaloa",
+      "province": "eastern"
+    },
+    {
+      "id": "ampara",
+      "name": "Ampara",
+      "province": "eastern"
+    },
+    {
+      "id": "jaffna",
+      "name": "Jaffna",
+      "province": "northern"
+    },
+    {
+      "id": "mannar",
+      "name": "Mannar",
+      "province": "northern"
+    },
+    {
+      "id": "kilinochchi",
+      "name": "Kilinochchi",
+      "province": "northern"
+    },
+    {
+      "id": "mullaitivu",
+      "name": "Mullaitivu",
+      "province": "northern"
+    },
+    {
+      "id": "vavuniya",
+      "name": "Vavuniya",
+      "province": "northern"
+    },
+    {
+      "id": "badulla",
+      "name": "Badulla",
+      "province": "uva"
+    },
+    {
+      "id": "monaragala",
+      "name": "Monaragala",
+      "province": "uva"
+    },
+    {
+      "id": "ratnapura",
+      "name": "Ratnapura",
+      "province": "sabaragamuwa"
+    },
+    {
+      "id": "kegalle",
+      "name": "Kegalle",
+      "province": "sabaragamuwa"
+    }
+  ],
+  "categories": [
+    {
+      "id": "nature",
+      "name": "Nature & Ecology",
+      "icon": "trees"
+    },
+    {
+      "id": "culture",
+      "name": "Culture & Heritage",
+      "icon": "landmark"
+    },
+    {
+      "id": "wildlife",
+      "name": "Wildlife & Safari",
+      "icon": "paw-print"
+    },
+    {
+      "id": "beach",
+      "name": "Beach & Coastal",
+      "icon": "waves"
+    },
+    {
+      "id": "adventure",
+      "name": "Adventure & Sports",
+      "icon": "mountain"
+    },
+    {
+      "id": "hiking",
+      "name": "Hiking & Trekking",
+      "icon": "footprints"
+    },
+    {
+      "id": "relax",
+      "name": "Relax & Wellness",
+      "icon": "droplets"
+    },
+    {
+      "id": "heritage",
+      "name": "Heritage",
+      "icon": "landmark"
+    }
+  ],
+  "attractions": [
+    {
+      "id": "national-museum-colombo",
+      "name": "National Museum of Colombo",
+      "description": "The largest museum in Sri Lanka, housed in a grand colonial edifice. Displays the regalia of the Kandyan monarchs and offers a comprehensive overview of the country's pre-colonial past.",
+      "district": "colombo",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/national-museum.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.9103,
+        "lng": 79.861
+      }
+    },
+    {
+      "id": "gangaramaya-temple",
+      "name": "Gangaramaya Temple",
+      "description": "An architectural fusion of Sri Lankan, Thai, Indian, and Chinese styles. Serves as a place of worship, a center of learning, and a repository of artifacts.",
+      "district": "colombo",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/gangaramaya.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.9149,
+        "lng": 79.8576
+      }
+    },
+    {
+      "id": "seema-malaka",
+      "name": "Seema Malaka",
+      "description": "Designed by Geoffrey Bawa, this floating temple sits serenely on Beira Lake, offering a meditative space amidst the urban sprawl.",
+      "district": "colombo",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/seema-malaka.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.9147,
+        "lng": 79.8572
+      }
+    },
+    {
+      "id": "red-mosque",
+      "name": "Jami Ul-Alfar Mosque (Red Mosque)",
+      "description": "Striking red and white candy-striped brickwork makes this an architectural marvel and testament to Colombo's Islamic trading heritage.",
+      "district": "colombo",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/red-mosque.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.9391,
+        "lng": 79.8524
+      }
+    },
+    {
+      "id": "viharamahadevi-park",
+      "name": "Viharamahadevi Park",
+      "description": "The city's largest and oldest park with flowering trees and fountains, serving as a green lung in Cinnamon Gardens.",
+      "district": "colombo",
+      "province": "Western",
+      "categories": [
+        "nature"
+      ],
+      "image": "/images/destinations/viharamahadevi-park.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.9122,
+        "lng": 79.8631
+      }
+    },
+    {
+      "id": "beddagana-wetland",
+      "name": "Beddagana Wetland Park",
+      "description": "Urban eco-tourism exemplar featuring boardwalks through biodiversity-rich marshlands. Critical habitat for migratory birds and butterflies.",
+      "district": "colombo",
+      "province": "Western",
+      "categories": [
+        "nature",
+        "wildlife"
+      ],
+      "image": "/images/destinations/beddagana-wetland.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.8927,
+        "lng": 79.9145
+      }
+    },
+    {
+      "id": "bolgoda-lake",
+      "name": "Bolgoda Lake",
+      "description": "The largest natural freshwater lake in Sri Lanka. Offers serene kayaking experiences through mangroves.",
+      "district": "colombo",
+      "province": "Western",
+      "categories": [
+        "nature",
+        "adventure"
+      ],
+      "image": "/images/destinations/bolgoda-lake.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.7214,
+        "lng": 79.9576
+      }
+    },
+    {
+      "id": "dutch-period-museum",
+      "name": "Dutch Period Museum",
+      "description": "Located in the bustling Pettah district, preserves the architectural legacy of the Dutch East India Company.",
+      "district": "colombo",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/dutch-period-museum.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.9366,
+        "lng": 79.8519
+      }
+    },
+    {
+      "id": "old-dutch-hospital",
+      "name": "Old Dutch Hospital",
+      "description": "A heritage shopping and dining precinct housed in a restored colonial Dutch hospital building.",
+      "district": "colombo",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/old-dutch-hospital.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.9328,
+        "lng": 79.8437
+      }
+    },
+    {
+      "id": "independence-memorial-hall",
+      "name": "Independence Memorial Hall",
+      "description": "A Kandyan-style monument commemorating the nation's independence from British rule in 1948.",
+      "district": "colombo",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/independence-hall.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.9042,
+        "lng": 79.8675
+      }
+    },
+    {
+      "id": "diyatha-uyana",
+      "name": "Diyatha Uyana",
+      "description": "Situated along the banks of the Diyawanna Oya, combines horticultural displays with walking tracks, popular for evening leisure and birdwatching.",
+      "district": "colombo",
+      "province": "Western",
+      "categories": [
+        "nature"
+      ],
+      "image": "/images/destinations/diyatha-uyana.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.8994,
+        "lng": 79.9238
+      }
+    },
+    {
+      "id": "port-city-colombo",
+      "name": "Port City Colombo",
+      "description": "Emerging urban adventure destination with facilities for ATV riding on artificial dunes and water sports.",
+      "district": "colombo",
+      "province": "Western",
+      "categories": [
+        "adventure"
+      ],
+      "image": "/images/destinations/port-city.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.9392,
+        "lng": 79.8391
+      }
+    },
+    {
+      "id": "muthurajawela-wetland",
+      "name": "Muthurajawela Wetland Sanctuary",
+      "description": "A vast coastal peat swamp forest. Boat tours reveal a complex ecosystem of mangroves, crocodiles, monkeys, and diverse birdlife.",
+      "district": "gampaha",
+      "province": "Western",
+      "categories": [
+        "nature",
+        "wildlife"
+      ],
+      "image": "/images/destinations/muthurajawela.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.0421,
+        "lng": 79.9135
+      }
+    },
+    {
+      "id": "henarathgoda-botanical",
+      "name": "Henarathgoda Botanical Garden",
+      "description": "Historic site where the first rubber seedlings in Asia were planted. Offers a rich collection of tropical flora.",
+      "district": "gampaha",
+      "province": "Western",
+      "categories": [
+        "nature"
+      ],
+      "image": "/images/destinations/henarathgoda.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.1118,
+        "lng": 79.9954
+      }
+    },
+    {
+      "id": "negombo-lagoon",
+      "name": "Negombo Lagoon",
+      "description": "Hub for water-based activities including boat safaris to observe traditional fishing methods and the mangrove ecosystem.",
+      "district": "gampaha",
+      "province": "Western",
+      "categories": [
+        "nature",
+        "adventure"
+      ],
+      "image": "/images/destinations/negombo-lagoon.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.155,
+        "lng": 79.857
+      }
+    },
+    {
+      "id": "st-marys-church-negombo",
+      "name": "St. Mary's Church Negombo",
+      "description": "Grand neoclassical structure with elaborate ceiling paintings. Negombo is known as 'Little Rome' for its Catholic heritage.",
+      "district": "gampaha",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/st-marys-negombo.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.2105,
+        "lng": 79.8435
+      }
+    },
+    {
+      "id": "angurukaramulla-temple",
+      "name": "Angurukaramulla Temple",
+      "description": "Famous for its colossal Buddha statue and a dragon entrance that leads to murals documenting the history of Sri Lankan kings.",
+      "district": "gampaha",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/angurukaramulla.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.2085,
+        "lng": 79.8557
+      }
+    },
+    {
+      "id": "negombo-dutch-fort",
+      "name": "Negombo Dutch Fort",
+      "description": "Though largely in ruins, retains its gate and ramparts, currently housing a prison, adding a layer of living history.",
+      "district": "gampaha",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/negombo-fort.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.2036,
+        "lng": 79.8395
+      }
+    },
+    {
+      "id": "brief-garden",
+      "name": "Brief Garden",
+      "description": "The landscape masterpiece of Bevis Bawa featuring overgrown paths, sculptures, and tropical foliage in artistic harmony.",
+      "district": "kalutara",
+      "province": "Western",
+      "categories": [
+        "nature"
+      ],
+      "image": "/images/destinations/brief-garden.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.4475,
+        "lng": 80.0152
+      }
+    },
+    {
+      "id": "fa-hien-caves",
+      "name": "Fa Hien Caves (Pahiyangala)",
+      "description": "Archaeological site where prehistoric human remains were discovered. The hike offers panoramic rainforest views.",
+      "district": "kalutara",
+      "province": "Western",
+      "categories": [
+        "nature",
+        "hiking"
+      ],
+      "image": "/images/destinations/fa-hien-caves.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.6111,
+        "lng": 80.2118
+      }
+    },
+    {
+      "id": "kalutara-bodhiya",
+      "name": "Kalutara Bodhiya",
+      "description": "One of the most sacred Buddhist sites, distinguished by its hollow stupa (Chaitya) which visitors can enter.",
+      "district": "kalutara",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/kalutara-bodhiya.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.5862,
+        "lng": 79.9604
+      }
+    },
+    {
+      "id": "richmond-castle",
+      "name": "Richmond Castle",
+      "description": "An Edwardian mansion showcasing the grandeur and architectural fusion favored by early 20th-century philanthropists.",
+      "district": "kalutara",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/richmond-castle.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.5912,
+        "lng": 79.9839
+      }
+    },
+    {
+      "id": "bentota-water-sports",
+      "name": "Bentota Water Sports Hub",
+      "description": "The premier hub for water sports including jet skiing, windsurfing, and banana boat rides on the calm Bentota River.",
+      "district": "kalutara",
+      "province": "Western",
+      "categories": [
+        "adventure",
+        "beach"
+      ],
+      "image": "/images/destinations/bentota-water-sports.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.4258,
+        "lng": 79.9989
+      }
+    },
+    {
+      "id": "kande-vihara",
+      "name": "Kande Vihara",
+      "description": "Draws pilgrims with one of the tallest sitting Buddha statues in Sri Lanka and colorful murals depicting Jataka tales.",
+      "district": "kalutara",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/kande-vihara.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.4532,
+        "lng": 79.9988
+      }
+    },
+    {
+      "id": "thudugala-ella",
+      "name": "Thudugala Ella Waterfall",
+      "description": "Popular bathing spot and scenic trek located within a rubber plantation.",
+      "district": "kalutara",
+      "province": "Western",
+      "categories": [
+        "nature"
+      ],
+      "image": "/images/destinations/thudugala-ella.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.5367,
+        "lng": 80.0541
+      }
+    },
+    {
+      "id": "calido-beach",
+      "name": "Calido Beach",
+      "description": "Unique spit of land separating the Kalu Ganga estuary from the ocean, offering distinct scenic views.",
+      "district": "kalutara",
+      "province": "Western",
+      "categories": [
+        "beach"
+      ],
+      "image": "/images/destinations/calido-beach.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.5824,
+        "lng": 79.9545
+      }
+    },
+    {
+      "id": "galle-fort",
+      "name": "Galle Fort",
+      "description": "UNESCO World Heritage Site - the best-preserved colonial sea fortress in Asia. A living city with Dutch architecture, museums, and cafes.",
+      "district": "galle",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/galle-fort.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.0271,
+        "lng": 80.217
+      }
+    },
+    {
+      "id": "kdn-forest",
+      "name": "Kanneliya-Dediyagala-Nakiyadeniya Forest",
+      "description": "UNESCO Biosphere Reserve rivaling Sinharaja in biodiversity. Features nature trails, waterfalls, and high endemicity of flora and fauna.",
+      "district": "galle",
+      "province": "Western",
+      "categories": [
+        "nature",
+        "hiking"
+      ],
+      "image": "/images/destinations/kdn-forest.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.2505,
+        "lng": 80.3341
+      }
+    },
+    {
+      "id": "madu-river",
+      "name": "Madu River",
+      "description": "Ramsar wetland famous for boat safaris through mangrove tunnels, visiting islands with cinnamon and ancient temples.",
+      "district": "galle",
+      "province": "Western",
+      "categories": [
+        "nature",
+        "adventure"
+      ],
+      "image": "/images/destinations/madu-river.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.2754,
+        "lng": 80.0579
+      }
+    },
+    {
+      "id": "hikkaduwa-marine-park",
+      "name": "Hikkaduwa Marine National Park",
+      "description": "Marine national park protecting coral reefs. Glass-bottom boat tours for viewing marine life.",
+      "district": "galle",
+      "province": "Western",
+      "categories": [
+        "wildlife",
+        "beach"
+      ],
+      "image": "/images/destinations/hikkaduwa-marine.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.1364,
+        "lng": 80.1042
+      }
+    },
+    {
+      "id": "hikkaduwa-surf",
+      "name": "Hikkaduwa Surf Point",
+      "description": "Sri Lanka's primary surf zone featuring 'Main Reef' with diverse breaks suitable for intermediates.",
+      "district": "galle",
+      "province": "Western",
+      "categories": [
+        "adventure",
+        "beach"
+      ],
+      "image": "/images/destinations/hikkaduwa-surf.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.135,
+        "lng": 80.1009
+      }
+    },
+    {
+      "id": "unawatuna-beach",
+      "name": "Unawatuna Beach",
+      "description": "Crescent-shaped bay with calm waters, perfect for swimming and snorkeling. One of Sri Lanka's most beautiful beaches.",
+      "district": "galle",
+      "province": "Western",
+      "categories": [
+        "beach"
+      ],
+      "image": "/images/destinations/unawatuna.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.0104,
+        "lng": 80.2486
+      }
+    },
+    {
+      "id": "maritime-museum-galle",
+      "name": "Maritime Archaeology Museum",
+      "description": "Housed in a Dutch warehouse within Galle Fort, showcases artifacts from shipwrecks around Galle harbor.",
+      "district": "galle",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/maritime-museum.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.0279,
+        "lng": 80.2185
+      }
+    },
+    {
+      "id": "kabalana-beach",
+      "name": "Kabalana Beach (The Rock)",
+      "description": "Features 'The Rock', an A-frame reef break known for consistency and power, attracting advanced surfers.",
+      "district": "galle",
+      "province": "Western",
+      "categories": [
+        "adventure",
+        "beach"
+      ],
+      "image": "/images/destinations/kabalana.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 5.9818,
+        "lng": 80.3662
+      }
+    },
+    {
+      "id": "koggala-lagoon",
+      "name": "Koggala Lagoon Kayaking",
+      "description": "Calm water paddling through mangrove ecosystems. Also home to the Gin Ganga river kayaking.",
+      "district": "galle",
+      "province": "Western",
+      "categories": [
+        "nature",
+        "adventure"
+      ],
+      "image": "/images/destinations/koggala-lagoon.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 5.9926,
+        "lng": 80.3441
+      }
+    },
+    {
+      "id": "mirissa-whale-watching",
+      "name": "Mirissa Whale Watching",
+      "description": "Globally recognized whale-watching capital. Blue Whales and Sperm Whales spotted from November to April.",
+      "district": "matara",
+      "province": "Western",
+      "categories": [
+        "wildlife",
+        "adventure"
+      ],
+      "image": "/images/destinations/mirissa-whales.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 5.9439,
+        "lng": 80.4578
+      }
+    },
+    {
+      "id": "polhena-beach",
+      "name": "Polhena Beach",
+      "description": "Protective reef creates shallow, calm waters frequented by resident sea turtles for easy snorkeling encounters.",
+      "district": "matara",
+      "province": "Western",
+      "categories": [
+        "beach",
+        "wildlife"
+      ],
+      "image": "/images/destinations/polhena.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 5.9372,
+        "lng": 80.5218
+      }
+    },
+    {
+      "id": "weligama-surf",
+      "name": "Weligama Bay",
+      "description": "Massive sand-bottomed bay universally recognized as the best place for beginner surfers in Sri Lanka.",
+      "district": "matara",
+      "province": "Western",
+      "categories": [
+        "adventure",
+        "beach"
+      ],
+      "image": "/images/destinations/weligama.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 5.9734,
+        "lng": 80.4284
+      }
+    },
+    {
+      "id": "dondra-lighthouse",
+      "name": "Dondra Head Lighthouse",
+      "description": "Marks the southernmost point of Sri Lanka. The tallest lighthouse in the country.",
+      "district": "matara",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/dondra-lighthouse.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 5.922,
+        "lng": 80.5891
+      }
+    },
+    {
+      "id": "star-fort-matara",
+      "name": "Star Fort",
+      "description": "Unique Dutch military structure built in the shape of a six-pointed star, showcasing advanced 18th-century military architecture.",
+      "district": "matara",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/star-fort.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 5.951,
+        "lng": 80.5435
+      }
+    },
+    {
+      "id": "weherahena-temple",
+      "name": "Weherahena Temple",
+      "description": "Distinct cultural experience with underground tunnel complex adorned with murals leading to a colossal Buddha statue.",
+      "district": "matara",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/weherahena.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 5.9663,
+        "lng": 80.5786
+      }
+    },
+    {
+      "id": "kirala-kele-sanctuary",
+      "name": "Kirala Kele Sanctuary",
+      "description": "Wetland sanctuary near Matara town offering excellent birdwatching and kayaking opportunities.",
+      "district": "matara",
+      "province": "Western",
+      "categories": [
+        "nature",
+        "wildlife"
+      ],
+      "image": "/images/destinations/kirala-kele.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 5.9592,
+        "lng": 80.5312
+      }
+    },
+    {
+      "id": "midigama-surf",
+      "name": "Midigama Surf Point",
+      "description": "Famous breaks like 'Lazy Left' and 'Rams' for intermediate and advanced surfers.",
+      "district": "matara",
+      "province": "Western",
+      "categories": [
+        "adventure",
+        "beach"
+      ],
+      "image": "/images/destinations/midigama.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 5.9696,
+        "lng": 80.3884
+      }
+    },
+    {
+      "id": "yala-national-park",
+      "name": "Yala National Park",
+      "description": "The most visited park in Sri Lanka, famous for the highest leopard density in the world. Also home to elephants, sloth bears, and crocodiles.",
+      "district": "hambantota",
+      "province": "Western",
+      "categories": [
+        "wildlife"
+      ],
+      "image": "/images/destinations/yala.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.3725,
+        "lng": 81.5125
+      }
+    },
+    {
+      "id": "bundala-national-park",
+      "name": "Bundala National Park",
+      "description": "UNESCO Biosphere Reserve and internationally important wintering ground for migratory waterbirds, particularly flamingos.",
+      "district": "hambantota",
+      "province": "Western",
+      "categories": [
+        "wildlife"
+      ],
+      "image": "/images/destinations/bundala.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.1969,
+        "lng": 81.2187
+      }
+    },
+    {
+      "id": "kumana-national-park",
+      "name": "Kumana National Park",
+      "description": "Renowned for the Kumana Villu mangrove swamp, a nesting site for multitudes of waterbirds.",
+      "district": "hambantota",
+      "province": "Western",
+      "categories": [
+        "wildlife"
+      ],
+      "image": "/images/destinations/kumana.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.5244,
+        "lng": 81.7051
+      }
+    },
+    {
+      "id": "ussangoda",
+      "name": "Ussangoda National Park",
+      "description": "Landscape of red soil and stunted vegetation, believed in folklore to be a landing site of King Ravana or a meteor impact.",
+      "district": "hambantota",
+      "province": "Western",
+      "categories": [
+        "nature"
+      ],
+      "image": "/images/destinations/ussangoda.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.1011,
+        "lng": 80.9856
+      }
+    },
+    {
+      "id": "hummanaya-blowhole",
+      "name": "Hummanaya Blowhole",
+      "description": "The second-largest blowhole in the world, where sea water shoots high into the air through a natural rock fissure.",
+      "district": "hambantota",
+      "province": "Western",
+      "categories": [
+        "nature",
+        "adventure"
+      ],
+      "image": "/images/destinations/hummanaya.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 5.9897,
+        "lng": 80.7188
+      }
+    },
+    {
+      "id": "temple-of-tooth",
+      "name": "Temple of the Sacred Tooth Relic",
+      "description": "The most sacred Buddhist site in Sri Lanka, housing the tooth relic of the Buddha. UNESCO World Heritage Site.",
+      "district": "kandy",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/temple-of-tooth.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.2936,
+        "lng": 80.6413
+      }
+    },
+    {
+      "id": "peradeniya-gardens",
+      "name": "Royal Botanic Gardens Peradeniya",
+      "description": "Renowned collection of orchids, spices, and the massive Javan Fig tree. Originally a royal pleasure garden.",
+      "district": "kandy",
+      "province": "Western",
+      "categories": [
+        "nature"
+      ],
+      "image": "/images/destinations/peradeniya.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.2718,
+        "lng": 80.5968
+      }
+    },
+    {
+      "id": "knuckles-range",
+      "name": "Knuckles Mountain Range",
+      "description": "UNESCO World Heritage site offering rugged trails through cloud forests, terraced paddy fields, and waterfalls. Biodiversity hotspot.",
+      "district": "kandy",
+      "province": "Western",
+      "categories": [
+        "hiking",
+        "nature"
+      ],
+      "image": "/images/destinations/knuckles.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.4331,
+        "lng": 80.7811
+      }
+    },
+    {
+      "id": "embekke-temple",
+      "name": "Embekke Devalaya",
+      "description": "14th-century temple known for exquisite wood carvings representing the Gampola period's artistic zenith.",
+      "district": "kandy",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/embekke.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.2181,
+        "lng": 80.5676
+      }
+    },
+    {
+      "id": "hanthana-range",
+      "name": "Hanthana Mountain Range",
+      "description": "Popular hiking destination offering panoramic views of Kandy city and the surrounding hills.",
+      "district": "kandy",
+      "province": "Western",
+      "categories": [
+        "hiking"
+      ],
+      "image": "/images/destinations/hanthana.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.2526,
+        "lng": 80.6277
+      }
+    },
+    {
+      "id": "sigiriya",
+      "name": "Sigiriya Rock Fortress",
+      "description": "The '8th wonder of the world' - a 5th-century citadel on a magma plug. Famous for frescoes, mirror wall, and advanced hydraulics.",
+      "district": "matale",
+      "province": "Western",
+      "categories": [
+        "heritage",
+        "hiking"
+      ],
+      "image": "/images/destinations/sigiriya.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.957,
+        "lng": 80.7603
+      }
+    },
+    {
+      "id": "dambulla-cave-temple",
+      "name": "Dambulla Cave Temple",
+      "description": "The largest and best-preserved cave temple complex in Sri Lanka, filled with statues and painted ceilings over two millennia old.",
+      "district": "matale",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/dambulla.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.8561,
+        "lng": 80.6483
+      }
+    },
+    {
+      "id": "pidurangala",
+      "name": "Pidurangala Rock",
+      "description": "Challenging hike opposite Sigiriya providing the best vantage point to view the famous rock fortress.",
+      "district": "matale",
+      "province": "Western",
+      "categories": [
+        "hiking"
+      ],
+      "image": "/images/destinations/pidurangala.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.9654,
+        "lng": 80.7614
+      }
+    },
+    {
+      "id": "riverston",
+      "name": "Riverston & Mini World's End",
+      "description": "Less commercialized trekking in the Knuckles range with dramatic viewpoint and windy gap.",
+      "district": "matale",
+      "province": "Western",
+      "categories": [
+        "hiking",
+        "nature"
+      ],
+      "image": "/images/destinations/riverston.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.5458,
+        "lng": 80.7236
+      }
+    },
+    {
+      "id": "sembuwatta-lake",
+      "name": "Sembuwatta Lake",
+      "description": "Man-made lake surrounded by pine forests, created from tea plantation water. A scenic mountain retreat.",
+      "district": "matale",
+      "province": "Western",
+      "categories": [
+        "nature"
+      ],
+      "image": "/images/destinations/sembuwatta.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.4428,
+        "lng": 80.6974
+      }
+    },
+    {
+      "id": "horton-plains",
+      "name": "Horton Plains National Park",
+      "description": "High-altitude plateau ending at 'World's End' - a sheer 880-meter cliff drop. Home to sambar deer and unique cloud forest.",
+      "district": "nuwara-eliya",
+      "province": "Western",
+      "categories": [
+        "hiking",
+        "wildlife",
+        "nature"
+      ],
+      "image": "/images/destinations/horton-plains.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.8023,
+        "lng": 80.8028
+      }
+    },
+    {
+      "id": "moon-plains",
+      "name": "Moon Plains",
+      "description": "Alternative to Horton Plains offering 'Mini World's End' with 360-degree views of surrounding peaks.",
+      "district": "nuwara-eliya",
+      "province": "Western",
+      "categories": [
+        "hiking",
+        "nature"
+      ],
+      "image": "/images/destinations/moon-plains.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.9458,
+        "lng": 80.8112
+      }
+    },
+    {
+      "id": "victoria-park",
+      "name": "Victoria Park Nuwara Eliya",
+      "description": "Well-maintained botanical space excellent for spotting Himalayan migrant birds in the cool climate.",
+      "district": "nuwara-eliya",
+      "province": "Western",
+      "categories": [
+        "nature"
+      ],
+      "image": "/images/destinations/victoria-park.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.9652,
+        "lng": 80.7712
+      }
+    },
+    {
+      "id": "sri-maha-bodhi",
+      "name": "Sri Maha Bodhi",
+      "description": "The oldest human-planted tree in the world with a known planting date (288 BC). Sacred to Buddhists worldwide.",
+      "district": "anuradhapura",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/sri-maha-bodhi.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 8.3448,
+        "lng": 80.3972
+      }
+    },
+    {
+      "id": "ruwanwelisaya",
+      "name": "Ruwanwelisaya Stupa",
+      "description": "Giant stupa enshrined with relics, one of the most sacred places of the Buddhist world.",
+      "district": "anuradhapura",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/ruwanwelisaya.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 8.3501,
+        "lng": 80.3951
+      }
+    },
+    {
+      "id": "mihintale",
+      "name": "Mihintale",
+      "description": "The cradle of Buddhism in Sri Lanka. A mountain peak complex with a grand stairway and ancient hospital ruins.",
+      "district": "anuradhapura",
+      "province": "Western",
+      "categories": [
+        "heritage",
+        "hiking"
+      ],
+      "image": "/images/destinations/mihintale.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 8.3512,
+        "lng": 80.5168
+      }
+    },
+    {
+      "id": "isurumuniya",
+      "name": "Isurumuniya Temple",
+      "description": "Rock temple famous for stone carvings including the 'Isurumuniya Lovers' and elephant pond carvings.",
+      "district": "anuradhapura",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/isurumuniya.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 8.3344,
+        "lng": 80.3899
+      }
+    },
+    {
+      "id": "wilpattu",
+      "name": "Wilpattu National Park",
+      "description": "The largest national park in Sri Lanka, known for unique 'Villu' (natural lakes) and prime leopard, sloth bear sightings.",
+      "district": "anuradhapura",
+      "province": "Western",
+      "categories": [
+        "wildlife"
+      ],
+      "image": "/images/destinations/wilpattu.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 8.4411,
+        "lng": 80.0094
+      }
+    },
+    {
+      "id": "gal-vihara",
+      "name": "Gal Vihara",
+      "description": "Masterpiece of rock-cut Buddha statues - seated, standing, and reclining - carved from a single granite face.",
+      "district": "polonnaruwa",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/gal-vihara.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.9519,
+        "lng": 81.0022
+      }
+    },
+    {
+      "id": "polonnaruwa-ancient-city",
+      "name": "Polonnaruwa Ancient City",
+      "description": "UNESCO World Heritage medieval capital with the Royal Palace, Quadrangle (Dalada Maluwa), and Vatadage.",
+      "district": "polonnaruwa",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/polonnaruwa.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.9403,
+        "lng": 81.0016
+      }
+    },
+    {
+      "id": "minneriya",
+      "name": "Minneriya National Park",
+      "description": "Famous for 'The Gathering' (July-October) where hundreds of elephants congregate - one of Asia's greatest wildlife spectacles.",
+      "district": "polonnaruwa",
+      "province": "Western",
+      "categories": [
+        "wildlife"
+      ],
+      "image": "/images/destinations/minneriya.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 8.0192,
+        "lng": 80.8544
+      }
+    },
+    {
+      "id": "kaudulla",
+      "name": "Kaudulla National Park",
+      "description": "Alternative elephant gathering location when Minneriya water levels rise. Part of the elephant corridor.",
+      "district": "polonnaruwa",
+      "province": "Western",
+      "categories": [
+        "wildlife"
+      ],
+      "image": "/images/destinations/kaudulla.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 8.1632,
+        "lng": 80.9026
+      }
+    },
+    {
+      "id": "ethagala",
+      "name": "Ethagala (Elephant Rock)",
+      "description": "Massive rock outcrop topped with a giant Buddha statue. Panoramic views of the city and surrounding lakes.",
+      "district": "kurunegala",
+      "province": "Western",
+      "categories": [
+        "hiking",
+        "heritage"
+      ],
+      "image": "/images/destinations/ethagala.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.4856,
+        "lng": 80.3701
+      }
+    },
+    {
+      "id": "yapahuwa",
+      "name": "Yapahuwa Rock Fortress",
+      "description": "13th-century capital with dramatic ornamental staircase resembling Cambodian styles. A steep climb to summit ruins.",
+      "district": "kurunegala",
+      "province": "Western",
+      "categories": [
+        "heritage",
+        "hiking"
+      ],
+      "image": "/images/destinations/yapahuwa.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.8183,
+        "lng": 80.3015
+      }
+    },
+    {
+      "id": "ridi-viharaya",
+      "name": "Ridi Viharaya (Silver Temple)",
+      "description": "Temple born from a silver ore discovery that funded the Ruwanwelisaya. Features Kandyan-era frescoes and Dutch tiles.",
+      "district": "kurunegala",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/ridi-viharaya.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.5342,
+        "lng": 80.5056
+      }
+    },
+    {
+      "id": "arankele",
+      "name": "Arankele Monastery",
+      "description": "Serene forest monastery ruins with meditation pathways and massive hot water baths used by ancient monks.",
+      "district": "kurunegala",
+      "province": "Western",
+      "categories": [
+        "heritage",
+        "nature"
+      ],
+      "image": "/images/destinations/arankele.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.6971,
+        "lng": 80.3956
+      }
+    },
+    {
+      "id": "kalpitiya",
+      "name": "Kalpitiya Peninsula",
+      "description": "Global kitesurfing hotspot. Sanctuary for Spinner Dolphins (thousands in pods) and seasonal Sperm Whales.",
+      "district": "puttalam",
+      "province": "Western",
+      "categories": [
+        "adventure",
+        "wildlife",
+        "beach"
+      ],
+      "image": "/images/destinations/kalpitiya.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 8.2325,
+        "lng": 79.7611
+      }
+    },
+    {
+      "id": "pigeon-island",
+      "name": "Pigeon Island National Park",
+      "description": "Premier snorkeling experience in Sri Lanka. Swim with Blacktip Reef Sharks and sea turtles around coral reefs.",
+      "district": "trincomalee",
+      "province": "Western",
+      "categories": [
+        "wildlife",
+        "beach",
+        "adventure"
+      ],
+      "image": "/images/destinations/pigeon-island.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 8.7183,
+        "lng": 81.2017
+      }
+    },
+    {
+      "id": "nilaveli-beach",
+      "name": "Nilaveli Beach",
+      "description": "Long stretch of pristine white sand and crystal blue water on the east coast.",
+      "district": "trincomalee",
+      "province": "Western",
+      "categories": [
+        "beach"
+      ],
+      "image": "/images/destinations/nilaveli.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 8.6882,
+        "lng": 81.1895
+      }
+    },
+    {
+      "id": "koneswaram-temple",
+      "name": "Koneswaram Temple",
+      "description": "The 'Temple of a Thousand Pillars' perched atop Swami Rock. Dramatic cliffside views of the Indian Ocean.",
+      "district": "trincomalee",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/koneswaram.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 8.588,
+        "lng": 81.2449
+      }
+    },
+    {
+      "id": "kanniya-hot-springs",
+      "name": "Kanniya Hot Springs",
+      "description": "Complex of seven wells with varying temperatures, steeped in legend associated with King Ravana.",
+      "district": "trincomalee",
+      "province": "Western",
+      "categories": [
+        "nature"
+      ],
+      "image": "/images/destinations/kanniya.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 8.5862,
+        "lng": 81.1764
+      }
+    },
+    {
+      "id": "pasikudah-beach",
+      "name": "Pasikudah Beach",
+      "description": "Famous for shallow, calm waters protected by a reef. Walk hundreds of meters into the sea - ideal for families.",
+      "district": "batticaloa",
+      "province": "Western",
+      "categories": [
+        "beach"
+      ],
+      "image": "/images/destinations/pasikudah.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.9255,
+        "lng": 81.5645
+      }
+    },
+    {
+      "id": "batticaloa-lagoon",
+      "name": "Batticaloa Lagoon",
+      "description": "Massive estuarine system known for the phenomenon of 'Singing Fish' and traditional prawn fishing.",
+      "district": "batticaloa",
+      "province": "Western",
+      "categories": [
+        "nature"
+      ],
+      "image": "/images/destinations/batticaloa-lagoon.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.7121,
+        "lng": 81.6964
+      }
+    },
+    {
+      "id": "arugam-bay",
+      "name": "Arugam Bay",
+      "description": "World-renowned surf destination with Main Point, Whiskey Point (beginner), and Peanut Farm breaks.",
+      "district": "ampara",
+      "province": "Western",
+      "categories": [
+        "adventure",
+        "beach"
+      ],
+      "image": "/images/destinations/arugam-bay.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.8415,
+        "lng": 81.8324
+      }
+    },
+    {
+      "id": "gal-oya",
+      "name": "Gal Oya National Park",
+      "description": "Unique boat safari on Senanayake Samudraya reservoir where you can see elephants swimming between islands.",
+      "district": "ampara",
+      "province": "Western",
+      "categories": [
+        "wildlife",
+        "adventure"
+      ],
+      "image": "/images/destinations/gal-oya.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.2215,
+        "lng": 81.4589
+      }
+    },
+    {
+      "id": "lahugala",
+      "name": "Lahugala Kitulana National Park",
+      "description": "Smaller park famous for the gathering of elephants around Lahugala Tank to feed on Beru grass.",
+      "district": "ampara",
+      "province": "Western",
+      "categories": [
+        "wildlife"
+      ],
+      "image": "/images/destinations/lahugala.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.8925,
+        "lng": 81.7169
+      }
+    },
+    {
+      "id": "nallur-temple",
+      "name": "Nallur Kandaswamy Kovil",
+      "description": "The most significant Hindu temple in the north, known for grand festivals and strict adherence to rituals.",
+      "district": "jaffna",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/nallur.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 9.6745,
+        "lng": 80.0294
+      }
+    },
+    {
+      "id": "jaffna-fort",
+      "name": "Jaffna Fort",
+      "description": "Massive Dutch fortification overlooking the lagoon. Symbol of the region's colonial and conflict history.",
+      "district": "jaffna",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/jaffna-fort.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 9.6611,
+        "lng": 80.0101
+      }
+    },
+    {
+      "id": "delft-island",
+      "name": "Delft Island (Neduntheevu)",
+      "description": "Remote island with wild horses descended from Dutch mounts, baobab trees, and coral walls.",
+      "district": "jaffna",
+      "province": "Western",
+      "categories": [
+        "nature",
+        "heritage"
+      ],
+      "image": "/images/destinations/delft.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 9.5167,
+        "lng": 79.6833
+      }
+    },
+    {
+      "id": "casuarina-beach",
+      "name": "Casuarina Beach",
+      "description": "The most famous beach in the north, known for shallow waters and beautiful Casuarina trees.",
+      "district": "jaffna",
+      "province": "Western",
+      "categories": [
+        "beach"
+      ],
+      "image": "/images/destinations/casuarina.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 9.7571,
+        "lng": 79.8856
+      }
+    },
+    {
+      "id": "nagadeepa",
+      "name": "Nagadeepa Purana Vihara",
+      "description": "Buddhist pilgrimage site on Nainativu island reached by boat. Sacred to both Buddhists and Hindus.",
+      "district": "jaffna",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/nagadeepa.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 9.6133,
+        "lng": 79.7745
+      }
+    },
+    {
+      "id": "adams-bridge",
+      "name": "Adam's Bridge (Rama Setu)",
+      "description": "Chain of limestone shoals stretching towards India. Boat tours to sandbanks in shimmering shallow waters.",
+      "district": "mannar",
+      "province": "Western",
+      "categories": [
+        "nature",
+        "heritage"
+      ],
+      "image": "/images/destinations/adams-bridge.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 9.1235,
+        "lng": 79.4447
+      }
+    },
+    {
+      "id": "vankalai-sanctuary",
+      "name": "Vankalai Sanctuary",
+      "description": "Haven for migratory birds including large flocks of flamingos.",
+      "district": "mannar",
+      "province": "Western",
+      "categories": [
+        "wildlife"
+      ],
+      "image": "/images/destinations/vankalai.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 8.8786,
+        "lng": 79.9324
+      }
+    },
+    {
+      "id": "mannar-baobabs",
+      "name": "Mannar Baobab Trees",
+      "description": "Massive living monuments planted centuries ago by Arab traders, testament to the region's trade history.",
+      "district": "mannar",
+      "province": "Western",
+      "categories": [
+        "nature"
+      ],
+      "image": "/images/destinations/mannar-baobabs.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 8.9812,
+        "lng": 79.9142
+      }
+    },
+    {
+      "id": "thiruketheeswaram",
+      "name": "Thiruketheeswaram Temple",
+      "description": "One of the five ancient Ishwarams of Lord Shiva with intricate Dravidian architecture.",
+      "district": "mannar",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/thiruketheeswaram.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 8.9567,
+        "lng": 79.9856
+      }
+    },
+    {
+      "id": "madhu-shrine",
+      "name": "Shrine of Our Lady of Madhu",
+      "description": "The holiest Catholic shrine in Sri Lanka, located in the jungle and drawing pilgrims from all faiths.",
+      "district": "mannar",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/madhu-shrine.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 8.8519,
+        "lng": 80.1706
+      }
+    },
+    {
+      "id": "iranamadu-tank",
+      "name": "Iranamadu Tank",
+      "description": "Vast reservoir serving as the lifeline of the north, offering scenic views and picnic spots.",
+      "district": "kilinochchi",
+      "province": "Western",
+      "categories": [
+        "nature"
+      ],
+      "image": "/images/destinations/iranamadu.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 9.3021,
+        "lng": 80.4682
+      }
+    },
+    {
+      "id": "elephant-pass",
+      "name": "Elephant Pass",
+      "description": "Strategic isthmus connecting the mainland to Jaffna peninsula. Features war memorials and salt pans.",
+      "district": "kilinochchi",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/elephant-pass.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 9.5312,
+        "lng": 80.3985
+      }
+    },
+    {
+      "id": "nanthikadal-lagoon",
+      "name": "Nanthikadal Lagoon",
+      "description": "Ecologically and historically significant lagoon, now a peaceful site for birdwatching and fishing.",
+      "district": "mullaitivu",
+      "province": "Western",
+      "categories": [
+        "nature",
+        "wildlife"
+      ],
+      "image": "/images/destinations/nanthikadal.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 9.2845,
+        "lng": 80.7634
+      }
+    },
+    {
+      "id": "kokkilai-sanctuary",
+      "name": "Kokkilai Bird Sanctuary",
+      "description": "Vital sanctuary for estuarine birds on the Trincomalee border.",
+      "district": "mullaitivu",
+      "province": "Western",
+      "categories": [
+        "wildlife"
+      ],
+      "image": "/images/destinations/kokkilai.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 9.0012,
+        "lng": 80.9156
+      }
+    },
+    {
+      "id": "vavuniya-museum",
+      "name": "Archaeological Museum Vavuniya",
+      "description": "Houses diverse artifacts including Buddha statues and Hindu sculptures from the region.",
+      "district": "vavuniya",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/vavuniya-museum.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 8.7532,
+        "lng": 80.4981
+      }
+    },
+    {
+      "id": "madukanda-vihara",
+      "name": "Madukanda Vihara",
+      "description": "Believed to be a resting place of the Sacred Tooth Relic during its journey to Anuradhapura.",
+      "district": "vavuniya",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/madukanda.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 8.7245,
+        "lng": 80.5367
+      }
+    },
+    {
+      "id": "ella-rock",
+      "name": "Ella Rock",
+      "description": "Challenging hike through tea plantations and eucalyptus forests with views of the southern plains.",
+      "district": "badulla",
+      "province": "Western",
+      "categories": [
+        "hiking"
+      ],
+      "image": "/images/destinations/ella-rock.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.8524,
+        "lng": 81.0416
+      }
+    },
+    {
+      "id": "little-adams-peak",
+      "name": "Little Adam's Peak",
+      "description": "Easier hike with stunning 360-degree views of Ella Gap and surrounding mountains.",
+      "district": "badulla",
+      "province": "Western",
+      "categories": [
+        "hiking"
+      ],
+      "image": "/images/destinations/little-adams-peak.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.8642,
+        "lng": 81.0631
+      }
+    },
+    {
+      "id": "nine-arch-bridge",
+      "name": "Nine Arch Bridge",
+      "description": "Engineering marvel in Demodara where visitors walk along tracks to watch trains pass through beautiful scenery.",
+      "district": "badulla",
+      "province": "Western",
+      "categories": [
+        "heritage",
+        "hiking"
+      ],
+      "image": "/images/destinations/nine-arch-bridge.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.8768,
+        "lng": 81.0608
+      }
+    },
+    {
+      "id": "diyaluma-falls",
+      "name": "Diyaluma Falls",
+      "description": "Sri Lanka's second-highest waterfall (220m) famous for natural infinity pools at the top.",
+      "district": "badulla",
+      "province": "Western",
+      "categories": [
+        "nature",
+        "hiking"
+      ],
+      "image": "/images/destinations/diyaluma.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.7212,
+        "lng": 81.0315
+      }
+    },
+    {
+      "id": "bambarakanda-falls",
+      "name": "Bambarakanda Falls",
+      "description": "Sri Lanka's tallest waterfall at 263m, resembling a thin horsetail through the forest.",
+      "district": "badulla",
+      "province": "Western",
+      "categories": [
+        "nature"
+      ],
+      "image": "/images/destinations/bambarakanda.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.7725,
+        "lng": 80.8335
+      }
+    },
+    {
+      "id": "dunhinda-falls",
+      "name": "Dunhinda Falls",
+      "description": "Known for its smoky spray, this waterfall near Badulla town requires a scenic forest hike to reach.",
+      "district": "badulla",
+      "province": "Western",
+      "categories": [
+        "nature",
+        "hiking"
+      ],
+      "image": "/images/destinations/dunhinda.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.9926,
+        "lng": 81.0645
+      }
+    },
+    {
+      "id": "kataragama",
+      "name": "Kataragama Sacred City",
+      "description": "Multi-religious sacred city visited by Buddhists, Hindus, and Muslims. Famous for fire-walking rituals.",
+      "district": "monaragala",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/kataragama.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.4144,
+        "lng": 81.3326
+      }
+    },
+    {
+      "id": "maligawila",
+      "name": "Maligawila Buddha Statue",
+      "description": "World's tallest free-standing ancient limestone Buddha statue in a forest setting.",
+      "district": "monaragala",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/maligawila.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.7335,
+        "lng": 81.3412
+      }
+    },
+    {
+      "id": "buduruwagala",
+      "name": "Buduruwagala",
+      "description": "Ancient rock-cut Buddha figures carved into a cliff, showing Mahayana Buddhist influence.",
+      "district": "monaragala",
+      "province": "Western",
+      "categories": [
+        "heritage"
+      ],
+      "image": "/images/destinations/buduruwagala.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.6859,
+        "lng": 81.0825
+      }
+    },
+    {
+      "id": "sinharaja",
+      "name": "Sinharaja Forest Reserve",
+      "description": "UNESCO World Heritage site - the last viable primary tropical rainforest. Hotspot for endemic birds like the Blue Magpie.",
+      "district": "ratnapura",
+      "province": "Western",
+      "categories": [
+        "nature",
+        "hiking",
+        "wildlife"
+      ],
+      "image": "/images/destinations/sinharaja.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.3991,
+        "lng": 80.4161
+      }
+    },
+    {
+      "id": "adams-peak",
+      "name": "Adam's Peak (Sri Pada)",
+      "description": "Sacred mountain pilgrimage site. The Ratnapura routes (Palabaddala/Erathna) are classic arduous paths through wilderness.",
+      "district": "ratnapura",
+      "province": "Western",
+      "categories": [
+        "hiking",
+        "heritage"
+      ],
+      "image": "/images/destinations/adams-peak.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.8096,
+        "lng": 80.4994
+      }
+    },
+    {
+      "id": "bopath-ella",
+      "name": "Bopath Ella",
+      "description": "Popular waterfall shaped like a Bo (Bodhi) leaf, easily accessible and scenic.",
+      "district": "ratnapura",
+      "province": "Western",
+      "categories": [
+        "nature"
+      ],
+      "image": "/images/destinations/bopath-ella.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.6432,
+        "lng": 80.3645
+      }
+    },
+    {
+      "id": "udawalawe",
+      "name": "Udawalawe National Park",
+      "description": "Renowned for guaranteed elephant sightings year-round. Home to the Elephant Transit Home for orphaned calves.",
+      "district": "ratnapura",
+      "province": "Western",
+      "categories": [
+        "wildlife"
+      ],
+      "image": "/images/destinations/udawalawe.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.4741,
+        "lng": 80.8872
+      }
+    },
+    {
+      "id": "pinnawala",
+      "name": "Pinnawala Elephant Orphanage",
+      "description": "Captive breeding and conservation center famous for the daily river bathing ritual of the elephant herd.",
+      "district": "kegalle",
+      "province": "Western",
+      "categories": [
+        "wildlife"
+      ],
+      "image": "/images/destinations/pinnawala.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.3005,
+        "lng": 80.3872
+      }
+    },
+    {
+      "id": "kitulgala",
+      "name": "Kitulgala",
+      "description": "Adventure capital famous for white-water rafting, canyoning, and as the filming location for 'The Bridge on the River Kwai'.",
+      "district": "kegalle",
+      "province": "Western",
+      "categories": [
+        "adventure"
+      ],
+      "image": "/images/destinations/kitulgala.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 6.9932,
+        "lng": 80.4167
+      }
+    },
+    {
+      "id": "bible-rock",
+      "name": "Bible Rock (Bathalegala)",
+      "description": "Scenic hike up a distinctive square-shaped rock offering panoramic views of the surrounding valleys.",
+      "district": "kegalle",
+      "province": "Western",
+      "categories": [
+        "hiking"
+      ],
+      "image": "/images/destinations/bible-rock.jpg",
+      "highlights": [],
+      "bestTime": "",
+      "entryFee": "",
+      "map": {
+        "x": 50,
+        "y": 50,
+        "lat": 7.1856,
+        "lng": 80.4354
+      }
+    }
+  ],
+  "waterfalls": [
+    {
+      "name": "Bambarakanda Falls",
+      "district": "badulla",
+      "height": 263,
+      "feature": "Tallest in Sri Lanka"
+    },
+    {
+      "name": "Diyaluma Falls",
+      "district": "badulla",
+      "height": 220,
+      "feature": "Upper infinity pools"
+    },
+    {
+      "name": "Kurundu Oya Falls",
+      "district": "nuwara-eliya",
+      "height": 189,
+      "feature": "Third tallest"
+    },
+    {
+      "name": "Laxapana Falls",
+      "district": "nuwara-eliya",
+      "height": 126,
+      "feature": "Hydro-power significance"
+    },
+    {
+      "name": "Devon Falls",
+      "district": "nuwara-eliya",
+      "height": 97,
+      "feature": "Scenic tea estate setting"
+    },
+    {
+      "name": "St. Clair's Falls",
+      "district": "nuwara-eliya",
+      "height": 80,
+      "feature": "Widest - 'Little Niagara'"
+    },
+    {
+      "name": "Dunhinda Falls",
+      "district": "badulla",
+      "height": 63,
+      "feature": "Smoky spray"
+    },
+    {
+      "name": "Bopath Ella",
+      "district": "ratnapura",
+      "height": 30,
+      "feature": "Bo-leaf shape"
+    },
+    {
+      "name": "Ravana Falls",
+      "district": "badulla",
+      "height": 25,
+      "feature": "Roadside accessibility"
+    },
+    {
+      "name": "Sera Ella",
+      "district": "matale",
+      "height": 10,
+      "feature": "Cave behind the water"
+    }
+  ],
+  "nationalParks": [
+    {
+      "name": "Yala (Block 1)",
+      "districts": [
+        "hambantota",
+        "monaragala"
+      ],
+      "wildlife": [
+        "Leopard",
+        "Sloth Bear",
+        "Elephant"
+      ],
+      "bestSeason": "Feb - July"
+    },
+    {
+      "name": "Wilpattu",
+      "districts": [
+        "puttalam",
+        "anuradhapura"
+      ],
+      "wildlife": [
+        "Leopard",
+        "Sloth Bear",
+        "Villu ecosystems"
+      ],
+      "bestSeason": "Feb - Oct"
+    },
+    {
+      "name": "Udawalawe",
+      "districts": [
+        "ratnapura",
+        "monaragala"
+      ],
+      "wildlife": [
+        "Elephants (Year-round)"
+      ],
+      "bestSeason": "All Year"
+    },
+    {
+      "name": "Minneriya",
+      "districts": [
+        "polonnaruwa"
+      ],
+      "wildlife": [
+        "Elephants (The Gathering)"
+      ],
+      "bestSeason": "July - Oct"
+    },
+    {
+      "name": "Kaudulla",
+      "districts": [
+        "polonnaruwa"
+      ],
+      "wildlife": [
+        "Elephants"
+      ],
+      "bestSeason": "Oct - Mar"
+    },
+    {
+      "name": "Bundala",
+      "districts": [
+        "hambantota"
+      ],
+      "wildlife": [
+        "Migratory Birds",
+        "Flamingos"
+      ],
+      "bestSeason": "Dec - Apr"
+    },
+    {
+      "name": "Kumana",
+      "districts": [
+        "ampara"
+      ],
+      "wildlife": [
+        "Waterfowl",
+        "Waders"
+      ],
+      "bestSeason": "May - Sept"
+    },
+    {
+      "name": "Horton Plains",
+      "districts": [
+        "nuwara-eliya"
+      ],
+      "wildlife": [
+        "Sambar Deer",
+        "Cloud Forest"
+      ],
+      "bestSeason": "Jan - Mar"
+    },
+    {
+      "name": "Pigeon Island",
+      "districts": [
+        "trincomalee"
+      ],
+      "wildlife": [
+        "Reef Sharks",
+        "Sea Turtles"
+      ],
+      "bestSeason": "May - Oct"
+    },
+    {
+      "name": "Gal Oya",
+      "districts": [
+        "ampara",
+        "monaragala"
+      ],
+      "wildlife": [
+        "Swimming Elephants"
+      ],
+      "bestSeason": "Mar - July"
+    }
+  ],
+  "adventureHubs": [
+    {
+      "activity": "Surfing (Pro)",
+      "location": "Arugam Bay",
+      "district": "ampara",
+      "season": "May - Sept"
+    },
+    {
+      "activity": "Surfing (Beginner)",
+      "location": "Weligama",
+      "district": "matara",
+      "season": "Nov - Apr"
+    },
+    {
+      "activity": "Kitesurfing",
+      "location": "Kalpitiya",
+      "district": "puttalam",
+      "season": "May-Sept / Dec-Mar"
+    },
+    {
+      "activity": "White Water Rafting",
+      "location": "Kitulgala",
+      "district": "kegalle",
+      "season": "Year-round"
+    },
+    {
+      "activity": "Hiking/Trekking",
+      "location": "Ella / Knuckles",
+      "district": "badulla",
+      "season": "Jan - Mar"
+    },
+    {
+      "activity": "Whale Watching",
+      "location": "Mirissa",
+      "district": "matara",
+      "season": "Nov - Apr"
+    },
+    {
+      "activity": "Whale Watching",
+      "location": "Trincomalee",
+      "district": "trincomalee",
+      "season": "May - Oct"
+    },
+    {
+      "activity": "Wreck Diving",
+      "location": "Colombo / Mount Lavinia",
+      "district": "colombo",
+      "season": "Nov - Apr"
+    }
+  ]
+}

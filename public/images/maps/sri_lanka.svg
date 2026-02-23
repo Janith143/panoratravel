@@ -1,0 +1,19 @@
+<svg viewBox="0 0 100 110" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="none">
+  <!-- Sri Lanka Outline -->
+  <path d="M 48 5 
+           C 55 5, 58 10, 52 13 
+           C 65 20, 75 30, 75 45 
+           C 85 55, 95 70, 92 80 
+           C 85 95, 70 103, 55 103 
+           C 40 103, 30 100, 25 90 
+           C 20 80, 25 65, 28 55 
+           C 25 45, 15 35, 18 25 
+           C 20 20, 35 15, 42 13 
+           C 45 10, 45 5, 48 5 Z" 
+        fill="#10b981" />
+        
+  <!-- Minimalistic Terrain Markers (Central Highlands) -->
+  <path d="M 50 70 L 55 65 L 60 70" fill="#047857" opacity="0.6" />
+  <path d="M 45 80 L 50 75 L 55 80" fill="#047857" opacity="0.6" />
+  <path d="M 55 80 L 60 75 L 65 80" fill="#047857" opacity="0.6" />
+</svg>

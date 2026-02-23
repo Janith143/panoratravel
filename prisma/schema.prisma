@@ -1,0 +1,91 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Inquiry {
+  id           String   @id @default(uuid())
+  email        String
+  date         DateTime @default(now())
+  status       String   @default("pending") // pending, connected, planned, completed
+  destinations Json?    // Array of destination IDs
+  vehicleType  String?
+  vehicleCount Int      @default(1)
+  passengers   Int      @default(1)
+  contact      Json?    // { whatsapp: string, telegram: string }
+  startDate    String?
+  addons       Json?    // Array of strings
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Review {
+  id         String   @id @default(uuid())
+  name       String
+  location   String?
+  rating     Int      @default(5)
+  text       String   @db.Text
+  trip       String?
+  avatar     String?
+  source     String   @default("website") // website, google, facebook
+  isFeatured Boolean  @default(false)
+  image      String?  // Optional image uploaded with review
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+model Destination {
+  id          String   @id @default(uuid())
+  slug        String   @unique
+  name        String
+  description String   @db.Text
+  image       String?
+  category    String   @default("General")
+  district    String?
+  highlights  Json? // Array of strings
+  mapData     Json? // { x: number, y: number }
+  categories  Json? // Array of strings (multi-category support)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Tour {
+  id          String   @id @default(uuid())
+  slug        String   @unique
+  title       String
+  duration    String
+  price       String
+  image       String?
+  category    String
+  rating      Float    @default(5.0)
+  reviews     Int      @default(0)
+  description String   @db.Text
+  highlights  Json?    // Array of strings
+  itinerary   Json?    // Complex object array
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model GalleryImage {
+  id        String   @id @default(uuid())
+  url       String
+  title     String?
+  category  String?  // wildlife, landscape, culture, etc.
+  width     Int?
+  height    Int?
+  featured  Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model SiteConfig {
+  id        String   @id @default("default")
+  key       String   @unique
+  value     Json
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

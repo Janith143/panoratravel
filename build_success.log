@@ -1,0 +1,56 @@
+
+> panora-travels@0.1.0 build
+> node scripts/build.js
+
+Running Next.js build...
+▲ Next.js 16.1.1 (Turbopack)
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 2.0s
+  Running TypeScript ...
+  Collecting page data using 11 workers ...
+  Generating static pages using 11 workers (0/151) ...
+  Generating static pages using 11 workers (37/151) 
+  Generating static pages using 11 workers (75/151) 
+  Generating static pages using 11 workers (113/151) 
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+✓ Generating static pages using 11 workers (151/151) in 909.7ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /about
+├ ○ /admin
+├ ○ /adventure
+├ ○ /blog
+├ ○ /contact
+├ ○ /destinations
+├ ● /destinations/[slug]
+│ ├ /destinations/sigiriya
+│ ├ /destinations/galle
+│ ├ /destinations/kandy
+│ └ [+120 more paths]
+├ ○ /faq
+├ ○ /national-parks
+├ ○ /planner
+├ ○ /portal
+├ ○ /reviews
+├ ○ /safety
+├ ○ /safety/trust
+├ ○ /services
+├ ○ /services/fleet
+├ ○ /team
+├ ○ /tours
+├ ● /tours/[slug]
+│ ├ /tours/cultural-triangle-explorer
+│ ├ /tours/wild-sri-lanka-safari
+│ ├ /tours/misty-hill-country-escape
+│ └ [+3 more paths]
+└ ○ /waterfalls
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+
+Restoring API routes...

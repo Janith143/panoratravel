@@ -1,0 +1,768 @@
+{
+    "categories": [
+        "Nature",
+        "Culture",
+        "Adventure",
+        "Wildlife",
+        "Relax",
+        "Beach",
+        "Heritage",
+        "Hiking",
+        "Travel Tips",
+        "Transport"
+    ],
+    "addons": [
+        {
+            "id": "guide",
+            "title": "Travel Guide",
+            "price": 50
+        },
+        {
+            "id": "pickup",
+            "title": "Airport Pickup",
+            "price": 40
+        },
+        {
+            "id": "dropoff",
+            "title": "Airport Drop off",
+            "price": 40
+        },
+        {
+            "id": "sim",
+            "title": "SIM Card",
+            "price": 10
+        },
+        {
+            "id": "baby-seat",
+            "title": "Baby Seat",
+            "price": 15
+        }
+    ],
+    "fleet": [
+        {
+            "id": "sedan-standard",
+            "name": "Standard Sedan",
+            "type": "Car",
+            "passengers": 3,
+            "price": 45,
+            "image": "/images/fleet/sedan.jpg"
+        },
+        {
+            "id": "sedan-premium",
+            "name": "Premium Sedan (Benz/BMW)",
+            "type": "Car",
+            "passengers": 3,
+            "price": 80,
+            "image": "/images/fleet/sedan-premium.jpg"
+        },
+        {
+            "id": "van-standard",
+            "name": "Standard Van (KDH)",
+            "type": "Van",
+            "passengers": 7,
+            "price": 60,
+            "image": "/images/fleet/van.jpg"
+        },
+        {
+            "id": "van-luxury",
+            "name": "Luxury Van (Vellfire)",
+            "type": "Van",
+            "passengers": 6,
+            "price": 100,
+            "image": "/images/fleet/van-luxury.jpg"
+        },
+        {
+            "id": "bus-mini",
+            "name": "Mini Bus",
+            "type": "Bus",
+            "passengers": 15,
+            "price": 90,
+            "image": "/images/fleet/minibus.jpg"
+        },
+        {
+            "id": "bus-coach",
+            "name": "Luxury Coach",
+            "type": "Bus",
+            "passengers": 40,
+            "price": 150,
+            "image": "/images/fleet/bus.jpg"
+        },
+        {
+            "id": "suv-4x4",
+            "name": "4x4 SUV",
+            "type": "Jeep",
+            "passengers": 4,
+            "price": 75,
+            "image": "/images/fleet/suv.jpg"
+        }
+    ],
+    "inquiries": [
+        {
+            "id": "inq-1768888664389",
+            "date": "2026-01-20T05:57:44.389Z",
+            "status": "pending",
+            "email": "jeshiopec@gmail.com",
+            "destinations": [
+                "national-museum-colombo",
+                "seema-malaka",
+                "viharamahadevi-park"
+            ],
+            "passengers": 2,
+            "contact": {
+                "whatsapp": "",
+                "telegram": ""
+            },
+            "addons": [
+                "Airport Transfer",
+                "Photography Package"
+            ],
+            "startDate": "2026-01-22"
+        },
+        {
+            "id": "inq-1768294380598",
+            "date": "2026-01-13T08:53:00.599Z",
+            "status": "pending",
+            "email": "bsprk1@gmail.com",
+            "destinations": [
+                "sigiriya",
+                "yala",
+                "kandy"
+            ],
+            "passengers": 2,
+            "contact": {
+                "whatsapp": "0764522262",
+                "telegram": ""
+            },
+            "addons": [
+                "Airport Pickup",
+                "Airport Drop off"
+            ]
+        }
+    ],
+    "tours": [
+        {
+            "id": "cultural-triangle",
+            "title": "Cultural Triangle Explorer",
+            "duration": "7 Days",
+            "price": "$850",
+            "image": "/images/tours/cultural.jpg",
+            "category": "Culture",
+            "rating": 4.8,
+            "reviews": 124,
+            "description": "Journey through the ancient cities of Anuradhapura, Polonnaruwa, and Sigiriya. Experience the rich history and culture of Sri Lanka.",
+            "slug": "cultural-triangle-explorer",
+            "highlights": [
+                "Climb Sigiriya Rock Fortress",
+                "Visit Temple of the Tooth",
+                "Jeep Safari in Minneriya",
+                "Ancient ruins of Polonnawura"
+            ],
+            "itinerary": [
+                {
+                    "day": 1,
+                    "title": "Arrival & Negombo",
+                    "description": "Arrive at Bandaranaike International Airport. Transfer to coastal city of Negombo. Relax by the beach."
+                },
+                {
+                    "day": 2,
+                    "title": "Anuradhapura Ancient City",
+                    "description": "Travel to Anuradhapura. Visit the sacred Bodhi tree and massive stupas."
+                },
+                {
+                    "day": 3,
+                    "title": "Polonnawura & Minneriya",
+                    "description": "Explore the medieval capital of Polonnawura. Evening elephant safari in Minneriya National Park."
+                },
+                {
+                    "day": 4,
+                    "title": "Sigiriya Rock Fortress",
+                    "description": "Morning climb of Sigiriya. Afternoon village tour and authentic lunch."
+                },
+                {
+                    "day": 5,
+                    "title": "Dambulla & Kandy",
+                    "description": "Visit Dambulla Cave Temple. Proceed to Kandy. Evening cultural dance show."
+                },
+                {
+                    "day": 6,
+                    "title": "Kandy City Tour",
+                    "description": "Visit Temple of the Tooth Relic. Peradeniya Royal Botanical Gardens."
+                },
+                {
+                    "day": 7,
+                    "title": "Departure",
+                    "description": "Transfer to airport for departure."
+                }
+            ]
+        },
+        {
+            "id": "wild-sri-lanka",
+            "title": "Wild Sri Lanka Safari",
+            "duration": "5 Days",
+            "price": "$600",
+            "image": "/images/tours/wildlife.jpg",
+            "category": "Wildlife",
+            "rating": 4.9,
+            "reviews": 85,
+            "description": "Encounter leopards in Yala and elephants in Udawalawe National Park. A perfect tour for nature lovers.",
+            "slug": "wild-sri-lanka-safari",
+            "highlights": [
+                "Yala Leopard Safari",
+                "Udawalawe Elephant Transit Home",
+                "Turtle Hatchery",
+                "Galle Fort"
+            ],
+            "itinerary": [
+                {
+                    "day": 1,
+                    "title": "Arrival & Udawalawe",
+                    "description": "Proceed to Udawalawe. Afternoon safari to see elephants."
+                },
+                {
+                    "day": 2,
+                    "title": "Yala National Park",
+                    "description": "Transfer to Yala. Evening game drive to spot leopards and bears."
+                },
+                {
+                    "day": 3,
+                    "title": "Full Day Safari",
+                    "description": "Morning and evening safaris in Yala for maximum wildlife sightings."
+                },
+                {
+                    "day": 4,
+                    "title": "Galle & South Coast",
+                    "description": "Drive along the coast to Galle. Visit the Dutch Fort. Relax on the beach."
+                },
+                {
+                    "day": 5,
+                    "title": "Departure",
+                    "description": "Visit Turtle Hatchery en route to airport."
+                }
+            ]
+        },
+        {
+            "id": "hill-country-escape",
+            "title": "Misty Hill Country Escape",
+            "duration": "4 Days",
+            "price": "$450",
+            "image": "/images/tours/hill-country.jpg",
+            "category": "Nature",
+            "rating": 4.7,
+            "reviews": 210,
+            "description": "Ride the scenic train to Ella and explore the tea plantations of Nuwara Eliya. Breathtaking views guaranteed.",
+            "slug": "misty-hill-country-escape",
+            "highlights": [
+                "Scenic Train Ride",
+                "Tea Factory Visit",
+                "Nine Arch Bridge",
+                "Little Adams Peak"
+            ],
+            "itinerary": [
+                {
+                    "day": 1,
+                    "title": "Kandy to Nuwara Eliya",
+                    "description": "Drive through tea estates. Visit a working tea factory and waterfall."
+                },
+                {
+                    "day": 2,
+                    "title": "Horton Plains",
+                    "description": "Early morning trek to Worlds End. Afternoon relax in the cool climate."
+                },
+                {
+                    "day": 3,
+                    "title": "Train to Ella",
+                    "description": "Famous scenic train journey. Visit Nine Arch Bridge in Ella."
+                },
+                {
+                    "day": 4,
+                    "title": "Ella & Departure",
+                    "description": "Morning hike to Little Adams Peak. Transfer to airport or beach extension."
+                }
+            ]
+        },
+        {
+            "id": "southern-coast-bliss",
+            "title": "Southern Coast Bliss",
+            "duration": "6 Days",
+            "price": "$720",
+            "image": "/images/tours/beach.jpg",
+            "category": "Beach",
+            "rating": 4.9,
+            "reviews": 156,
+            "description": "Relax on the golden sands of Mirissa and explore the colonial fort of Galle. Whale watching and surfing included.",
+            "slug": "southern-coast-bliss",
+            "highlights": [
+                "Whale Watching",
+                "Surfing Lesson",
+                "Galle Fort",
+                "Beach Relaxation"
+            ],
+            "itinerary": [
+                {
+                    "day": 1,
+                    "title": "Arrival & Bentota",
+                    "description": "Transfer to Bentota. Key water sports activities."
+                },
+                {
+                    "day": 2,
+                    "title": "Hikkaduwa & Galle",
+                    "description": "Snorkeling in Hikkaduwa. Explore Galle Fort at sunset."
+                },
+                {
+                    "day": 3,
+                    "title": "Mirissa",
+                    "description": "Transfer to Mirissa. Relax on the beach."
+                },
+                {
+                    "day": 4,
+                    "title": "Whale Watching",
+                    "description": "Morning boat trip to see Blue Whales. Afternoon surfing."
+                },
+                {
+                    "day": 5,
+                    "title": "Beach Leisure",
+                    "description": "Full day at leisure or optional visit to Matara."
+                },
+                {
+                    "day": 6,
+                    "title": "Departure",
+                    "description": "Transfer to airport."
+                }
+            ]
+        },
+        {
+            "id": "ramayana-trail",
+            "title": "Ramayana Trail",
+            "duration": "8 Days",
+            "price": "$950",
+            "image": "/images/tours/ramayana.jpg",
+            "category": "Culture",
+            "rating": 4.6,
+            "reviews": 45,
+            "description": "Follow the legendary path of Lord Rama and Sita across Sri Lanka. Visit sacred temples and historic sites mentioned in the epic.",
+            "slug": "ramayana-trail",
+            "highlights": [
+                "Munneswaram Temple",
+                "Sita Amman Temple",
+                "Ashok Vatika",
+                "Divurumpola"
+            ],
+            "itinerary": []
+        },
+        {
+            "id": "adventure-rush",
+            "title": "Adrenaline Rush",
+            "duration": "6 Days",
+            "price": "$700",
+            "image": "/images/tours/adventure.jpg",
+            "category": "Adventure",
+            "rating": 4.8,
+            "reviews": 92,
+            "description": "White water rafting in Kitulgala, hiking across Knuckles Mountain Range, and surfing in Arugam Bay.",
+            "slug": "adrenaline-rush",
+            "highlights": [
+                "White Water Rafting",
+                "Knuckles Trekking",
+                "Surfing",
+                "Canyoning"
+            ],
+            "itinerary": []
+        }
+    ],
+    "destinations": [
+        {
+            "id": "sigiriya",
+            "name": "Sigiriya",
+            "description": "The ancient rock fortress and palace ruin, Sigiriya is a UNESCO World Heritage site and the most visited historic site in Sri Lanka. Known as the Lion Rock, it stands 200 meters high over the surrounding plains.",
+            "category": "Culture",
+            "image": "/images/destinations/sigiriya.jpg",
+            "slug": "sigiriya",
+            "highlights": [
+                "Lion Gate",
+                "Mirror Wall",
+                "Frescoes",
+                "Water Gardens"
+            ],
+            "map": {
+                "x": 45,
+                "y": 42,
+                "lat": 7.957,
+                "lng": 80.7603
+            },
+            "attractions": [
+                {
+                    "name": "Pidurangala Rock",
+                    "description": "Offers the best view of Sigiriya Rock."
+                },
+                {
+                    "name": "Sigiriya Museum",
+                    "description": "Describes the history and architecture."
+                }
+            ]
+        },
+        {
+            "id": "galle",
+            "name": "Galle",
+            "description": "A historic Dutch Fort and UNESCO World Heritage site. Galle is the best example of a fortified city built by Europeans in South and South East Asia.",
+            "category": "Culture",
+            "image": "/images/destinations/galle.jpg",
+            "slug": "galle",
+            "highlights": [
+                "Dutch Fort",
+                "Lighthouse",
+                "Maritime Museum",
+                "Dutch Reformed Church"
+            ],
+            "map": {
+                "x": 30,
+                "y": 85,
+                "lat": 6.0535,
+                "lng": 80.221
+            },
+            "attractions": [
+                {
+                    "name": "Unawatuna Beach",
+                    "description": "A popular beach just minutes away."
+                },
+                {
+                    "name": "Jungle Beach",
+                    "description": "A secluded bay perfect for snorkeling."
+                }
+            ]
+        },
+        {
+            "id": "kandy",
+            "name": "Kandy",
+            "description": "The cultural capital and home to the Temple of the Tooth. Kandy is a major city in Sri Lanka located in the Central Province.",
+            "category": "Culture",
+            "image": "/images/destinations/kandy.jpg",
+            "slug": "kandy",
+            "highlights": [
+                "Temple of the Tooth Relic",
+                "Kandy Lake",
+                "Peradeniya Botanical Gardens",
+                "Cultural Dance Show"
+            ],
+            "map": {
+                "x": 48,
+                "y": 55,
+                "lat": 7.2906,
+                "lng": 80.6337
+            },
+            "attractions": [
+                {
+                    "name": "Udawatta Kele Sanctuary",
+                    "description": "A historic forest reserve."
+                },
+                {
+                    "name": "Ceylon Tea Museum",
+                    "description": "Learn about the history of tea."
+                }
+            ]
+        },
+        {
+            "id": "ella",
+            "name": "Ella",
+            "description": "A mountain village famous for its hiking trails and scenic views. Ella offers breathtaking views and a cool climate.",
+            "category": "Nature",
+            "image": "/images/destinations/ella.jpg",
+            "slug": "ella",
+            "highlights": [
+                "Nine Arch Bridge",
+                "Little Adams Peak",
+                "Ella Rock",
+                "Ravana Falls"
+            ],
+            "map": {
+                "x": 55,
+                "y": 65,
+                "lat": 6.8667,
+                "lng": 81.0466
+            },
+            "attractions": [
+                {
+                    "name": "Lipton Seat",
+                    "description": "Where Sir Thomas Lipton surveyed his tea empire."
+                },
+                {
+                    "name": "Diyaluma Falls",
+                    "description": "The second highest waterfall in Sri Lanka."
+                }
+            ]
+        },
+        {
+            "id": "nuwara-eliya",
+            "name": "Nuwara Eliya",
+            "description": "Often referred to as 'Little England', this city in the hill country is famous for its temperate climate and picturesque landscape of tea plantations.",
+            "category": "Nature",
+            "image": "/images/destinations/nuwara-eliya.jpg",
+            "slug": "nuwara-eliya",
+            "highlights": [
+                "Gregory Lake",
+                "Victoria Park",
+                "Tea Factories",
+                "Horton Plains"
+            ],
+            "map": {
+                "x": 48,
+                "y": 60,
+                "lat": 6.9497,
+                "lng": 80.7891
+            },
+            "attractions": []
+        },
+        {
+            "id": "yala",
+            "name": "Yala National Park",
+            "description": "The most visited and second largest national park in Sri Lanka. It is best known for its variety of wild animals and holds the highest density of leopards in the world.",
+            "category": "Wildlife",
+            "image": "/images/destinations/yala.jpg",
+            "slug": "yala",
+            "highlights": [
+                "Leopard Safari",
+                "Bear Sighting",
+                "Bird Watching",
+                "Camping"
+            ],
+            "map": {
+                "x": 65,
+                "y": 80,
+                "lat": 6.381,
+                "lng": 81.3965
+            },
+            "attractions": []
+        },
+        {
+            "id": "mirissa",
+            "name": "Mirissa",
+            "description": "A tropical paradise famous for whale watching and its stunning crescent beach. A laid-back atmosphere perfect for relaxation.",
+            "category": "Beach",
+            "image": "/images/destinations/mirissa.jpg",
+            "slug": "mirissa",
+            "highlights": [
+                "Whale Watching",
+                "Coconut Tree Hill",
+                "Parrot Rock",
+                "Secret Beach"
+            ],
+            "map": {
+                "x": 35,
+                "y": 87,
+                "lat": 5.9482,
+                "lng": 80.4716
+            },
+            "attractions": []
+        },
+        {
+            "id": "anuradhapura",
+            "name": "Anuradhapura",
+            "description": "One of the ancient capitals of Sri Lanka, famous for its well-preserved ruins of an ancient Sinhala civilization.",
+            "category": "Culture",
+            "image": "/images/destinations/anuradhapura.jpg",
+            "slug": "anuradhapura",
+            "highlights": [
+                "Sri Maha Bodhi",
+                "Ruwanwelisaya",
+                "Jetavanaramaya",
+                "Isurumuniya"
+            ],
+            "map": {
+                "x": 40,
+                "y": 25,
+                "lat": 8.3114,
+                "lng": 80.4037
+            },
+            "attractions": []
+        }
+    ],
+    "posts": [
+        {
+            "id": 1,
+            "slug": "best-time-to-visit-sri-lanka",
+            "title": "The Best Time to Visit Sri Lanka: A Complete Guide",
+            "excerpt": "Sri Lanka's unique geography means you can visit year-round. Discover which coast to visit when, and how to plan around the monsoon seasons.",
+            "image": "/images/blog/seasons.jpg",
+            "category": "Travel Tips",
+            "date": "2024-01-15",
+            "readTime": "8 min read"
+        },
+        {
+            "id": 2,
+            "slug": "hidden-gems-sri-lanka",
+            "title": "10 Hidden Gems in Sri Lanka Most Tourists Miss",
+            "excerpt": "Beyond Sigiriya and Galle, discover secret waterfalls, untouched beaches, and local villages that offer authentic experiences.",
+            "image": "/images/blog/hidden-gems.jpg",
+            "category": "Destinations",
+            "date": "2024-01-10",
+            "readTime": "12 min read"
+        },
+        {
+            "id": 3,
+            "slug": "sri-lanka-packing-list",
+            "title": "What to Pack for Sri Lanka: The Ultimate Checklist",
+            "excerpt": "From temple-appropriate clothing to safari essentials, here's everything you need to pack for your Sri Lankan adventure.",
+            "image": "/images/blog/packing.jpg",
+            "category": "Travel Tips",
+            "date": "2024-01-05",
+            "readTime": "6 min read"
+        },
+        {
+            "id": 4,
+            "slug": "sri-lanka-food-guide",
+            "title": "A Food Lover's Guide to Sri Lankan Cuisine",
+            "excerpt": "Rice and curry is just the beginning. Explore hoppers, kottu, and the street food scene that makes Sri Lanka a culinary destination.",
+            "image": "/images/blog/food.jpg",
+            "category": "Culture",
+            "date": "2023-12-28",
+            "readTime": "10 min read"
+        },
+        {
+            "id": 5,
+            "slug": "train-ella-kandy",
+            "title": "The Famous Train Ride from Kandy to Ella",
+            "excerpt": "Everything you need to know about booking tickets, best seats, and what to expect on one of the world's most scenic train journeys.",
+            "image": "/images/blog/train.jpg",
+            "category": "Transport",
+            "date": "2023-12-20",
+            "readTime": "7 min read"
+        },
+        {
+            "id": 6,
+            "slug": "wildlife-safari-tips",
+            "title": "Safari Tips: Spotting Leopards in Yala National Park",
+            "excerpt": "Yala has the highest leopard density in the world. Learn the best times, photography tips, and ethical safari practices.",
+            "image": "/images/blog/safari.jpg",
+            "category": "Wildlife",
+            "date": "2023-12-15",
+            "readTime": "9 min read"
+        }
+    ],
+    "faq": [
+        {
+            "category": "Before You Travel",
+            "questions": [
+                {
+                    "q": "Do I need a visa to visit Sri Lanka?",
+                    "a": "Most nationalities need an Electronic Travel Authorization (ETA) before arrival. You can apply online at www.eta.gov.lk. The ETA costs around $50 USD and allows a 30-day stay, extendable to 90 days."
+                },
+                {
+                    "q": "What is the best time to visit Sri Lanka?",
+                    "a": "Sri Lanka can be visited year-round! The west and south coasts are best from December to April, while the east coast is ideal from May to September. The hill country is pleasant throughout the year."
+                },
+                {
+                    "q": "What currency is used in Sri Lanka?",
+                    "a": "The Sri Lankan Rupee (LKR) is the local currency. Major credit cards are accepted in hotels and larger establishments. ATMs are widely available. We recommend carrying some cash for smaller purchases."
+                },
+                {
+                    "q": "Is Sri Lanka safe for tourists?",
+                    "a": "Yes! Sri Lanka is generally very safe for tourists. The locals are known for their hospitality. Standard travel precautions apply, such as safeguarding valuables and being aware of your surroundings."
+                }
+            ]
+        },
+        {
+            "category": "Booking & Tours",
+            "questions": [
+                {
+                    "q": "How far in advance should I book?",
+                    "a": "We recommend booking at least 2-4 weeks in advance, especially during peak season (December-March). Last-minute bookings are possible but vehicle and guide availability may be limited."
+                },
+                {
+                    "q": "Can I customize my tour itinerary?",
+                    "a": "Absolutely! All our tours are 100% customizable. Tell us your interests, budget, and timeframe, and we will create a personalized itinerary just for you."
+                },
+                {
+                    "q": "What is included in your tour packages?",
+                    "a": "Standard inclusions are: private vehicle with driver/guide, fuel, tolls, parking, and driver accommodation. You can add hotel bookings, entrance fees, and activities as extras."
+                },
+                {
+                    "q": "What is your cancellation policy?",
+                    "a": "Free cancellation up to 7 days before. 50% refund for cancellations 3-7 days before. Cancellations within 48 hours are non-refundable. Special circumstances are considered on a case-by-case basis."
+                }
+            ]
+        },
+        {
+            "category": "During Your Trip",
+            "questions": [
+                {
+                    "q": "Will my driver speak English?",
+                    "a": "Yes! All our chauffeur-guides are fluent in English and are government-licensed tour guides. Many also speak German, French, or other languages upon request."
+                },
+                {
+                    "q": "What type of vehicles do you use?",
+                    "a": "We offer a range of well-maintained vehicles including luxury sedans (Toyota Axio/Premio), SUVs (Land Cruiser), comfortable vans (KDH), and mini-buses for larger groups."
+                },
+                {
+                    "q": "Is WiFi available in vehicles?",
+                    "a": "Yes, most of our vehicles are equipped with mobile WiFi hotspots. We can also provide local SIM cards with data packages upon request."
+                },
+                {
+                    "q": "Can I travel with children?",
+                    "a": "Of course! Sri Lanka is very family-friendly. We can provide child seats, recommend kid-friendly activities, and adjust itineraries to include rest stops and shorter driving distances."
+                }
+            ]
+        }
+    ],
+    "siteConfig": {
+        "contact": {
+            "phone": "+94 71 927 6870",
+            "email": "hello@panoratravels.com",
+            "address": "Colombo 03, Sri Lanka",
+            "whatsapp": "94719276870"
+        },
+        "heroSlides": [
+            {
+                "id": "slide-min",
+                "badge": "The Dream Engine",
+                "title": "The Soul of",
+                "highlight": "Sri Lanka",
+                "subtitle": "Not just a holiday. An immersion.",
+                "subtext": "Experience the pearl of the Indian Ocean with the #1 Digital Concierge.",
+                "image": "/images/hero/main.jpg"
+            },
+            {
+                "id": "slide-1771780493540",
+                "badge": "New Badge",
+                "title": "New Title",
+                "highlight": "Highlight",
+                "subtitle": "New Subtitle",
+                "subtext": "Description goes here.",
+                "image": "/images/hero/Generate_a_bright_2k_202602222236__2_.jpeg"
+            },
+            {
+                "id": "slide-1771780517225",
+                "badge": "New Badge",
+                "title": "New Title",
+                "highlight": "Highlight",
+                "subtitle": "New Subtitle",
+                "subtext": "Description goes here.",
+                "image": "/images/hero/Generate_a_bright_2k_202602222236__1_.jpeg"
+            },
+            {
+                "id": "slide-1771780520216",
+                "badge": "New Badge",
+                "title": "New Title",
+                "highlight": "Highlight",
+                "subtitle": "New Subtitle",
+                "subtext": "Description goes here.",
+                "image": "/images/hero/Generate_a_bright_2k_202602222236__3_.jpeg"
+            },
+            {
+                "id": "slide-1771780520533",
+                "badge": "New Badge",
+                "title": "New Title",
+                "highlight": "Highlight",
+                "subtitle": "New Subtitle",
+                "subtext": "Description goes here.",
+                "image": "/images/hero/Generate_a_bright_2k_202602222236.jpeg"
+            }
+        ],
+        "about": {
+            "footerTagline": "Your trusted partner for authentic Sri Lankan adventures."
+        },
+        "links": {
+            "facebook": "#",
+            "instagram": "#",
+            "twitter": "#"
+        }
+    }
+}

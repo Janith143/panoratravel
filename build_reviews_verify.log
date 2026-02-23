@@ -1,0 +1,22 @@
+
+> panora-travels@0.1.0 build
+> node scripts/build.js
+
+Hiding API routes for static build...
+Build failed: Error: EPERM: operation not permitted, rename 'E:\Business\Websites\PanoraPaths\src\app\api' -> 'E:\Business\Websites\PanoraPaths\src\app\_api'
+    at Object.renameSync (node:fs:1020:11)
+    at build (E:\Business\Websites\PanoraPaths\scripts\build.js:13:16)
+    at Object.<anonymous> (E:\Business\Websites\PanoraPaths\scripts\build.js:32:1)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5) {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'rename',
+  path: 'E:\\Business\\Websites\\PanoraPaths\\src\\app\\api',
+  dest: 'E:\\Business\\Websites\\PanoraPaths\\src\\app\\_api'
+}

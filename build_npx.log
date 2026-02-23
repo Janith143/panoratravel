@@ -1,0 +1,24 @@
+▲ Next.js 16.1.1 (Turbopack)
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 2.2s
+  Running TypeScript ...
+  Collecting page data using 11 workers ...
+  Generating static pages using 11 workers (0/151) ...
+  Generating static pages using 11 workers (37/151) 
+  Generating static pages using 11 workers (75/151) 
+⨯ useSearchParams() should be wrapped in a suspense boundary at page "/destinations". Read more: https://nextjs.org/docs/messages/missing-suspense-with-csr-bailout
+    at Q (E:\Business\Websites\PanoraPaths\.next\server\chunks\ssr\_f20920dd._.js:2:2111)
+    at o (E:\Business\Websites\PanoraPaths\.next\server\chunks\ssr\_f20920dd._.js:4:5284)
+    at v (E:\Business\Websites\PanoraPaths\.next\server\chunks\ssr\_f20920dd._.js:4:7499)
+    at an (E:\Business\Websites\PanoraPaths\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.prod.js:2:84360)
+    at ai (E:\Business\Websites\PanoraPaths\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.prod.js:2:86179)
+    at ai (E:\Business\Websites\PanoraPaths\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.prod.js:2:104708)
+    at al (E:\Business\Websites\PanoraPaths\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.prod.js:2:107953)
+    at as (E:\Business\Websites\PanoraPaths\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.prod.js:2:105368)
+    at am (E:\Business\Websites\PanoraPaths\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.prod.js:2:112882)
+    at au (E:\Business\Websites\PanoraPaths\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.prod.js:2:109985)
+Error occurred prerendering page "/destinations". Read more: https://nextjs.org/docs/messages/prerender-error
+Export encountered an error on /destinations/page: /destinations, exiting the build.
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+⨯ Next.js build worker exited with code: 1 and signal: null
