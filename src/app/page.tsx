@@ -6,11 +6,28 @@ import DestinationsGrid from '@/components/features/DestinationsGrid'
 import InteractiveMap from '@/components/features/InteractiveMap'
 import Testimonials from '@/components/features/Testimonials'
 import TrustBadges from '@/components/features/TrustBadges'
+import pool from '@/lib/db'
+import { getSiteConfig } from '@/lib/content'
 
-export default function Home() {
+export const dynamic = 'force-dynamic' // Ensure page is not statically cached
+
+export default async function Home() {
+  let config = getSiteConfig();
+
+  try {
+    const [rows] = await pool.query('SELECT value FROM site_config WHERE section_key = ?', ['main_config']);
+    if ((rows as any[]).length > 0) {
+      // Handle varying mysql driver returns (string vs parsed JSON depending on DB setup)
+      const val = (rows as any[])[0].value;
+      config = typeof val === 'string' ? JSON.parse(val) : val;
+    }
+  } catch (e) {
+    console.error("Failed to load dynamic site config", e)
+  }
+
   return (
     <>
-      <Hero />
+      <Hero config={config} />
       <StatsSection />
       <ScrollyTellingSection />
       <InteractiveMap />

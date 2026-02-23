@@ -141,7 +141,7 @@ export default function SiteContentEditor({ content, setContent }: SiteContentEd
                                         type="text"
                                         value={slide.badge}
                                         onChange={(e) => updateHeroSlide(index, 'badge', e.target.value)}
-                                        className="w-full border border-slate-300 rounded-md p-2 text-sm focus:ring-2 focus:ring-emerald-500 outline-none bg-white font-medium"
+                                        className="w-full border border-slate-300 rounded-md p-2 text-sm focus:ring-2 focus:ring-emerald-500 outline-none bg-white font-medium text-slate-900"
                                     />
                                 </div>
                                 <div>
@@ -150,7 +150,7 @@ export default function SiteContentEditor({ content, setContent }: SiteContentEd
                                         type="text"
                                         value={slide.title}
                                         onChange={(e) => updateHeroSlide(index, 'title', e.target.value)}
-                                        className="w-full border border-slate-300 rounded-md p-2 text-sm focus:ring-2 focus:ring-emerald-500 outline-none bg-white font-serif"
+                                        className="w-full border border-slate-300 rounded-md p-2 text-sm focus:ring-2 focus:ring-emerald-500 outline-none bg-white font-serif text-slate-900"
                                     />
                                 </div>
                                 <div>
@@ -168,7 +168,7 @@ export default function SiteContentEditor({ content, setContent }: SiteContentEd
                                         type="text"
                                         value={slide.subtitle}
                                         onChange={(e) => updateHeroSlide(index, 'subtitle', e.target.value)}
-                                        className="w-full border border-slate-300 rounded-md p-2 text-sm focus:ring-2 focus:ring-emerald-500 outline-none bg-white"
+                                        className="w-full border border-slate-300 rounded-md p-2 text-sm focus:ring-2 focus:ring-emerald-500 outline-none bg-white text-slate-900"
                                     />
                                 </div>
                                 <div className="col-span-2">
@@ -176,7 +176,7 @@ export default function SiteContentEditor({ content, setContent }: SiteContentEd
                                     <textarea
                                         value={slide.subtext}
                                         onChange={(e) => updateHeroSlide(index, 'subtext', e.target.value)}
-                                        className="w-full border border-slate-300 rounded-md p-2 text-sm h-16 focus:ring-2 focus:ring-emerald-500 outline-none bg-white resize-none"
+                                        className="w-full border border-slate-300 rounded-md p-2 text-sm h-16 focus:ring-2 focus:ring-emerald-500 outline-none bg-white resize-none text-slate-900"
                                     />
                                 </div>
                             </div>

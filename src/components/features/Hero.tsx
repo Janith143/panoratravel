@@ -12,9 +12,9 @@ import WeatherMapModal from './WeatherMapModal'
 
 import { getSiteConfig } from '@/lib/content'
 
-export default function Hero() {
+export default function Hero({ config }: { config?: any }) {
     const containerRef = useRef<HTMLDivElement>(null)
-    const siteConfig = getSiteConfig()
+    const siteConfig = config || getSiteConfig()
     const slides = siteConfig.heroSlides || []
 
     const [showMap, setShowMap] = useState(false)
@@ -193,7 +193,7 @@ export default function Hero() {
             {/* Custom Slider Navigation (Liquid Progress Indicators) */}
             {slides.length > 1 && (
                 <div className="absolute bottom-20 left-0 right-0 z-30 flex justify-center items-center gap-3">
-                    {slides.map((_, i) => (
+                    {slides.map((_: any, i: number) => (
                         <button
                             key={i}
                             onClick={() => {
