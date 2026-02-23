@@ -1,8 +1,14 @@
 import mysql from 'mysql2/promise';
 
 // Hardcoded for Hostinger
-const dbUrl = 'mysql://u117517986_panoratravels:Ican123++@localhost:3306/u117517986_panoratravels';
-
-const pool = mysql.createPool(dbUrl as any);
+const pool = mysql.createPool({
+    host: '127.0.0.1',
+    user: 'u117517986_panoratravels',
+    password: 'Ican123++',
+    database: 'u117517986_panoratravels',
+    waitForConnections: true,
+    connectionLimit: 10,
+    queueLimit: 0
+});
 
 export default pool;
