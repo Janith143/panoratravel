@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, Phone, X, ChevronDown, MapPin, Droplets, PawPrint, Mountain, Shield, Trees, Landmark, Waves } from 'lucide-react'
 
 import { getGlobalCategories } from '@/lib/content'
@@ -38,13 +39,28 @@ export default function Navbar() {
 
     return (
         <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background shadow-sm">
-            <div className="container flex h-20 max-w-7xl items-center justify-between px-4 md:px-8">
-                <div className="flex items-center gap-2">
-                    {/* Logo */}
-                    <Link href="/" className="flex items-center space-x-2" onClick={() => setIsMobileMenuOpen(false)}>
-                        <span className="text-2xl font-heading font-bold text-primary tracking-tight">Panora<span className="text-secondary">Travels</span></span>
+            <div className="container flex h-20 max-w-7xl items-center justify-between px-4 md:px-8 relative">
+
+                {/* Absolute Popping Logo placed at top left */}
+                <div className="absolute top-0 -left-6 md:-left-12 lg:-left-20 z-[60] pointer-events-none">
+                    <Link href="/" className="flex items-center space-x-2 pointer-events-auto mt-2" onClick={() => setIsMobileMenuOpen(false)}>
+                        <div className="animate-professional origin-top-left transition-all flex items-center justify-center">
+                            <div className="relative w-40 md:w-56 lg:w-120 aspect-[3/1]">
+                                <Image
+                                    src="/logo.png"
+                                    alt="Panora Travels Logo"
+                                    fill
+                                    className="object-contain drop-shadow-[0_0_15px_rgba(255,255,255,1)]"
+                                    priority
+                                    sizes="(max-width: 768px) 128px, (max-width: 1024px) 192px, 224px"
+                                />
+                            </div>
+                        </div>
                     </Link>
                 </div>
+
+                {/* Spacer variable for left side to keep layout balanced since logo is absolute */}
+                <div className="w-32 md:w-48 lg:w-56 flex-shrink-0"></div>
 
                 {/* Desktop Nav */}
                 <nav className="hidden md:flex gap-6 items-center text-sm font-medium">

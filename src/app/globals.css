@@ -18,16 +18,16 @@
   --color-secondary-foreground: var(--secondary-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
-  
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  
+
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
-  
+
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
-  
+
   --radius-lg: var(--radius);
   --radius-md: calc(var(--radius) - 2px);
   --radius-sm: calc(var(--radius) - 4px);
@@ -38,7 +38,7 @@
   --foreground: #0f172a;
 
   /* Emerald 600 - Nature/Growth */
-  --primary: #059669; 
+  --primary: #059669;
   --primary-foreground: #ffffff;
 
   /* Amber 500 - Luxury/Heritage */
@@ -56,7 +56,7 @@
   --card-foreground: #0f172a;
 
   --radius: 0.5rem;
-  
+
   --font-sans: 'Inter', sans-serif;
   --font-serif: 'Playfair Display', serif;
   --font-heading: 'Outfit', sans-serif;
@@ -64,16 +64,20 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #020617; /* Slate 950 */
+    --background: #020617;
+    /* Slate 950 */
     --foreground: #f8fafc;
 
-    --primary: #10b981; /* Emerald 500 */
+    --primary: #10b981;
+    /* Emerald 500 */
     --primary-foreground: #ffffff;
 
-    --secondary: #fbbf24; /* Amber 400 */
+    --secondary: #fbbf24;
+    /* Amber 400 */
     --secondary-foreground: #0f172a;
-    
-    --accent: #2dd4bf; /* Teal 400 */
+
+    --accent: #2dd4bf;
+    /* Teal 400 */
     --accent-foreground: #0f172a;
 
     --muted: #1e293b;
@@ -92,10 +96,75 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
 }
 
 .font-serif {
   font-family: var(--font-serif);
+}
+
+@keyframes popping-logo {
+  0% {
+    transform: scale(1);
+  }
+
+  15% {
+    transform: scale(1.1);
+  }
+
+  30% {
+    transform: scale(1);
+  }
+
+  45% {
+    transform: scale(1.05);
+  }
+
+  60% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes logo-float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes glow-pulse {
+
+  0%,
+  100% {
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8));
+  }
+
+  50% {
+    filter: drop-shadow(0 0 25px rgba(255, 255, 255, 1));
+  }
+}
+
+.animate-popping {
+  animation: popping-logo 3s ease-in-out infinite;
+}
+
+.animate-professional {
+  animation:
+    logo-float 4s ease-in-out infinite,
+    glow-pulse 3s ease-in-out infinite;
 }
