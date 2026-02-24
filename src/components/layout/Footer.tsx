@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Facebook, Instagram, Twitter, Mail, MapPin, Phone } from 'lucide-react'
 import { getSiteConfig } from '@/lib/content'
 
@@ -12,7 +13,9 @@ export default function Footer() {
 
                     {/* Brand Column */}
                     <div className="col-span-2 md:col-span-1 space-y-4">
-                        <span className="text-2xl font-heading font-bold text-emerald-500 tracking-tight">Panora<span className="text-amber-500">Travels</span></span>
+                        <Link href="/" className="inline-block relative">
+                            <Image src="/logo.png" alt="Panora Travels Logo" width={180} height={50} className="h-10 w-auto" />
+                        </Link>
                         <p className="text-sm text-slate-400 leading-relaxed">
                             {siteConfig.about.footerTagline}
                         </p>
