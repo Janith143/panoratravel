@@ -50,8 +50,15 @@ export async function POST(request: Request) {
             const filename = `${baseName}_${uniqueId.substring(0, 8)}${ext}`
 
             const filePath = path.join(uploadDir, filename)
+
+            // Always ensure the precise path directory exists before writing each file in array
+            if (!fs.existsSync(uploadDir)) {
+                fs.mkdirSync(uploadDir, { recursive: true })
+            }
+
             await writeFile(filePath, buffer)
 
+            // Public path for the database and frontend rendering
             const publicPath = `/images/tourist-memories/${filename}`
 
             // Save to DB

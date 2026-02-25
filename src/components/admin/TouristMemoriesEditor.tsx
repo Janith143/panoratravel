@@ -48,30 +48,35 @@ export default function TouristMemoriesEditor() {
         setIsUploading(true)
         setUploadError(null)
 
-        const formData = new FormData()
-
-        // Append all files to formData
-        for (let i = 0; i < files.length; i++) {
-            formData.append('file', files[i])
-        }
-
         try {
-            const response = await fetch('/api/tourist-memories', {
-                method: 'POST',
-                body: formData,
-            })
+            // Upload files one by one to avoid 413 Payload Too Large limits on VPS/Nginx
+            let successCount = 0;
+            for (let i = 0; i < files.length; i++) {
+                const formData = new FormData()
+                formData.append('file', files[i])
 
-            const data = await response.json()
+                const response = await fetch('/api/tourist-memories', {
+                    method: 'POST',
+                    body: formData,
+                })
 
-            if (data.success) {
-                // Refresh list
+                const data = await response.json()
+                if (data.success) {
+                    successCount++;
+                }
+            }
+
+            if (successCount > 0) {
+                // Refresh list if at least one succeeded
                 await fetchMemories()
-            } else {
-                setUploadError(data.message || 'Upload failed')
+            }
+
+            if (successCount < files.length) {
+                setUploadError(`Only ${successCount} of ${files.length} uploaded successfully. Some files may be too large.`)
             }
         } catch (error) {
             console.error('Upload Error:', error)
-            setUploadError('Network error uploading files')
+            setUploadError('Network error uploading files. Files might be too large.')
         } finally {
             setIsUploading(false)
             if (fileInputRef.current) {
