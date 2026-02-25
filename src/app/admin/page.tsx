@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Save, Plus, Trash2, Image as ImageIcon, Loader2, MapPin, Calendar, Clock, DollarSign, GripVertical, Check, X, Mail } from 'lucide-react'
+import { Save, Plus, Trash2, Image as ImageIcon, Loader2, MapPin, Calendar, Clock, DollarSign, GripVertical, Check, X, Mail, Star } from 'lucide-react'
 import Image from 'next/image'
 import AttractionsAdmin from '@/components/admin/AttractionsAdmin'
 import ToursAdmin from '@/components/admin/ToursAdmin'
@@ -9,6 +9,7 @@ import BlogEditor from '@/components/admin/BlogEditor'
 import FAQEditor from '@/components/admin/FaqEditor'
 import SiteContentEditor from '@/components/admin/SiteContentEditor'
 import ReviewsAdmin from '@/components/admin/ReviewsAdmin'
+import TouristMemoriesEditor from '@/components/admin/TouristMemoriesEditor'
 
 import contentData from '@/data/content.json'
 
@@ -86,13 +87,13 @@ export default function AdminDashboard() {
 
             <div className="container mx-auto p-4 md:p-8 space-y-6">
                 <div className="flex flex-wrap gap-2 pb-4">
-                    {['inquiries', 'planner', 'attractions', 'tours', 'fleet', 'blog', 'faq', 'reviews', 'settings'].map(tab => (
+                    {['inquiries', 'planner', 'attractions', 'tours', 'fleet', 'blog', 'faq', 'reviews', 'tourist-memories', 'settings'].map(tab => (
                         <button
                             key={tab}
                             onClick={() => setActiveTab(tab)}
                             className={`px-4 py-2.5 rounded-lg text-sm font-medium capitalize transition whitespace-nowrap ${activeTab === tab ? 'bg-slate-900 shadow text-white' : 'bg-white text-slate-600 border border-slate-200 hover:bg-slate-50'}`}
                         >
-                            {tab === 'attractions' ? 'Destinations / Attractions' : tab}
+                            {tab === 'attractions' ? 'Destinations / Attractions' : tab === 'tourist-memories' ? 'Tourist Memories' : tab}
                         </button>
                     ))}
                 </div>
@@ -104,6 +105,7 @@ export default function AdminDashboard() {
                     {activeTab === 'blog' && <BlogEditor content={content.posts || []} setContent={(posts) => setContent({ ...content, posts })} />}
                     {activeTab === 'faq' && <FAQEditor content={content.faq || []} setContent={(faq) => setContent({ ...content, faq })} />}
                     {activeTab === 'reviews' && <ReviewsAdmin />}
+                    {activeTab === 'tourist-memories' && <TouristMemoriesEditor />}
                     {activeTab === 'settings' && <SiteContentEditor content={content.siteConfig} setContent={(siteConfig) => setContent({ ...content, siteConfig })} />}
                     {activeTab === 'inquiries' && <InquiriesViewer content={content} onPlan={handlePlanInquiry} />}
                     {activeTab === 'planner' && <TripPlanner content={content} initialInquiry={selectedInquiry} />}

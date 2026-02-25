@@ -5,6 +5,7 @@ import { useSession, signOut } from 'next-auth/react'
 import Image from 'next/image'
 import { Star, Plus, User, Quote, X } from 'lucide-react'
 import ReviewForm from '@/components/reviews/ReviewForm'
+import TouristMemoriesGallery from '@/components/reviews/TouristMemoriesGallery'
 import { motion, AnimatePresence } from 'framer-motion'
 
 type Review = {
@@ -282,6 +283,10 @@ export default function ReviewsPage() {
                     </motion.div>
                 )}
             </AnimatePresence>
+
+            <div className="container px-4 mx-auto">
+                <TouristMemoriesGallery />
+            </div>
         </div >
     )
 }
