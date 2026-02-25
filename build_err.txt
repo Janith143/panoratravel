@@ -1,0 +1,72 @@
+﻿
+> panora-travels@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.1.1 (Turbopack)
+- Environments: .env.local, .env.production
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 4.7s
+  Running TypeScript ...
+  Collecting page data using 11 workers ...
+  Generating static pages using 11 workers (0/163) ...
+  Generating static pages using 11 workers (40/163) 
+  Generating static pages using 11 workers (81/163) 
+  Generating static pages using 11 workers (122/163) 
+Γ£ô Generating static pages using 11 workers (163/163) in 1686.4ms
+  Finalizing page optimization ...
+
+Route (app)
+Γöî ╞Æ /
+Γö£ Γùï /_not-found
+Γö£ Γùï /about
+Γö£ Γùï /admin
+Γö£ Γùï /adventure
+Γö£ ╞Æ /api/admin/content
+Γö£ ╞Æ /api/admin/destinations
+Γö£ ╞Æ /api/admin/fix-db
+Γö£ ╞Æ /api/admin/save
+Γö£ ╞Æ /api/admin/upload
+Γö£ ╞Æ /api/auth/[...nextauth]
+Γö£ ╞Æ /api/currency
+Γö£ ╞Æ /api/diagnose
+Γö£ ╞Æ /api/fleet
+Γö£ ╞Æ /api/gallery
+Γö£ ╞Æ /api/inquiry
+Γö£ ╞Æ /api/reviews
+Γö£ ╞Æ /api/tourist-memories
+Γö£ ╞Æ /api/weather
+Γö£ Γùï /blog
+Γö£ ╞Æ /blog/[slug]
+Γö£ Γùï /contact
+Γö£ Γùï /destinations
+Γö£ ΓùÅ /destinations/[slug]
+Γöé Γö£ /destinations/sigiriya
+Γöé Γö£ /destinations/galle
+Γöé Γö£ /destinations/kandy
+Γöé Γöö [+120 more paths]
+Γö£ Γùï /faq
+Γö£ ╞Æ /gallery
+Γö£ Γùï /icon.png
+Γö£ Γùï /national-parks
+Γö£ Γùï /planner
+Γö£ Γùï /portal
+Γö£ Γùï /reviews
+Γö£ Γùï /safety
+Γö£ Γùï /safety/trust
+Γö£ Γùï /services
+Γö£ Γùï /services/fleet
+Γö£ Γùï /team
+Γö£ Γùï /tours
+Γö£ ΓùÅ /tours/[slug]
+Γöé Γö£ /tours/cultural-triangle-explorer
+Γöé Γö£ /tours/wild-sri-lanka-safari
+Γöé Γö£ /tours/misty-hill-country-escape
+Γöé Γöö [+3 more paths]
+Γöö Γùï /waterfalls
+
+
+Γùï  (Static)   prerendered as static content
+ΓùÅ  (SSG)      prerendered as static HTML (uses generateStaticParams)
+╞Æ  (Dynamic)  server-rendered on demand
+
