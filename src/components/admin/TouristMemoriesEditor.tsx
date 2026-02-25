@@ -42,18 +42,18 @@ export default function TouristMemoriesEditor() {
     }
 
     const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
-        const file = e.target.files?.[0]
-        if (!file) return
+        const files = e.target.files
+        if (!files || files.length === 0) return
 
         setIsUploading(true)
         setUploadError(null)
 
         const formData = new FormData()
-        formData.append('file', file)
 
-        // Use filename as initial title
-        const filename = file.name.split('.').slice(0, -1).join('.')
-        formData.append('title', filename)
+        // Append all files to formData
+        for (let i = 0; i < files.length; i++) {
+            formData.append('file', files[i])
+        }
 
         try {
             const response = await fetch('/api/tourist-memories', {
@@ -71,7 +71,7 @@ export default function TouristMemoriesEditor() {
             }
         } catch (error) {
             console.error('Upload Error:', error)
-            setUploadError('Network error uploading file')
+            setUploadError('Network error uploading files')
         } finally {
             setIsUploading(false)
             if (fileInputRef.current) {
@@ -124,6 +124,7 @@ export default function TouristMemoriesEditor() {
                         ref={fileInputRef}
                         onChange={handleFileChange}
                         accept="image/*,video/mp4,video/quicktime"
+                        multiple
                         className="hidden"
                     />
                     <button

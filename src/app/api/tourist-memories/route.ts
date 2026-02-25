@@ -20,14 +20,11 @@ export async function GET() {
 export async function POST(request: Request) {
     try {
         const formData = await request.formData()
-        const file = formData.get('file') as File
+        const files = formData.getAll('file') as File[]
 
-        if (!file) {
-            return NextResponse.json({ success: false, message: 'No file uploaded' }, { status: 400 })
+        if (!files || files.length === 0) {
+            return NextResponse.json({ success: false, message: 'No files uploaded' }, { status: 400 })
         }
-
-        const bytes = await file.arrayBuffer()
-        const buffer = Buffer.from(bytes)
 
         // Create directory if not exists
         const uploadDir = path.join(process.cwd(), 'public', 'images', 'tourist-memories')
@@ -35,30 +32,43 @@ export async function POST(request: Request) {
             fs.mkdirSync(uploadDir, { recursive: true })
         }
 
-        // Sanitize filename and append unique ID to handle duplicates
-        const originalName = file.name.replace(/[^a-zA-Z0-9.-]/g, '_')
-        const uniqueId = uuidv4()
-        // Extract extension 
-        const extMatch = originalName.match(/\.[0-9a-z]+$/i)
-        const ext = extMatch ? extMatch[0] : ''
-        const baseName = originalName.replace(ext, '')
-        const filename = `${baseName}_${uniqueId.substring(0, 8)}${ext}`
+        const uploadedMedia = []
 
-        const filePath = path.join(uploadDir, filename)
-        await writeFile(filePath, buffer)
+        // Process each file
+        for (const file of files) {
+            const bytes = await file.arrayBuffer()
+            const buffer = Buffer.from(bytes)
 
-        const publicPath = `/images/tourist-memories/${filename}`
+            // Sanitize filename and append unique ID to handle duplicates
+            const originalName = file.name.replace(/[^a-zA-Z0-9.-]/g, '_')
+            const uniqueId = uuidv4()
 
-        // Save to DB
-        const id = uuidv4()
-        const title = formData.get('title') as string || ''
+            // Extract extension 
+            const extMatch = originalName.match(/\.[0-9a-z]+$/i)
+            const ext = extMatch ? extMatch[0] : ''
+            const baseName = originalName.replace(ext, '')
+            const filename = `${baseName}_${uniqueId.substring(0, 8)}${ext}`
 
-        await pool.query(
-            'INSERT INTO gallery_images (id, url, title, category) VALUES (?, ?, ?, ?)',
-            [id, publicPath, title, 'tourist_memories']
-        )
+            const filePath = path.join(uploadDir, filename)
+            await writeFile(filePath, buffer)
 
-        return NextResponse.json({ success: true, id, url: publicPath })
+            const publicPath = `/images/tourist-memories/${filename}`
+
+            // Save to DB
+            const id = uuidv4()
+
+            // For multiple files, we'll just use the basename as the title
+            const title = baseName.replace(/_/g, ' ')
+
+            await pool.query(
+                'INSERT INTO gallery_images (id, url, title, category) VALUES (?, ?, ?, ?)',
+                [id, publicPath, title, 'tourist_memories']
+            )
+
+            uploadedMedia.push({ id, url: publicPath, title })
+        }
+
+        return NextResponse.json({ success: true, uploaded: uploadedMedia.length, media: uploadedMedia })
     } catch (error) {
         console.error('Upload Error:', error)
         return NextResponse.json({ success: false, message: 'Upload failed' }, { status: 500 })
