@@ -145,7 +145,7 @@ export default function Hero({ config }: { config?: any }) {
             </motion.div>
 
             {/* Main Text Content */}
-            <div className="relative z-20 container max-w-7xl px-4 text-center space-y-8 flex-1 flex flex-col items-center justify-center pb-32">
+            <div className="relative z-20 container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-left space-y-8 flex-1 flex flex-col items-start justify-center pb-32">
                 <AnimatePresence mode="wait">
                     <motion.div
                         key={`text-${currentSlide}`}
@@ -153,7 +153,7 @@ export default function Hero({ config }: { config?: any }) {
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: -30, scale: 1.05 }}
                         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                        className="flex flex-col items-center space-y-6"
+                        className="flex flex-col items-start space-y-6 w-full lg:w-3/4 xl:w-2/3"
                     >
                         <div className="inline-block px-4 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-500/30 backdrop-blur-md">
                             <span className="text-emerald-300 text-sm font-medium tracking-[0.2em] uppercase">
@@ -168,7 +168,7 @@ export default function Hero({ config }: { config?: any }) {
                             </span>
                         </h1>
 
-                        <p className="text-lg md:text-2xl text-slate-200 max-w-3xl mx-auto leading-relaxed drop-shadow-md font-light">
+                        <p className="text-lg md:text-2xl text-slate-200 max-w-3xl leading-relaxed drop-shadow-md font-light">
                             {activeSlide.subtitle} <br className="hidden md:block" />
                             {activeSlide.subtext}
                         </p>
@@ -179,7 +179,7 @@ export default function Hero({ config }: { config?: any }) {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.8 }}
-                    className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-8"
+                    className="flex flex-col sm:flex-row items-start sm:items-center sm:justify-start gap-4 pt-8"
                 >
                     <Link href="#start-planning" className="group inline-flex h-14 items-center justify-center rounded-full bg-emerald-600 px-10 text-lg font-bold text-white shadow-xl shadow-emerald-900/40 transition-all hover:scale-105 hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
                         Start Your Journey
