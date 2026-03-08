@@ -55,6 +55,10 @@ export function getDistrictsByProvince(provinceId: string): District[] {
     return destinationsData.districts.filter(d => d.province === provinceId)
 }
 
+export function getTourCategories(): string[] {
+    return content.categories
+}
+
 export function getCategories(): Category[] {
     return destinationsData.categories
 }

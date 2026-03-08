@@ -36,8 +36,7 @@ export async function GET() {
 
             if (destData.categories && destData.categories.length > 0) {
                 // The new unified categories from destinations-data.json are objects: {id, name, icon}
-                // The Home page expects an array of strings
-                data.categories = destData.categories.map((c: any) => c.name)
+                data.destCategories = destData.categories.map((c: any) => c.name)
             }
 
             // Build a lookup map from category ID -> display name

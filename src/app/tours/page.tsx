@@ -1,10 +1,10 @@
-import { getCategories } from '@/lib/content'
+import { getTourCategories } from '@/lib/content'
 import { getToursDB } from '@/lib/db-content'
 import ToursClientList from './ToursClientList'
 
 export default async function ToursPage() {
     const tours = await getToursDB()
-    const categories = getCategories().map(c => c.name)
+    const categories = getTourCategories()
 
     return (
         <div className="bg-muted/30 min-h-screen">
