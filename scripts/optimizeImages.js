@@ -103,8 +103,8 @@ async function main() {
             port: process.env.DB_PORT || 3306
         });
 
-        const publicDir = path.join(__dirname, '../public/images');
-        const converted = await processImageDirectory(conn, publicDir, '/images');
+        const publicDir = path.join(__dirname, '../public');
+        const converted = await processImageDirectory(conn, publicDir, '/');
         console.log(`File conversion complete. Processed ${converted} new images.`);
 
         const dbUpdated = await updateDatabaseRecords(conn);
