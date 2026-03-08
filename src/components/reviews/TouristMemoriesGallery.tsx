@@ -109,14 +109,7 @@ export default function TouristMemoriesGallery() {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
                         <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none">
-                            <div className="flex items-center justify-between">
-                                {memory.title ? (
-                                    <h3 className="text-white font-medium text-lg drop-shadow-md truncate pr-2">
-                                        {memory.title.replace(/_/g, ' ')}
-                                    </h3>
-                                ) : (
-                                    <span /> // Spacer
-                                )}
+                            <div className="flex items-center justify-end">
                                 <div className="bg-white/20 backdrop-blur-md p-2 rounded-full border border-white/30">
                                     <Maximize2 className="w-4 h-4 text-white" />
                                 </div>
@@ -176,18 +169,7 @@ export default function TouristMemoriesGallery() {
                                 </div>
                             )}
 
-                            {selectedMedia.title && (
-                                <motion.div
-                                    initial={{ opacity: 0, y: 10 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={{ delay: 0.2 }}
-                                    className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-black/60 backdrop-blur-lg px-6 py-3 rounded-full border border-white/10 shadow-xl"
-                                >
-                                    <p className="text-white/90 font-medium text-lg tracking-wide">
-                                        {selectedMedia.title.replace(/_/g, ' ')}
-                                    </p>
-                                </motion.div>
-                            )}
+
                         </motion.div>
                     </motion.div>
                 )}

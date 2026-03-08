@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { Menu, Phone, X, ChevronDown, MapPin, Droplets, PawPrint, Mountain, Shield, Trees, Landmark, Waves } from 'lucide-react'
 
 import { getGlobalCategories } from '@/lib/content'
+import { useTripPlanner } from '@/lib/contexts/TripPlannerContext'
 
 const getExploreLinks = () => {
     const categories = getGlobalCategories()
@@ -22,8 +23,16 @@ const getExploreLinks = () => {
         'Transport': ChevronDown
     }
 
+    // Need to map the display name to the category ID used by the destinations page
+    // Using a simplistic mapping since getGlobalCategories just returns strings right now
+    const categoryNameToId = (name: string) => {
+        // e.g. "Nature & Ecology" -> "nature"
+        const firstWord = name.split(' ')[0].toLowerCase()
+        return firstWord === 'culture' ? 'heritage' : firstWord;
+    }
+
     return categories.map(cat => ({
-        href: `/destinations?category=${cat}`, // Assuming filtering by category works this way
+        href: `/destinations?category=${categoryNameToId(cat)}`,
         label: cat,
         icon: iconMap[cat] || MapPin,
         description: `Explore ${cat}`
@@ -34,6 +43,7 @@ export default function Navbar() {
     const exploreLinks = getExploreLinks()
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
     const [isExploreOpen, setIsExploreOpen] = useState(false)
+    const { destinations } = useTripPlanner()
 
     const toggleMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen)
 
@@ -47,7 +57,7 @@ export default function Navbar() {
                         <div className="animate-professional origin-top-left transition-all flex items-center justify-center">
                             <div className="relative w-40 md:w-56 lg:w-120 aspect-[3/1]">
                                 <Image
-                                    src="/logo.png"
+                                    src="/logo.webp"
                                     alt="Panora Travels Logo"
                                     fill
                                     className="object-contain drop-shadow-[0_0_15px_rgba(255,255,255,1)]"
@@ -82,7 +92,7 @@ export default function Navbar() {
                             <div className="bg-white rounded-xl shadow-xl border border-slate-100 p-2 min-w-[240px]">
                                 {exploreLinks.map((link) => (
                                     <Link
-                                        key={link.href}
+                                        key={link.label}
                                         href={link.href}
                                         className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 transition-colors"
                                     >
@@ -99,7 +109,14 @@ export default function Navbar() {
                         </div>
                     </div>
 
-                    <Link href="/planner" className="hover:text-primary transition-colors">Planner</Link>
+                    <Link href="/planner" className="hover:text-primary transition-colors flex items-center gap-1">
+                        Planner
+                        {destinations.length > 0 && (
+                            <span className="bg-emerald-100 text-emerald-700 text-[10px] font-bold px-1.5 py-0.5 rounded-full flex items-center justify-center min-w-[18px]">
+                                {destinations.length}
+                            </span>
+                        )}
+                    </Link>
                     <Link href="/services/fleet" className="hover:text-primary transition-colors">Fleet</Link>
                     <Link href="/reviews" className="hover:text-primary transition-colors">Reviews</Link>
                     <Link href="/blog" className="hover:text-primary transition-colors">Blog</Link>
@@ -140,7 +157,7 @@ export default function Navbar() {
                             <div className="text-xs uppercase text-muted-foreground mb-2">Explore</div>
                             {exploreLinks.map((link) => (
                                 <Link
-                                    key={link.href}
+                                    key={link.label}
                                     href={link.href}
                                     className="flex items-center gap-3 py-2 hover:text-primary"
                                     onClick={toggleMenu}
@@ -151,7 +168,14 @@ export default function Navbar() {
                             ))}
                         </div>
 
-                        <Link href="/planner" className="hover:text-primary py-3 border-b border-border/50" onClick={toggleMenu}>Trip Planner</Link>
+                        <Link href="/planner" className="flex items-center justify-between hover:text-primary py-3 border-b border-border/50" onClick={toggleMenu}>
+                            <span>Trip Planner</span>
+                            {destinations.length > 0 && (
+                                <span className="bg-emerald-100 text-emerald-700 text-xs font-bold px-2 py-0.5 rounded-full">
+                                    {destinations.length}
+                                </span>
+                            )}
+                        </Link>
                         <Link href="/services/fleet" className="hover:text-primary py-3 border-b border-border/50" onClick={toggleMenu}>Our Fleet</Link>
                         <Link href="/reviews" className="hover:text-primary py-3 border-b border-border/50" onClick={toggleMenu}>Reviews</Link>
                         <Link href="/blog" className="hover:text-primary py-3 border-b border-border/50" onClick={toggleMenu}>Blog</Link>

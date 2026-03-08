@@ -11,6 +11,7 @@ import {
 } from '@/lib/content'
 import { MapPin, ArrowLeft, Camera, Compass } from 'lucide-react'
 import * as turf from '@turf/turf'
+import AddToPlannerButton from '@/components/planner/AddToPlannerButton'
 
 interface DestinationPageProps {
     params: Promise<{
@@ -213,11 +214,9 @@ export default async function DestinationDetailPage({ params }: DestinationPageP
                         <div className="bg-emerald-50 rounded-2xl p-8 border border-emerald-100 sticky top-24">
                             <h3 className="text-xl font-bold text-emerald-900 mb-4 font-serif">Visit {data.name}</h3>
                             <p className="text-emerald-800/80 mb-6 text-sm">
-                                Ready to explore {data.name}? Let us include this amazing destination in your custom itinerary.
+                                Ready to explore {data.name}? Add this amazing destination to your custom itinerary.
                             </p>
-                            <Link href="/contact" className="block w-full py-3 bg-emerald-600 text-white text-center rounded-lg font-bold hover:bg-emerald-700 transition-colors shadow-lg shadow-emerald-900/10">
-                                Plan My Trip
-                            </Link>
+                            <AddToPlannerButton destinationId={(data as any).slug || String((data as any).id)} destinationName={data.name} />
                             <p className="text-xs text-emerald-800/60 mt-4 text-center">
                                 Our local experts can guide you to the best spots.
                             </p>

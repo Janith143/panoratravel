@@ -45,6 +45,7 @@ export async function GET() {
                     const resolvedCategories = (d.categories || []).map((catId: string) => catIdToName[catId] || catId)
                     return {
                         ...d,
+                        slug: d.id, // Fallback slug to id since JSON doesn't define slug
                         categories: resolvedCategories,
                         category: resolvedCategories.length > 0 ? resolvedCategories[0] : 'General',
                         map: d.map || { lat: 7.8731, lng: 80.7718 }

@@ -10,7 +10,7 @@ async function getGalleryImages(): Promise<GalleryItem[]> {
 
     // 1. Fetch images from Database (Existing logic)
     try {
-        const [rows] = await pool.query('SELECT * FROM gallery_images ORDER BY created_at DESC')
+        const [rows] = await pool.query("SELECT * FROM gallery_images WHERE category != 'tourist_memories' OR category IS NULL ORDER BY created_at DESC")
         const dbImages = rows as any[]
         dbImages.forEach(img => {
             images.push({
@@ -29,7 +29,7 @@ async function getGalleryImages(): Promise<GalleryItem[]> {
     attractions.forEach((attr, index) => {
         // Skip default placeholder image if possible to keep gallery high quality,
         // but for now we include everything that isn't explicitly the default.
-        if (attr.image && !attr.image.includes('default.jpg')) {
+        if (attr.image && !attr.image.includes('default.webp')) {
             images.push({
                 id: `attr-${attr.id}-${index}`,
                 url: attr.image,

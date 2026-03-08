@@ -10,6 +10,8 @@ export async function GET() {
         const [rows] = await pool.query(
             "SELECT * FROM gallery_images WHERE category = 'tourist_memories' ORDER BY created_at DESC"
         )
+        // Convert any .webp/.webp to .webp in results if they exist on disk, 
+        // wait, we'll just update the DB directly in the script.
         return NextResponse.json({ images: rows })
     } catch (error) {
         console.error('Tourist Memories Fetch Error:', error)
@@ -37,7 +39,7 @@ export async function POST(request: Request) {
         // Process each file
         for (const file of files) {
             const bytes = await file.arrayBuffer()
-            const buffer = Buffer.from(bytes)
+            let finalBuffer = new Uint8Array(bytes)
 
             // Sanitize filename and append unique ID to handle duplicates
             const originalName = file.name.replace(/[^a-zA-Z0-9.-]/g, '_')
@@ -45,8 +47,21 @@ export async function POST(request: Request) {
 
             // Extract extension 
             const extMatch = originalName.match(/\.[0-9a-z]+$/i)
-            const ext = extMatch ? extMatch[0] : ''
-            const baseName = originalName.replace(ext, '')
+            const originalExt = extMatch ? extMatch[0].toLowerCase() : ''
+            const baseName = originalName.replace(new RegExp(`\\${originalExt}$`, 'i'), '')
+
+            let ext = originalExt
+
+            // Convert images to webp
+            const isImage = file.type.startsWith('image/') && !file.type.includes('svg')
+            if (isImage) {
+                // Inline import sharp to avoid top-level issues if unavailable, but we'll import it at top.
+                const sharp = (await import('sharp')).default
+                const webpBuffer = await sharp(Buffer.from(finalBuffer)).webp({ quality: 80 }).toBuffer()
+                finalBuffer = new Uint8Array(webpBuffer)
+                ext = '.webp'
+            }
+
             const filename = `${baseName}_${uniqueId.substring(0, 8)}${ext}`
 
             const filePath = path.join(uploadDir, filename)
@@ -56,7 +71,7 @@ export async function POST(request: Request) {
                 fs.mkdirSync(uploadDir, { recursive: true })
             }
 
-            await writeFile(filePath, buffer)
+            await writeFile(filePath, finalBuffer)
 
             // Public path for the database and frontend rendering
             const publicPath = `/images/tourist-memories/${filename}`

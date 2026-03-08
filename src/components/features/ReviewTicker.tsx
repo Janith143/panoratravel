@@ -29,16 +29,22 @@ export default function ReviewTicker() {
 
     return (
         <div className="w-full bg-black/40 backdrop-blur-md border-t border-white/10 py-4 overflow-hidden absolute bottom-0 z-40">
-            <motion.div
-                className="flex gap-8 items-center"
-                animate={{ x: ['0%', '-50%'] }}
-                transition={{
-                    repeat: Infinity,
-                    ease: 'linear',
-                    duration: Math.max(20, reviews.length * 5)
+            <div
+                className="flex gap-8 items-center group"
+                style={{
+                    width: 'fit-content',
+                    animation: `marquee ${Math.max(60, reviews.length * 15)}s linear infinite`,
                 }}
-                style={{ width: 'fit-content' }}
             >
+                <style jsx>{`
+                    @keyframes marquee {
+                        0% { transform: translateX(0); }
+                        100% { transform: translateX(calc(-50% - 1rem)); }
+                    }
+                    div:hover {
+                        animation-play-state: paused !important;
+                    }
+                `}</style>
                 {displayReviews.map((review, idx) => (
                     <Link
                         href="/reviews"
@@ -70,7 +76,7 @@ export default function ReviewTicker() {
                         </div>
                     </Link>
                 ))}
-            </motion.div>
-        </div>
+            </div>
+        </div >
     )
 }

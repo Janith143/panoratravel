@@ -36,7 +36,7 @@ export default function Hero({ config }: { config?: any }) {
 
         const timer = setInterval(() => {
             setCurrentSlide((prev) => (prev + 1) % slides.length)
-        }, 6000)
+        }, 10000)
 
         return () => clearInterval(timer)
     }, [isAutoPlaying, slides.length, currentSlide])
@@ -54,7 +54,7 @@ export default function Hero({ config }: { config?: any }) {
             opacity: 1,
             transition: {
                 clipPath: { duration: 1.5, ease: [0.77, 0, 0.175, 1] as any },
-                scale: { duration: 6, ease: "linear" as any }, // Continuous slow zoom
+                scale: { duration: 10, ease: "linear" as any }, // Continuous slow zoom
                 opacity: { duration: 0.5 }
             }
         },
@@ -207,7 +207,7 @@ export default function Hero({ config }: { config?: any }) {
                                 <motion.div
                                     initial={{ width: "0%" }}
                                     animate={{ width: "100%" }}
-                                    transition={{ duration: 6, ease: "linear" }}
+                                    transition={{ duration: 10, ease: "linear" }}
                                     className="absolute top-0 left-0 bottom-0 bg-emerald-400"
                                 />
                             )}

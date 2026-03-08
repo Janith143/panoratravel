@@ -207,7 +207,7 @@ export default function LeafletMap({ selectedRegion, onRegionSelect }: LeafletMa
                 attributionControl={false}
             >
                 <TileLayer
-                    url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+                    url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.webp"
                 />
 
                 {geoData && (

@@ -19,7 +19,7 @@ export default function BlogEditor({ content, setContent }: BlogEditorProps) {
             slug: `new-post-${Date.now()}`,
             title: 'New Blog Post',
             excerpt: 'Write a catchy excerpt here...',
-            image: '/images/hero/main.jpg',
+            image: '/images/hero/main.webp',
             category: 'Travel Tips',
             date: new Date().toISOString().split('T')[0],
             readTime: '5 min read'

@@ -67,7 +67,7 @@ export default function ToursAdmin({ globalCategories }: { globalCategories: str
             title: 'New Tour Package',
             duration: '3 Days',
             price: '$0',
-            image: '/images/tours/cultural.jpg',
+            image: '/images/tours/cultural.webp',
             category: 'Nature',
             rating: 5.0,
             reviews: 0,

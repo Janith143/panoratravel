@@ -55,7 +55,7 @@ export default function AttractionsAdmin({ globalCategories }: { globalCategorie
         district: '',
         province: '',
         categories: [],
-        image: '/images/destinations/default.jpg',
+        image: '/images/destinations/default.webp',
         highlights: [],
         map: { x: 50, y: 50, lat: 7.8731, lng: 80.7718 },
         category: 'General'
@@ -121,7 +121,7 @@ export default function AttractionsAdmin({ globalCategories }: { globalCategorie
             district: newAttraction.district || defaultDistrict,
             province: newAttraction.province || 'Western',
             categories: newAttraction.categories || [],
-            image: newAttraction.image || '/images/destinations/default.jpg',
+            image: newAttraction.image || '/images/destinations/default.webp',
             highlights: newAttraction.highlights || [],
             bestTime: newAttraction.bestTime,
             entryFee: newAttraction.entryFee,
@@ -130,7 +130,7 @@ export default function AttractionsAdmin({ globalCategories }: { globalCategorie
         }
         setData({ ...data, attractions: [...data.attractions, attraction] })
         setShowAddForm(false)
-        setNewAttraction({ name: '', description: '', district: '', province: '', categories: [], image: '/images/destinations/default.jpg', highlights: [], map: { x: 50, y: 50, lat: 7.8731, lng: 80.7718 }, category: 'General' })
+        setNewAttraction({ name: '', description: '', district: '', province: '', categories: [], image: '/images/destinations/default.webp', highlights: [], map: { x: 50, y: 50, lat: 7.8731, lng: 80.7718 }, category: 'General' })
         setFeedback('✅ Attraction added! Remember to Save Changes.')
     }
 
@@ -218,7 +218,7 @@ export default function AttractionsAdmin({ globalCategories }: { globalCategorie
                         district,
                         province,
                         categories: categoriesArray,
-                        image: row.image || row.Image || '/images/destinations/default.jpg',
+                        image: row.image || row.Image || '/images/destinations/default.webp',
                         highlights: highlightsArray,
                         bestTime: row.bestTime || row.BestTime || '',
                         entryFee: row.entryFee || row.EntryFee || '',
@@ -304,7 +304,7 @@ export default function AttractionsAdmin({ globalCategories }: { globalCategorie
 
         // If no attractions exist, provide a fallback template row
         if (rows.length === 0) {
-            const exampleRow = ['', 'Sigiriya Rock Fortress', 'Ancient rock fortress with frescoes and mirror wall', 'Matale', 'Central', '"heritage,nature"', '/images/destinations/sigiriya.jpg', '"Lion Rock,Frescoes,Mirror Wall"', 'December - April', '$30 foreigners', '7.9570', '80.7603', '55', '40']
+            const exampleRow = ['', 'Sigiriya Rock Fortress', 'Ancient rock fortress with frescoes and mirror wall', 'Matale', 'Central', '"heritage,nature"', '/images/destinations/sigiriya.webp', '"Lion Rock,Frescoes,Mirror Wall"', 'December - April', '$30 foreigners', '7.9570', '80.7603', '55', '40']
             rows.push(exampleRow.join(','))
         }
 

@@ -541,7 +541,7 @@ function ToursEditor({ content, setContent }: any) {
             title: 'New Tour Package',
             duration: '3 Days',
             price: '$0',
-            image: '/images/hero/main.jpg',
+            image: '/images/hero/main.webp',
             category: 'General',
             rating: 5.0,
             reviews: 0,
@@ -682,7 +682,7 @@ function DestinationsEditor({ content, setContent }: any) {
             id: `dest - ${Date.now()} `,
             name: 'New Destination',
             description: 'Description goes here.',
-            image: '/images/hero/main.jpg',
+            image: '/images/hero/main.webp',
             slug: `new- dest - ${Date.now()} `,
             highlights: ['Highlight 1'],
             attractions: [],
@@ -895,7 +895,7 @@ function FleetEditor({ content, setContent }: any) {
             type: 'Car',
             passengers: 4,
             price: 50,
-            image: '/images/hero/main.jpg'
+            image: '/images/hero/main.webp'
         }
         setContent({ ...content, fleet: [...(content.fleet || []), newVehicle] })
     }

@@ -36,7 +36,7 @@ export default function SiteContentEditor({ content, setContent }: SiteContentEd
             highlight: "Highlight",
             subtitle: "New Subtitle",
             subtext: "Description goes here.",
-            image: "/images/hero/main.jpg"
+            image: "/images/hero/main.webp"
         }
         setContent({
             ...content,

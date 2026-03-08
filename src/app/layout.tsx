@@ -33,6 +33,7 @@ export const metadata: Metadata = {
 
 import { ServiceWorkerCleaner } from '@/components/utils/ServiceWorkerCleaner'
 import AuthProvider from '@/components/auth/AuthProvider'
+import { TripPlannerProvider } from '@/lib/contexts/TripPlannerContext'
 
 export default function RootLayout({
   children,
@@ -43,14 +44,16 @@ export default function RootLayout({
     <html lang="en" className={cn(inter.variable, playfair.variable, outfit.variable)}>
       <body className="antialiased min-h-screen flex flex-col font-sans bg-background text-foreground selection:bg-primary selection:text-white">
         <AuthProvider>
-          <ServiceWorkerCleaner />
-          <Navbar />
-          <main className="flex-grow pb-16 md:pb-0">
-            {children}
-          </main>
-          <Footer />
-          <WhatsAppButton />
-          <StickyCTA />
+          <TripPlannerProvider>
+            <ServiceWorkerCleaner />
+            <Navbar />
+            <main className="flex-grow pb-16 md:pb-0">
+              {children}
+            </main>
+            <Footer />
+            <WhatsAppButton />
+            <StickyCTA />
+          </TripPlannerProvider>
         </AuthProvider>
       </body>
     </html>

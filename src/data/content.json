@@ -45,7 +45,7 @@
             "type": "Car",
             "passengers": 3,
             "price": 45,
-            "image": "/images/fleet/sedan.jpg"
+            "image": "/images/fleet/sedan.webp"
         },
         {
             "id": "sedan-premium",
@@ -53,7 +53,7 @@
             "type": "Car",
             "passengers": 3,
             "price": 80,
-            "image": "/images/fleet/sedan-premium.jpg"
+            "image": "/images/fleet/sedan-premium.webp"
         },
         {
             "id": "van-standard",
@@ -61,7 +61,7 @@
             "type": "Van",
             "passengers": 7,
             "price": 60,
-            "image": "/images/fleet/van.jpg"
+            "image": "/images/fleet/van.webp"
         },
         {
             "id": "van-luxury",
@@ -69,7 +69,7 @@
             "type": "Van",
             "passengers": 6,
             "price": 100,
-            "image": "/images/fleet/van-luxury.jpg"
+            "image": "/images/fleet/van-luxury.webp"
         },
         {
             "id": "bus-mini",
@@ -77,7 +77,7 @@
             "type": "Bus",
             "passengers": 15,
             "price": 90,
-            "image": "/images/fleet/minibus.jpg"
+            "image": "/images/fleet/minibus.webp"
         },
         {
             "id": "bus-coach",
@@ -85,7 +85,7 @@
             "type": "Bus",
             "passengers": 40,
             "price": 150,
-            "image": "/images/fleet/bus.jpg"
+            "image": "/images/fleet/bus.webp"
         },
         {
             "id": "suv-4x4",
@@ -93,7 +93,7 @@
             "type": "Jeep",
             "passengers": 4,
             "price": 75,
-            "image": "/images/fleet/suv.jpg"
+            "image": "/images/fleet/suv.webp"
         }
     ],
     "inquiries": [
@@ -145,7 +145,7 @@
             "title": "Cultural Triangle Explorer",
             "duration": "7 Days",
             "price": "$850",
-            "image": "/images/tours/cultural.jpg",
+            "image": "/images/tours/cultural.webp",
             "category": "Culture",
             "rating": 4.8,
             "reviews": 124,
@@ -200,7 +200,7 @@
             "title": "Wild Sri Lanka Safari",
             "duration": "5 Days",
             "price": "$600",
-            "image": "/images/tours/wildlife.jpg",
+            "image": "/images/tours/wildlife.webp",
             "category": "Wildlife",
             "rating": 4.9,
             "reviews": 85,
@@ -245,7 +245,7 @@
             "title": "Misty Hill Country Escape",
             "duration": "4 Days",
             "price": "$450",
-            "image": "/images/tours/hill-country.jpg",
+            "image": "/images/tours/hill-country.webp",
             "category": "Nature",
             "rating": 4.7,
             "reviews": 210,
@@ -285,7 +285,7 @@
             "title": "Southern Coast Bliss",
             "duration": "6 Days",
             "price": "$720",
-            "image": "/images/tours/beach.jpg",
+            "image": "/images/tours/beach.webp",
             "category": "Beach",
             "rating": 4.9,
             "reviews": 156,
@@ -335,7 +335,7 @@
             "title": "Ramayana Trail",
             "duration": "8 Days",
             "price": "$950",
-            "image": "/images/tours/ramayana.jpg",
+            "image": "/images/tours/ramayana.webp",
             "category": "Culture",
             "rating": 4.6,
             "reviews": 45,
@@ -354,7 +354,7 @@
             "title": "Adrenaline Rush",
             "duration": "6 Days",
             "price": "$700",
-            "image": "/images/tours/adventure.jpg",
+            "image": "/images/tours/adventure.webp",
             "category": "Adventure",
             "rating": 4.8,
             "reviews": 92,
@@ -375,7 +375,7 @@
             "name": "Sigiriya",
             "description": "The ancient rock fortress and palace ruin, Sigiriya is a UNESCO World Heritage site and the most visited historic site in Sri Lanka. Known as the Lion Rock, it stands 200 meters high over the surrounding plains.",
             "category": "Culture",
-            "image": "/images/destinations/sigiriya.jpg",
+            "image": "/images/destinations/sigiriya.webp",
             "slug": "sigiriya",
             "highlights": [
                 "Lion Gate",
@@ -405,7 +405,7 @@
             "name": "Galle",
             "description": "A historic Dutch Fort and UNESCO World Heritage site. Galle is the best example of a fortified city built by Europeans in South and South East Asia.",
             "category": "Culture",
-            "image": "/images/destinations/galle.jpg",
+            "image": "/images/destinations/galle.webp",
             "slug": "galle",
             "highlights": [
                 "Dutch Fort",
@@ -435,7 +435,7 @@
             "name": "Kandy",
             "description": "The cultural capital and home to the Temple of the Tooth. Kandy is a major city in Sri Lanka located in the Central Province.",
             "category": "Culture",
-            "image": "/images/destinations/kandy.jpg",
+            "image": "/images/destinations/kandy.webp",
             "slug": "kandy",
             "highlights": [
                 "Temple of the Tooth Relic",
@@ -465,7 +465,7 @@
             "name": "Ella",
             "description": "A mountain village famous for its hiking trails and scenic views. Ella offers breathtaking views and a cool climate.",
             "category": "Nature",
-            "image": "/images/destinations/ella.jpg",
+            "image": "/images/destinations/ella.webp",
             "slug": "ella",
             "highlights": [
                 "Nine Arch Bridge",
@@ -495,7 +495,7 @@
             "name": "Nuwara Eliya",
             "description": "Often referred to as 'Little England', this city in the hill country is famous for its temperate climate and picturesque landscape of tea plantations.",
             "category": "Nature",
-            "image": "/images/destinations/nuwara-eliya.jpg",
+            "image": "/images/destinations/nuwara-eliya.webp",
             "slug": "nuwara-eliya",
             "highlights": [
                 "Gregory Lake",
@@ -516,7 +516,7 @@
             "name": "Yala National Park",
             "description": "The most visited and second largest national park in Sri Lanka. It is best known for its variety of wild animals and holds the highest density of leopards in the world.",
             "category": "Wildlife",
-            "image": "/images/destinations/yala.jpg",
+            "image": "/images/destinations/yala.webp",
             "slug": "yala",
             "highlights": [
                 "Leopard Safari",
@@ -537,7 +537,7 @@
             "name": "Mirissa",
             "description": "A tropical paradise famous for whale watching and its stunning crescent beach. A laid-back atmosphere perfect for relaxation.",
             "category": "Beach",
-            "image": "/images/destinations/mirissa.jpg",
+            "image": "/images/destinations/mirissa.webp",
             "slug": "mirissa",
             "highlights": [
                 "Whale Watching",
@@ -558,7 +558,7 @@
             "name": "Anuradhapura",
             "description": "One of the ancient capitals of Sri Lanka, famous for its well-preserved ruins of an ancient Sinhala civilization.",
             "category": "Culture",
-            "image": "/images/destinations/anuradhapura.jpg",
+            "image": "/images/destinations/anuradhapura.webp",
             "slug": "anuradhapura",
             "highlights": [
                 "Sri Maha Bodhi",
@@ -581,7 +581,7 @@
             "slug": "best-time-to-visit-sri-lanka",
             "title": "The Best Time to Visit Sri Lanka: A Complete Guide",
             "excerpt": "Sri Lanka might be a small island, but it boasts two distinct monsoon seasons. This unique weather pattern means there's always a sunny beach to relax on, no matter what time of year you plan your adventure.",
-            "image": "/images/blog/best-time.jpg",
+            "image": "/images/blog/best-time.webp",
             "category": "Travel Tips",
             "date": "2024-01-15",
             "readTime": "8 min read"
@@ -591,7 +591,7 @@
             "slug": "hidden-gems-sri-lanka",
             "title": "10 Hidden Gems in Sri Lanka Most Tourists Miss",
             "excerpt": "Everyone knows about Sigiriya Rock, the golden beaches of Mirissa, and the breathtaking train ride from Kandy to Ella. But what if you're looking to escape the crowds and explore the real, untouched Sri Lanka?",
-            "image": "/images/blog/hidden-gems.jpg",
+            "image": "/images/blog/hidden-gems.webp",
             "category": "Destinations",
             "date": "2024-01-10",
             "readTime": "12 min read"
@@ -601,7 +601,7 @@
             "slug": "sri-lanka-packing-list",
             "title": "What to Pack for Sri Lanka: The Ultimate Checklist",
             "excerpt": "Packing for Sri Lanka can be tricky. Within a few short hours, you can go from the sweltering, humid beaches of the coast to the misty, chilly climate of the hill country.",
-            "image": "/images/blog/packing.jpg",
+            "image": "/images/blog/packing.webp",
             "category": "Travel Tips",
             "date": "2024-01-05",
             "readTime": "6 min read"
@@ -611,7 +611,7 @@
             "slug": "sri-lanka-food-guide",
             "title": "A Food Lover's Guide to Sri Lankan Cuisine",
             "excerpt": "If you love bold flavors, rich spices, and enormous portions, you're going to fall in love with Sri Lankan food.",
-            "image": "/images/blog/food.jpg",
+            "image": "/images/blog/food.webp",
             "category": "Culture",
             "date": "2023-12-28",
             "readTime": "10 min read"
@@ -621,7 +621,7 @@
             "slug": "train-ella-kandy",
             "title": "The Famous Train Ride from Kandy to Ella",
             "excerpt": "It's often touted as the most scenic train journey in the world. The seven-hour blue train ride from Kandy to Ella winds through lush green tea estates, misty mountain passes, cascading waterfalls, and local farming villages.",
-            "image": "/images/blog/train.jpg",
+            "image": "/images/blog/train.webp",
             "category": "Transport",
             "date": "2023-12-20",
             "readTime": "7 min read"
@@ -631,7 +631,7 @@
             "slug": "wildlife-safari-tips",
             "title": "Safari Tips: Spotting Leopards in Yala National Park",
             "excerpt": "Yala National Park, located on the southeastern coast of Sri Lanka, is famous worldwide for one incredible statistic: it holds the highest density of leopards in the world.",
-            "image": "/images/blog/safari.jpg",
+            "image": "/images/blog/safari.webp",
             "category": "Wildlife",
             "date": "2023-12-15",
             "readTime": "9 min read"
@@ -717,7 +717,7 @@
                 "highlight": "Sri Lanka",
                 "subtitle": "Not just a holiday. An immersion.",
                 "subtext": "Experience the pearl of the Indian Ocean with the #1 Digital Concierge.",
-                "image": "/images/hero/main.jpg"
+                "image": "/images/hero/main.webp"
             },
             {
                 "id": "slide-1771780493540",
@@ -726,7 +726,7 @@
                 "highlight": "Highlight",
                 "subtitle": "New Subtitle",
                 "subtext": "Description goes here.",
-                "image": "/images/hero/Generate_a_bright_2k_202602222236__2_.jpeg"
+                "image": "/images/hero/Generate_a_bright_2k_202602222236__2_.webp"
             },
             {
                 "id": "slide-1771780517225",
@@ -735,7 +735,7 @@
                 "highlight": "Highlight",
                 "subtitle": "New Subtitle",
                 "subtext": "Description goes here.",
-                "image": "/images/hero/Generate_a_bright_2k_202602222236__1_.jpeg"
+                "image": "/images/hero/Generate_a_bright_2k_202602222236__1_.webp"
             },
             {
                 "id": "slide-1771780520216",
@@ -744,7 +744,7 @@
                 "highlight": "Highlight",
                 "subtitle": "New Subtitle",
                 "subtext": "Description goes here.",
-                "image": "/images/hero/Generate_a_bright_2k_202602222236__3_.jpeg"
+                "image": "/images/hero/Generate_a_bright_2k_202602222236__3_.webp"
             },
             {
                 "id": "slide-1771780520533",
@@ -753,7 +753,7 @@
                 "highlight": "Highlight",
                 "subtitle": "New Subtitle",
                 "subtext": "Description goes here.",
-                "image": "/images/hero/Generate_a_bright_2k_202602222236.jpeg"
+                "image": "/images/hero/Generate_a_bright_2k_202602222236.webp"
             }
         ],
         "about": {

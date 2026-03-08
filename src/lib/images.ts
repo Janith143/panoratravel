@@ -1,34 +1,34 @@
 export const IMAGES = {
     hero: {
-        main: '/images/hero/main.jpg',
-        bg_video_fallback: '/images/hero/bg-fallback.jpg',
-        scroll_1: '/images/hero/scroll-1.jpg',
-        scroll_2: '/images/hero/scroll-2.jpg',
-        scroll_3: '/images/hero/scroll-3.jpg',
-        about: '/images/hero/about.jpg',
+        main: '/images/hero/main.webp',
+        bg_video_fallback: '/images/hero/bg-fallback.webp',
+        scroll_1: '/images/hero/scroll-1.webp',
+        scroll_2: '/images/hero/scroll-2.webp',
+        scroll_3: '/images/hero/scroll-3.webp',
+        about: '/images/hero/about.webp',
     },
     tours: {
-        cultural: '/images/tours/cultural.jpg',
-        wildlife: '/images/tours/wildlife.jpg',
-        hill_country: '/images/tours/hill-country.jpg',
-        beach: '/images/tours/beach.jpg',
-        adventure: '/images/tours/adventure.jpg'
+        cultural: '/images/tours/cultural.webp',
+        wildlife: '/images/tours/wildlife.webp',
+        hill_country: '/images/tours/hill-country.webp',
+        beach: '/images/tours/beach.webp',
+        adventure: '/images/tours/adventure.webp'
     },
     destinations: {
-        sigiriya: '/images/destinations/sigiriya.jpg',
-        kandy: '/images/destinations/kandy.jpg',
-        ella: '/images/destinations/ella.jpg',
-        galle: '/images/destinations/galle.jpg',
-        yala: '/images/destinations/yala.jpg',
-        mirissa: '/images/destinations/mirissa.jpg'
+        sigiriya: '/images/destinations/sigiriya.webp',
+        kandy: '/images/destinations/kandy.webp',
+        ella: '/images/destinations/ella.webp',
+        galle: '/images/destinations/galle.webp',
+        yala: '/images/destinations/yala.webp',
+        mirissa: '/images/destinations/mirissa.webp'
     },
     fleet: {
-        sedan: '/images/fleet/sedan.jpg',
-        suv: '/images/fleet/suv.jpg',
-        van: '/images/fleet/van.jpg'
+        sedan: '/images/fleet/sedan.webp',
+        suv: '/images/fleet/suv.webp',
+        van: '/images/fleet/van.webp'
     },
     portal: {
-        driver: '/images/portal/driver.jpg',
-        map_fallback: '/images/portal/map-fallback.jpg'
+        driver: '/images/portal/driver.webp',
+        map_fallback: '/images/portal/map-fallback.webp'
     }
 }

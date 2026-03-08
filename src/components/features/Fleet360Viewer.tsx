@@ -43,7 +43,7 @@ export default function Fleet360Viewer({ vehicleType, image }: { vehicleType: st
             >
                 {/* 
                    Simulate 360 interior by using a very wide image and translating it. 
-                   Since we only have 'main.jpg', we will zoom it in heavily to simulate panning.
+                   Since we only have 'main.webp', we will zoom it in heavily to simulate panning.
                 */}
                 <div
                     className="absolute inset-0 transition-transform duration-75 ease-out"

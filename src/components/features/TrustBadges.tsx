@@ -4,9 +4,9 @@
 import { Award } from 'lucide-react'
 
 const certifications = [
-    { name: 'SLTDA Licensed', image: '/images/badges/sltda.png' },
-    { name: 'TripAdvisor Excellence', image: '/images/badges/tripadvisor.png' },
-    { name: 'SafeTravels', image: '/images/badges/safetravels.png' }
+    { name: 'SLTDA Licensed', image: '/images/badges/sltda.webp' },
+    { name: 'TripAdvisor Excellence', image: '/images/badges/tripadvisor.webp' },
+    { name: 'SafeTravels', image: '/images/badges/safetravels.webp' }
 ]
 
 export default function TrustBadges() {

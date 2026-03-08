@@ -14,7 +14,7 @@ export async function POST(request: Request) {
         }
 
         const bytes = await file.arrayBuffer()
-        const buffer = Buffer.from(bytes)
+        let buffer = Buffer.from(new Uint8Array(bytes))
 
         // Create directory if not exists
         const uploadDir = path.join(process.cwd(), 'public', 'images', folder)
@@ -24,10 +24,27 @@ export async function POST(request: Request) {
 
         // Save file
         // Sanitize filename
-        const filename = file.name.replace(/[^a-zA-Z0-9.-]/g, '_')
+        const originalName = file.name.replace(/[^a-zA-Z0-9.-]/g, '_')
+        const extMatch = originalName.match(/\.[0-9a-z]+$/i)
+        const originalExt = extMatch ? extMatch[0].toLowerCase() : ''
+
+        let filename = originalName
+        let finalBuffer: string | NodeJS.ArrayBufferView = buffer
+
+        const isImage = file.type.startsWith('image/') && !file.type.includes('svg')
+        if (isImage) {
+            const sharp = (await import('sharp')).default
+            const webpBuffer = await sharp(buffer).webp({ quality: 80 }).toBuffer()
+            finalBuffer = new Uint8Array(webpBuffer)
+            const baseName = originalName.replace(new RegExp(`\\${originalExt}$`, 'i'), '')
+            filename = `${baseName}.webp`
+        } else {
+            finalBuffer = new Uint8Array(buffer)
+        }
+
         const filePath = path.join(uploadDir, filename)
 
-        await writeFile(filePath, buffer)
+        await writeFile(filePath, finalBuffer)
 
         const publicPath = `/images/${folder}/${filename}`
         return NextResponse.json({ success: true, path: publicPath })

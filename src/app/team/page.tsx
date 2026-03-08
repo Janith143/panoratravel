@@ -3,9 +3,9 @@ import { CheckCircle, Award, Star, Video } from 'lucide-react'
 
 // Mock Data
 const GUIDES = [
-    { name: 'Wasantha Pradeep', role: 'Senior Chauffeur Guide', exp: '15 Years', badges: ['National License', 'First Aid'], image: '/images/hero/main.jpg' },
-    { name: 'Nalin Perera', role: 'Wildlife Specialist', exp: '8 Years', badges: ['Yala Certified', 'Birdwatching Pro'], image: '/images/hero/main.jpg' },
-    { name: 'Kamal De Silva', role: 'Cultural Expert', exp: '12 Years', badges: ['Archaeology Degree', 'English Fluent'], image: '/images/hero/main.jpg' },
+    { name: 'Wasantha Pradeep', role: 'Senior Chauffeur Guide', exp: '15 Years', badges: ['National License', 'First Aid'], image: '/images/hero/main.webp' },
+    { name: 'Nalin Perera', role: 'Wildlife Specialist', exp: '8 Years', badges: ['Yala Certified', 'Birdwatching Pro'], image: '/images/hero/main.webp' },
+    { name: 'Kamal De Silva', role: 'Cultural Expert', exp: '12 Years', badges: ['Archaeology Degree', 'English Fluent'], image: '/images/hero/main.webp' },
 ]
 
 export default function TeamPage() {

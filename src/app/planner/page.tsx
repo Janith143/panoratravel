@@ -37,6 +37,7 @@ const allDestinations: Destination[] = destinationsData.attractions.map((attr: a
 }))
 
 import { getGlobalCategories } from '@/lib/content'
+import { useTripPlanner } from '@/lib/contexts/TripPlannerContext'
 
 // Get unique categories from the data
 const allCategories = getGlobalCategories()
@@ -56,8 +57,15 @@ function PlannerContent() {
     const [selectedCategory, setSelectedCategory] = useState<string>('All')
     const [searchQuery, setSearchQuery] = useState('')
 
-    // Planner State
+    // Planner State linked to Context
+    const { destinations: addedIds, addDestination, removeDestination, reorderDestinations, clearPlanner } = useTripPlanner()
     const [preferredDestinations, setPreferredDestinations] = useState<Destination[]>([])
+
+    // Sync preferredDestinations with context addedIds
+    useEffect(() => {
+        const dests = addedIds.map(id => allDestinations.find(d => d.id === id || d.slug === id)).filter(Boolean) as Destination[]
+        setPreferredDestinations(dests)
+    }, [addedIds])
 
     // Drag State
     const [draggedItem, setDraggedItem] = useState<Destination | null>(null)
@@ -96,33 +104,31 @@ function PlannerContent() {
     const handleDrop = (e: React.DragEvent) => {
         e.preventDefault()
         if (draggedItem) {
-            if (!preferredDestinations.find(p => p.id === draggedItem.id)) {
-                setPreferredDestinations([...preferredDestinations, draggedItem])
-            }
+            addDestination(draggedItem.id)
             setDraggedItem(null)
         }
     }
 
     const removeFromPreferred = (id: string) => {
-        setPreferredDestinations(preferredDestinations.filter(d => d.id !== id))
+        removeDestination(id)
     }
 
     const moveUp = (index: number) => {
         if (index === 0) return
-        const newDests = [...preferredDestinations]
-        const temp = newDests[index - 1]
-        newDests[index - 1] = newDests[index]
-        newDests[index] = temp
-        setPreferredDestinations(newDests)
+        const newIds = [...addedIds]
+        const temp = newIds[index - 1]
+        newIds[index - 1] = newIds[index]
+        newIds[index] = temp
+        reorderDestinations(newIds)
     }
 
     const moveDown = (index: number) => {
-        if (index === preferredDestinations.length - 1) return
-        const newDests = [...preferredDestinations]
-        const temp = newDests[index + 1]
-        newDests[index + 1] = newDests[index]
-        newDests[index] = temp
-        setPreferredDestinations(newDests)
+        if (index === addedIds.length - 1) return
+        const newIds = [...addedIds]
+        const temp = newIds[index + 1]
+        newIds[index + 1] = newIds[index]
+        newIds[index] = temp
+        reorderDestinations(newIds)
     }
 
     const handleSubmit = async (e: React.FormEvent) => {
@@ -172,7 +178,7 @@ function PlannerContent() {
                     <button
                         onClick={() => {
                             setSubmitted(false)
-                            setPreferredDestinations([])
+                            clearPlanner()
                             setFormData({ ...formData, email: '' })
                         }}
                         className="bg-slate-900 text-white px-6 py-2 rounded-lg hover:bg-slate-800 transition"
@@ -273,9 +279,13 @@ function PlannerContent() {
                                     >
                                         <ExternalLink className="h-4 w-4" />
                                     </Link>
-                                    <div className="group-hover:text-emerald-500 transition">
+                                    <button
+                                        className="group-hover:text-emerald-500 transition"
+                                        onClick={() => addDestination(dest.id)}
+                                        title="Add to Trip Planner"
+                                    >
                                         <Plus className="h-5 w-5" />
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
                         ))}

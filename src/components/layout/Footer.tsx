@@ -14,7 +14,7 @@ export default function Footer() {
                     {/* Brand Column */}
                     <div className="col-span-2 md:col-span-1 space-y-4">
                         <Link href="/" className="inline-block relative">
-                            <Image src="/logo.png" alt="Panora Travels Logo" width={180} height={50} className="h-10 w-auto" />
+                            <Image src="/logo.webp" alt="Panora Travels Logo" width={180} height={50} className="h-10 w-auto" />
                         </Link>
                         <p className="text-sm text-slate-400 leading-relaxed">
                             {siteConfig.about.footerTagline}
