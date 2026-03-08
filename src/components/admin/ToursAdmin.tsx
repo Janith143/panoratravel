@@ -25,8 +25,14 @@ type Tour = {
     itinerary: ItineraryDay[]
 }
 
-export default function ToursAdmin({ globalCategories, initialTours }: { globalCategories: string[], initialTours: Tour[] }) {
+export default function ToursAdmin({ globalCategories, initialTours, onUpdateTours }: { globalCategories: string[], initialTours: Tour[], onUpdateTours?: (tours: Tour[]) => void }) {
     const [tours, setTours] = useState<Tour[]>(initialTours || [])
+
+    useEffect(() => {
+        if (onUpdateTours) {
+            onUpdateTours(tours)
+        }
+    }, [tours, onUpdateTours])
     const [isSaving, setIsSaving] = useState(false)
     const [feedback, setFeedback] = useState('')
     const [expandedId, setExpandedId] = useState<string | null>(null)
