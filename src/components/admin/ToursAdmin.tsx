@@ -79,9 +79,25 @@ export default function ToursAdmin({ globalCategories, initialTours }: { globalC
         setExpandedId(newTour.id)
     }
 
-    const deleteTour = (id: string) => {
+    const deleteTour = async (id: string) => {
         if (!confirm('Are you sure you want to delete this tour package?')) return
-        setTours(prev => prev.filter(t => t.id !== id))
+        try {
+            const res = await fetch('/api/admin/tours/delete', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ id })
+            })
+            const data = await res.json()
+            if (data.success) {
+                setTours(prev => prev.filter(t => t.id !== id))
+                setFeedback('Tour deleted successfully!')
+                setTimeout(() => setFeedback(''), 3000)
+            } else {
+                alert('Failed to delete tour from database.')
+            }
+        } catch (e) {
+            alert('Network error while deleting.')
+        }
     }
 
     const handleImageUpload = async (tourId: string, e: React.ChangeEvent<HTMLInputElement>) => {

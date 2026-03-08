@@ -102,15 +102,8 @@ export async function POST(request: Request) {
         }
 
         if (data.tours) {
-            // Delete tours that are no longer in the array
-            const currentIds = data.tours.filter((v: any) => v.id).map((v: any) => v.id);
-            if (currentIds.length > 0) {
-                const placeholders = currentIds.map(() => '?').join(',');
-                await pool.query(`DELETE FROM tours WHERE id NOT IN (${placeholders})`, currentIds);
-            } else {
-                await pool.query('DELETE FROM tours');
-            }
-
+            // WE MUST NOT DELETE TOURS THAT AREN'T IN THE ARRAY TO PREVENT ACCIDENTAL WIPES
+            // Only Update or Insert
             for (const tour of data.tours) {
                 const id = tour.id || randomUUID();
                 await pool.query(
