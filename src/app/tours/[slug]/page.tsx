@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Metadata } from 'next'
-import { getTours, getTourBySlug } from '@/lib/content'
+import { getToursDB, getTourBySlugDB } from '@/lib/db-content'
 import { Calendar, Clock, MapPin, CheckCircle, ArrowLeft, Star, Users } from 'lucide-react'
 
 interface TourPageProps {
@@ -13,15 +13,15 @@ interface TourPageProps {
 
 // Generate Static Params for SSG
 export async function generateStaticParams() {
-    const tours = getTours()
-    return tours.map((tour) => ({
+    const tours = await getToursDB()
+    return tours.map((tour: any) => ({
         slug: tour.slug,
     }))
 }
 
 export async function generateMetadata({ params }: TourPageProps): Promise<Metadata> {
     const { slug } = await params
-    const tour = getTourBySlug(slug)
+    const tour = await getTourBySlugDB(slug)
 
     if (!tour) {
         return {
@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: TourPageProps): Promise<Metad
 
 export default async function TourDetailPage({ params }: TourPageProps) {
     const { slug } = await params
-    const tour = getTourBySlug(slug)
+    const tour = await getTourBySlugDB(slug)
 
     if (!tour) {
         notFound()

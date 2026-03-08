@@ -141,7 +141,28 @@
     ],
     "tours": [
         {
+            "id": "adventure-rush",
+            "slug": "adrenaline-rush",
+            "title": "Adrenaline Rush",
+            "duration": "6 Days",
+            "price": "$700",
+            "image": "/images/tours/adventure.webp",
+            "category": "Adventure",
+            "rating": 4.8,
+            "reviews": 92,
+            "description": "White water rafting in Kitulgala, hiking across Knuckles Mountain Range, and surfing in Arugam Bay.",
+            "highlights": [
+                "White Water Rafting",
+                "Knuckles Trekking",
+                "Surfing",
+                "Canyoning"
+            ],
+            "itinerary": [],
+            "created_at": "2026-01-22T06:21:34.000Z"
+        },
+        {
             "id": "cultural-triangle",
+            "slug": "cultural-triangle-explorer",
             "title": "Cultural Triangle Explorer",
             "duration": "7 Days",
             "price": "$850",
@@ -150,7 +171,6 @@
             "rating": 4.8,
             "reviews": 124,
             "description": "Journey through the ancient cities of Anuradhapura, Polonnaruwa, and Sigiriya. Experience the rich history and culture of Sri Lanka.",
-            "slug": "cultural-triangle-explorer",
             "highlights": [
                 "Climb Sigiriya Rock Fortress",
                 "Visit Temple of the Tooth",
@@ -193,55 +213,12 @@
                     "title": "Departure",
                     "description": "Transfer to airport for departure."
                 }
-            ]
-        },
-        {
-            "id": "wild-sri-lanka",
-            "title": "Wild Sri Lanka Safari",
-            "duration": "5 Days",
-            "price": "$600",
-            "image": "/images/tours/wildlife.webp",
-            "category": "Wildlife",
-            "rating": 4.9,
-            "reviews": 85,
-            "description": "Encounter leopards in Yala and elephants in Udawalawe National Park. A perfect tour for nature lovers.",
-            "slug": "wild-sri-lanka-safari",
-            "highlights": [
-                "Yala Leopard Safari",
-                "Udawalawe Elephant Transit Home",
-                "Turtle Hatchery",
-                "Galle Fort"
             ],
-            "itinerary": [
-                {
-                    "day": 1,
-                    "title": "Arrival & Udawalawe",
-                    "description": "Proceed to Udawalawe. Afternoon safari to see elephants."
-                },
-                {
-                    "day": 2,
-                    "title": "Yala National Park",
-                    "description": "Transfer to Yala. Evening game drive to spot leopards and bears."
-                },
-                {
-                    "day": 3,
-                    "title": "Full Day Safari",
-                    "description": "Morning and evening safaris in Yala for maximum wildlife sightings."
-                },
-                {
-                    "day": 4,
-                    "title": "Galle & South Coast",
-                    "description": "Drive along the coast to Galle. Visit the Dutch Fort. Relax on the beach."
-                },
-                {
-                    "day": 5,
-                    "title": "Departure",
-                    "description": "Visit Turtle Hatchery en route to airport."
-                }
-            ]
+            "created_at": "2026-01-22T06:21:34.000Z"
         },
         {
             "id": "hill-country-escape",
+            "slug": "misty-hill-country-escape",
             "title": "Misty Hill Country Escape",
             "duration": "4 Days",
             "price": "$450",
@@ -250,7 +227,6 @@
             "rating": 4.7,
             "reviews": 210,
             "description": "Ride the scenic train to Ella and explore the tea plantations of Nuwara Eliya. Breathtaking views guaranteed.",
-            "slug": "misty-hill-country-escape",
             "highlights": [
                 "Scenic Train Ride",
                 "Tea Factory Visit",
@@ -278,10 +254,32 @@
                     "title": "Ella & Departure",
                     "description": "Morning hike to Little Adams Peak. Transfer to airport or beach extension."
                 }
-            ]
+            ],
+            "created_at": "2026-01-22T06:21:34.000Z"
+        },
+        {
+            "id": "ramayana-trail",
+            "slug": "ramayana-trail",
+            "title": "Ramayana Trail",
+            "duration": "8 Days",
+            "price": "$950",
+            "image": "/images/tours/ramayana.webp",
+            "category": "Culture",
+            "rating": 4.6,
+            "reviews": 45,
+            "description": "Follow the legendary path of Lord Rama and Sita across Sri Lanka. Visit sacred temples and historic sites mentioned in the epic.",
+            "highlights": [
+                "Munneswaram Temple",
+                "Sita Amman Temple",
+                "Ashok Vatika",
+                "Divurumpola"
+            ],
+            "itinerary": [],
+            "created_at": "2026-01-22T06:21:34.000Z"
         },
         {
             "id": "southern-coast-bliss",
+            "slug": "southern-coast-bliss",
             "title": "Southern Coast Bliss",
             "duration": "6 Days",
             "price": "$720",
@@ -290,7 +288,6 @@
             "rating": 4.9,
             "reviews": 156,
             "description": "Relax on the golden sands of Mirissa and explore the colonial fort of Galle. Whale watching and surfing included.",
-            "slug": "southern-coast-bliss",
             "highlights": [
                 "Whale Watching",
                 "Surfing Lesson",
@@ -328,251 +325,2665 @@
                     "title": "Departure",
                     "description": "Transfer to airport."
                 }
-            ]
+            ],
+            "created_at": "2026-01-22T06:21:34.000Z"
         },
         {
-            "id": "ramayana-trail",
-            "title": "Ramayana Trail",
-            "duration": "8 Days",
-            "price": "$950",
-            "image": "/images/tours/ramayana.webp",
-            "category": "Culture",
-            "rating": 4.6,
-            "reviews": 45,
-            "description": "Follow the legendary path of Lord Rama and Sita across Sri Lanka. Visit sacred temples and historic sites mentioned in the epic.",
-            "slug": "ramayana-trail",
+            "id": "wild-sri-lanka",
+            "slug": "wild-sri-lanka-safari",
+            "title": "Wild Sri Lanka Safari",
+            "duration": "5 Days",
+            "price": "$600",
+            "image": "/images/tours/wildlife.webp",
+            "category": "Wildlife",
+            "rating": 4.9,
+            "reviews": 85,
+            "description": "Encounter leopards in Yala and elephants in Udawalawe National Park. A perfect tour for nature lovers.",
             "highlights": [
-                "Munneswaram Temple",
-                "Sita Amman Temple",
-                "Ashok Vatika",
-                "Divurumpola"
+                "Yala Leopard Safari",
+                "Udawalawe Elephant Transit Home",
+                "Turtle Hatchery",
+                "Galle Fort"
             ],
-            "itinerary": []
+            "itinerary": [
+                {
+                    "day": 1,
+                    "title": "Arrival & Udawalawe",
+                    "description": "Proceed to Udawalawe. Afternoon safari to see elephants."
+                },
+                {
+                    "day": 2,
+                    "title": "Yala National Park",
+                    "description": "Transfer to Yala. Evening game drive to spot leopards and bears."
+                },
+                {
+                    "day": 3,
+                    "title": "Full Day Safari",
+                    "description": "Morning and evening safaris in Yala for maximum wildlife sightings."
+                },
+                {
+                    "day": 4,
+                    "title": "Galle & South Coast",
+                    "description": "Drive along the coast to Galle. Visit the Dutch Fort. Relax on the beach."
+                },
+                {
+                    "day": 5,
+                    "title": "Departure",
+                    "description": "Visit Turtle Hatchery en route to airport."
+                }
+            ],
+            "created_at": "2026-01-22T06:21:34.000Z"
         },
         {
-            "id": "adventure-rush",
-            "title": "Adrenaline Rush",
-            "duration": "6 Days",
-            "price": "$700",
-            "image": "/images/tours/adventure.webp",
-            "category": "Adventure",
-            "rating": 4.8,
-            "reviews": 92,
-            "description": "White water rafting in Kitulgala, hiking across Knuckles Mountain Range, and surfing in Arugam Bay.",
-            "slug": "adrenaline-rush",
-            "highlights": [
-                "White Water Rafting",
-                "Knuckles Trekking",
-                "Surfing",
-                "Canyoning"
-            ],
+            "id": "tour-1772954307152",
+            "title": "New Tour Package",
+            "duration": "3 Days",
+            "price": "$0",
+            "image": "/images/tours/ChatGPT_Image_Mar_4__2026__10_43_51_PM.webp",
+            "category": "Nature",
+            "rating": 5,
+            "reviews": 0,
+            "description": "Description goes here.",
+            "slug": "new-tour-1772954307152",
+            "highlights": [],
             "itinerary": []
         }
     ],
     "destinations": [
         {
-            "id": "sigiriya",
-            "name": "Sigiriya",
-            "description": "The ancient rock fortress and palace ruin, Sigiriya is a UNESCO World Heritage site and the most visited historic site in Sri Lanka. Known as the Lion Rock, it stands 200 meters high over the surrounding plains.",
-            "category": "Culture",
-            "image": "/images/destinations/sigiriya.webp",
-            "slug": "sigiriya",
-            "highlights": [
-                "Lion Gate",
-                "Mirror Wall",
-                "Frescoes",
-                "Water Gardens"
+            "id": "national-museum-colombo",
+            "name": "National Museum of Colombo",
+            "description": "The Colombo National Museum is Sri Lanka's largest and most prestigious museum. Established in 1877 by Sir William Henry Gregory, the grand Italian architectural building houses a stunning collection of ancient royal regalia, including the golden throne and crown of the Kandyan monarchs, alongside millennia of cultural artifacts, ancient demon masks, and antique colonial-era swords.",
+            "district": "colombo",
+            "province": "Western",
+            "categories": [
+                "Heritage"
             ],
+            "image": "/images/destinations/national-museum.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
             "map": {
-                "x": 45,
-                "y": 42,
+                "x": 50,
+                "y": 50,
+                "lat": 6.9103,
+                "lng": 79.861
+            },
+            "slug": "national-museum-colombo",
+            "category": "Heritage"
+        },
+        {
+            "id": "gangaramaya-temple",
+            "name": "Gangaramaya Temple",
+            "description": "Gangaramaya Temple is one of Colombo's most important and iconic Buddhist temples. Located near the Beira Lake, this vibrant complex is a captivating blend of Sri Lankan, Thai, Indian, and Chinese architecture. Beyond a place of worship, it functions as a museum holding thousands of eclectic artifacts, ranging from ancient Buddhist relics to vintage cars and a vast collection of antique Buddha statues.",
+            "district": "colombo",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/gangaramaya.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.9149,
+                "lng": 79.8576
+            },
+            "slug": "gangaramaya-temple",
+            "category": "Heritage"
+        },
+        {
+            "id": "seema-malaka",
+            "name": "Seema Malaka",
+            "description": "Designed by the world-renowned Sri Lankan architect Geoffrey Bawa, Seema Malaka is a serene and masterfully designed floating temple resting on the tranquil waters of Beira Lake. Offering a striking contrast to Colombo's bustling high-rises, this assembly hall for monks is primarily used for meditation and peaceful reflection, flanked by bronze Thai Buddha statues that cast stunning reflections on the water.",
+            "district": "colombo",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/seema-malaka.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.9147,
+                "lng": 79.8572
+            },
+            "slug": "seema-malaka",
+            "category": "Heritage"
+        },
+        {
+            "id": "red-mosque",
+            "name": "Jami Ul-Alfar Mosque (Red Mosque)",
+            "description": "The Jami Ul-Alfar Mosque, widely known as the Red Mosque, is an architectural marvel located in the heart of the chaotic Pettah district. Built in 1909, its mesmerizing candy-striped red and white brickwork combines Indo-Islamic and Neo-Gothic styles. Once a reliable landmark for approaching sailors entering Colombo harbor, it remains a bustling cultural center and a visual icon of the city's trading heritage.",
+            "district": "colombo",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/red-mosque.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.9391,
+                "lng": 79.8524
+            },
+            "slug": "red-mosque",
+            "category": "Heritage"
+        },
+        {
+            "id": "viharamahadevi-park",
+            "name": "Viharamahadevi Park",
+            "description": "Viharamahadevi Park is Colombo's largest and oldest public park, previously known as Victoria Park. Situated opposite the colonial-era Town Hall, it serves as a massive green lung for the city. The park features beautiful flowering trees that bloom brilliantly in spring, a majestic golden Buddha statue, cascading water fountains, well-maintained walking paths, and a dedicated children's play area.",
+            "district": "colombo",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology"
+            ],
+            "image": "/images/destinations/viharamahadevi-park.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.9122,
+                "lng": 79.8631
+            },
+            "slug": "viharamahadevi-park",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "beddagana-wetland",
+            "name": "Beddagana Wetland Park",
+            "description": "Beddagana Wetland Park is an 18-hectare urban eco-tourism haven located on the fringes of Sri Jayawardenepura Kotte. Acting as a critical urban floodplain and biodiversity hotspot, it features wooden boardwalks winding through dense marshlands. It is an exceptional spot for birdwatching, home to migratory and endemic birds, butterflies, and the elusive fishing cat.",
+            "district": "colombo",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology",
+                "Wildlife & Safari"
+            ],
+            "image": "/images/destinations/beddagana-wetland.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.8927,
+                "lng": 79.9145
+            },
+            "slug": "beddagana-wetland",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "bolgoda-lake",
+            "name": "Bolgoda Lake",
+            "description": "Bolgoda Lake holds the title of the largest natural freshwater lake in Sri Lanka, boasting an expansive surface area of nearly 374 square kilometers. Once a popular retreat during the British colonial era, it is now a premier destination for kayaking, windsurfing, and recreational fishing. Its dense mangrove ecosystem provides vital habitat for numerous aquatic birds and reptiles.",
+            "district": "colombo",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology",
+                "Adventure & Sports"
+            ],
+            "image": "/images/destinations/bolgoda-lake.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.7214,
+                "lng": 79.9576
+            },
+            "slug": "bolgoda-lake",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "dutch-period-museum",
+            "name": "Dutch Period Museum",
+            "description": "The Dutch Period Museum in Colombo is housed in a beautifully preserved 17th-century vernacular mansion that originally served as the residence of the Dutch Governor Thomas van Rhee. Complete with a picturesque central courtyard, heavy wooden doors, and period furniture, the museum provides an authentic and deep dive into the history of the Dutch East India Company's rule in Ceylon.",
+            "district": "colombo",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/dutch-period-museum.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.9366,
+                "lng": 79.8519
+            },
+            "slug": "dutch-period-museum",
+            "category": "Heritage"
+        },
+        {
+            "id": "old-dutch-hospital",
+            "name": "Old Dutch Hospital",
+            "description": "Dating back to 1681, the Old Dutch Hospital is considered one of the oldest buildings in the Colombo Fort area. Originally built to treat officers of the Dutch East India Company, it has been elegantly restored into a high-end heritage shopping and dining precinct. Its wide arcades, thick walls, and massive teak beams offer a historic ambiance to enjoy some of the city's finest restaurants.",
+            "district": "colombo",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/old-dutch-hospital.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.9328,
+                "lng": 79.8437
+            },
+            "slug": "old-dutch-hospital",
+            "category": "Heritage"
+        },
+        {
+            "id": "independence-memorial-hall",
+            "name": "Independence Memorial Hall",
+            "description": "Independence Memorial Hall is a striking national monument built to commemorate Sri Lanka's independence from British rule on February 4, 1948. Inspired by the 'Magul Maduwa' (Royal Audience Hall) in Kandy, the open-sided pavilion features intricately carved stone pillars depicting lions and traditional motifs, surrounded by expansive, manicured gardens popular with early morning joggers.",
+            "district": "colombo",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/independence-hall.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.9042,
+                "lng": 79.8675
+            },
+            "slug": "independence-memorial-hall",
+            "category": "Heritage"
+        },
+        {
+            "id": "diyatha-uyana",
+            "name": "Diyatha Uyana",
+            "description": "Diyatha Uyana is a modern, beautifully landscaped leisure park built seamlessly along the banks of the Diyawanna Oya in Battaramulla. Known for its 3D pavement art, illuminated water fountains, and circular walking tracks, it also hosts a vibrant weekend plant and food market. The park is a favorite evening destination for families and nature lovers.",
+            "district": "colombo",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology"
+            ],
+            "image": "/images/destinations/diyatha-uyana.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.8994,
+                "lng": 79.9238
+            },
+            "slug": "diyatha-uyana",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "port-city-colombo",
+            "name": "Port City Colombo",
+            "description": "Port City Colombo is an ambitious, world-class urban development built on 269 hectares of reclaimed land adjacent to the historic Galle Face Green. While currently establishing itself as the region's premier financial hub, it offers an exclusive Marina, pristine artificial beaches, an ATV sand dune track, water sports, and futuristic promenades offering the best sunset views in the city.",
+            "district": "colombo",
+            "province": "Western",
+            "categories": [
+                "Adventure & Sports"
+            ],
+            "image": "/images/destinations/port-city.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.9392,
+                "lng": 79.8391
+            },
+            "slug": "port-city-colombo",
+            "category": "Adventure & Sports"
+        },
+        {
+            "id": "muthurajawela-wetland",
+            "name": "Muthurajawela Wetland Sanctuary",
+            "description": "The Muthurajawela Wetland Sanctuary is a massive coastal peat bog spanning over 6,000 hectares just south of Negombo. Translating to 'Swamp of Royal Treasure,' this vibrant ecosystem is best explored via early morning boat safaris. It supports a staggering array of wildlife, including over 100 species of birds, toque macaques, water monitors, and estuarine crocodiles.",
+            "district": "gampaha",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology",
+                "Wildlife & Safari"
+            ],
+            "image": "/images/destinations/muthurajawela.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 7.0421,
+                "lng": 79.9135
+            },
+            "slug": "muthurajawela-wetland",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "henarathgoda-botanical",
+            "name": "Henarathgoda Botanical Garden",
+            "description": "The Henarathgoda Botanical Garden in Gampaha holds immense historical significance as the site where the very first rubber seedlings from the Amazon (via Kew Gardens) were planted in Asia in 1876. Today, this sprawling 43-acre garden offers a serene escape, featuring an extensive collection of tropical trees, vivid orchids, towering palms, and a tranquil lake.",
+            "district": "gampaha",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology"
+            ],
+            "image": "/images/destinations/henarathgoda.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 7.1118,
+                "lng": 79.9954
+            },
+            "slug": "henarathgoda-botanical",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "negombo-lagoon",
+            "name": "Negombo Lagoon",
+            "description": "The Negombo Lagoon is a vast estuarine lagoon fundamentally intertwined with the local fishing community. Covering 35 square kilometers, it is bordered by dense mangrove swamps and feeds into the sea. Boat tours here offer a unique opportunity to witness traditional Prawn farming, spot exotic wading birds, and watch the iconic local fishermen using outrigger canoes called 'Oruvas'.",
+            "district": "gampaha",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology",
+                "Adventure & Sports"
+            ],
+            "image": "/images/destinations/negombo-lagoon.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 7.155,
+                "lng": 79.857
+            },
+            "slug": "negombo-lagoon",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "st-marys-church-negombo",
+            "name": "St. Mary's Church Negombo",
+            "description": "St. Mary's Church in Negombo is a magnificent neoclassical cathedral that stands as a testament to the city's strong Catholic heritage, earning Negombo the moniker 'Little Rome'. Construction began in 1874, and the church is renowned for its breathtaking, intricately painted ceiling depicting the life of Christ, crafted by a local artist over several decades.",
+            "district": "gampaha",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/st-marys-negombo.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 7.2105,
+                "lng": 79.8435
+            },
+            "slug": "st-marys-church-negombo",
+            "category": "Heritage"
+        },
+        {
+            "id": "angurukaramulla-temple",
+            "name": "Angurukaramulla Temple",
+            "description": "The Angurukaramulla Temple in Negombo is instantly recognizable by the towering 6-meter-tall statue of Lord Buddha and the dramatic dragon-mouth entrance. Inside, visitors can explore a labyrinth of vibrant, detailed murals and sculptures that chronicle the journey of the Buddha and important events from the ancient history of Sri Lankan kings.",
+            "district": "gampaha",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/angurukaramulla.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 7.2085,
+                "lng": 79.8557
+            },
+            "slug": "angurukaramulla-temple",
+            "category": "Heritage"
+        },
+        {
+            "id": "negombo-dutch-fort",
+            "name": "Negombo Dutch Fort",
+            "description": "The Negombo Dutch Fort is a historic colonial remnant originally built by the Portuguese and later captured and fortified by the Dutch in 1672. Though much of the original pentagonal star fort was dismantled by the British to build a prison (which still stands today), the impressive main gateway, the clock tower, and sections of the eastern ramparts remain accessible to visitors.",
+            "district": "gampaha",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/negombo-fort.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 7.2036,
+                "lng": 79.8395
+            },
+            "slug": "negombo-dutch-fort",
+            "category": "Heritage"
+        },
+        {
+            "id": "brief-garden",
+            "name": "Brief Garden",
+            "description": "Brief Garden is the legendary landscape masterpiece of Bevis Bawa, brother of renowned architect Geoffrey Bawa. Nestled away in Aluthgama, this former rubber plantation was transformed over decades into a magical, overgrown jungle garden. It blends Italian and English garden elements with tropical foliage, hidden pathways, and intimate courtyards adorned with provocative sculptures and art.",
+            "district": "kalutara",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology"
+            ],
+            "image": "/images/destinations/brief-garden.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.4475,
+                "lng": 80.0152
+            },
+            "slug": "brief-garden",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "fa-hien-caves",
+            "name": "Fa Hien Caves (Pahiyangala)",
+            "description": "The Fa Hien Cave, or Pahiyangala Cave, is one of the largest natural rock shelters in Asia and a site of immense paleoanthropological importance. Named after the famous Chinese Buddhist monk Faxian, excavations here discovered the 37,000-year-old skeletal remains of the 'Balangoda Man', one of the region's earliest anatomically modern human settlements. The hike to the top offers spectacular views of the surrounding rainforest canopy.",
+            "district": "kalutara",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology",
+                "Hiking & Trekking"
+            ],
+            "image": "/images/destinations/fa-hien-caves.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.6111,
+                "lng": 80.2118
+            },
+            "slug": "fa-hien-caves",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "kalutara-bodhiya",
+            "name": "Kalutara Bodhiya",
+            "description": "The Kalutara Bodhiya is arguably the most recognizable Buddhist shrine in southern Sri Lanka, prominently located by the Kalu Ganga river. Its massive, pristine white stupa is uniquely hollow—one of the few in the world that visitors can actually step inside. The interior is adorned with stunning, vibrant frescoes depicting scenes from the Jataka tales (past lives of the Buddha).",
+            "district": "kalutara",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/kalutara-bodhiya.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.5862,
+                "lng": 79.9604
+            },
+            "slug": "kalutara-bodhiya",
+            "category": "Heritage"
+        },
+        {
+            "id": "richmond-castle",
+            "name": "Richmond Castle",
+            "description": "Richmond Castle is a striking, opulent Edwardian mansion built in 1896 by a wealthy regional philanthropist, Mudaliyar Don Arthur de Silva. Drawing heavy inspiration from the architecture of Indian Maharajas, the two-story palace incorporates Scottish glass, Burmese teak, and Italian tiles into a gorgeous blend of Eastern and Western design, set amidst expansive fruit orchards.",
+            "district": "kalutara",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/richmond-castle.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.5912,
+                "lng": 79.9839
+            },
+            "slug": "richmond-castle",
+            "category": "Heritage"
+        },
+        {
+            "id": "bentota-water-sports",
+            "name": "Bentota Water Sports Hub",
+            "description": "The Bentota Water Sports Hub, situated along the calm estuarine waters of the Bentota River, is the undisputed premier destination for aqua-adventures in Sri Lanka. Protected from ocean swells, the broad river provides ideal, year-round conditions for high-octane activities including jet skiing, wakeboarding, windsurfing, banana boat rides, and paramotoring.",
+            "district": "kalutara",
+            "province": "Western",
+            "categories": [
+                "Adventure & Sports",
+                "Beach & Coastal"
+            ],
+            "image": "/images/destinations/bentota-water-sports.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.4258,
+                "lng": 79.9989
+            },
+            "slug": "bentota-water-sports",
+            "category": "Adventure & Sports"
+        },
+        {
+            "id": "kande-vihara",
+            "name": "Kande Vihara",
+            "description": "Kande Vihara (Mountain Temple) is a major Buddhist pilgrimage site dating back to 1734. Its most striking feature is the towering 160-foot sitting Buddha statue—one of the tallest in the world—visible from miles away. The vividly painted temple complex within the statue's base contains intricately carved relic chambers, ancient frescoes, and a sacred Bodhi tree.",
+            "district": "kalutara",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/kande-vihara.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.4532,
+                "lng": 79.9988
+            },
+            "slug": "kande-vihara",
+            "category": "Heritage"
+        },
+        {
+            "id": "thudugala-ella",
+            "name": "Thudugala Ella Waterfall",
+            "description": "Thudugala Ella is a picturesque, multi-tiered waterfall cascading down natural rock steps within a lush, abandoned British rubber estate in the Kalutara district. Unlike the towering falls of the hills, Thudugala is easily accessible and provides a safe, refreshing natural bathing pool surrounded by rich endemic flora and fauna.",
+            "district": "kalutara",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology"
+            ],
+            "image": "/images/destinations/thudugala-ella.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.5367,
+                "lng": 80.0541
+            },
+            "slug": "thudugala-ella",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "calido-beach",
+            "name": "Calido Beach",
+            "description": "Calido Beach offers a unique geographical landscape, forming an exposed spit of golden sand that acts as a natural barrier between the crashing waves of the Indian Ocean and the calm waters of the Kalu Ganga estuary. It is a highly popular spot for evening walks, flying kites, and enjoying some of the most dramatic sunsets on the western coast.",
+            "district": "kalutara",
+            "province": "Western",
+            "categories": [
+                "Beach & Coastal"
+            ],
+            "image": "/images/destinations/calido-beach.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.5824,
+                "lng": 79.9545
+            },
+            "slug": "calido-beach",
+            "category": "Beach & Coastal"
+        },
+        {
+            "id": "galle-fort",
+            "name": "Galle Fort",
+            "description": "The Galle Fort is an immaculately preserved 17th-century coastal fortress and a designated UNESCO World Heritage site. Originally built by the Portuguese and heavily fortified by the Dutch, the fort is a living town enclosed by massive coral-stone ramparts. Its narrow cobblestone streets are lined with beautifully restored Dutch-colonial villas, boutique hotels, art galleries, and charming cafes.",
+            "district": "galle",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/galle-fort.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.0271,
+                "lng": 80.217
+            },
+            "slug": "galle-fort",
+            "category": "Heritage"
+        },
+        {
+            "id": "kdn-forest",
+            "name": "Kanneliya-Dediyagala-Nakiyadeniya Forest",
+            "description": "The Kanneliya-Dediyagala-Nakiyadeniya (KDN) Forest is an expansive, UNESCO-designated true lowland rainforest biosphere reserve. Rivaling the more famous Sinharaja in biodiversity, it boasts a staggering concentration of endemic flora, crystal-clear streams, and hidden waterfalls like Anagimale Ella. It is an untouched paradise for hard-core trekkers and passionate nature lovers.",
+            "district": "galle",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology",
+                "Hiking & Trekking"
+            ],
+            "image": "/images/destinations/kdn-forest.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.2505,
+                "lng": 80.3341
+            },
+            "slug": "kdn-forest",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "madu-river",
+            "name": "Madu River",
+            "description": "The Madu River estuary is a sprawling Ramsar-designated wetland encompassing a complex matrix of deep mangrove forests and dozens of scattered islands. The popular boat safaris navigate through dark mangrove tunnels, offering close encounters with water monitors, kingfishers, and stops at specialized islands to learn traditional cinnamon peeling methods and visit ancient Buddhist forest temples.",
+            "district": "galle",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology",
+                "Adventure & Sports"
+            ],
+            "image": "/images/destinations/madu-river.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.2754,
+                "lng": 80.0579
+            },
+            "slug": "madu-river",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "hikkaduwa-marine-park",
+            "name": "Hikkaduwa Marine National Park",
+            "description": "The Hikkaduwa Marine National Park is one of the very few coastal national parks in Sri Lanka, established specifically to protect a vibrant, shallow fringing coral reef. Renowned for its unparalleled accessibility, visitors can easily snorkel right off the beach to swim alongside enormous, completely wild resident Green Sea Turtles and schools of colorful reef fish.",
+            "district": "galle",
+            "province": "Western",
+            "categories": [
+                "Wildlife & Safari",
+                "Beach & Coastal"
+            ],
+            "image": "/images/destinations/hikkaduwa-marine.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.1364,
+                "lng": 80.1042
+            },
+            "slug": "hikkaduwa-marine-park",
+            "category": "Wildlife & Safari"
+        },
+        {
+            "id": "hikkaduwa-surf",
+            "name": "Hikkaduwa Surf Point",
+            "description": "Hikkaduwa is a legendary surfing destination on Sri Lanka's southwest coast, famous for its consistent reef breaks and vibrant, bohemian atmosphere. The main surf point offers long, peeling waves suitable for intermediate and advanced surfers, while the sandy shore breaks are perfect for beginners. Beyond the surf, the town's beach bars and sunset parties make it a hub of coastal energy.",
+            "district": "galle",
+            "province": "Western",
+            "categories": [
+                "Adventure & Sports",
+                "Beach & Coastal"
+            ],
+            "image": "/images/destinations/hikkaduwa-surf.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.135,
+                "lng": 80.1009
+            },
+            "slug": "hikkaduwa-surf",
+            "category": "Adventure & Sports"
+        },
+        {
+            "id": "unawatuna-beach",
+            "name": "Unawatuna Beach",
+            "description": "Unawatuna Beach is a stunning, horseshoe-shaped bay protected by a natural coral reef, making it one of the safest and most tranquil swimming spots in Sri Lanka. Fringed by swaying coconut palms and a bustling stretch of boutique cafes and handicraft shops, it is perfect for relaxation. The nearby Japanese Peace Pagoda offers panoramic views of the turquoise Indian Ocean.",
+            "district": "galle",
+            "province": "Western",
+            "categories": [
+                "Beach & Coastal"
+            ],
+            "image": "/images/destinations/unawatuna.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.0104,
+                "lng": 80.2486
+            },
+            "slug": "unawatuna-beach",
+            "category": "Beach & Coastal"
+        },
+        {
+            "id": "maritime-museum-galle",
+            "name": "Maritime Archaeology Museum",
+            "description": "Housed within the massive 17th-century Dutch Warehouse across from the Galle Fort, the National Maritime Museum showcases Sri Lanka's rich seafaring history. Its exhibits include fascinating marine artifacts, detailed ship models, and items recovered from ancient shipwrecks off the Galle coast, all set within the impressive, thick-walled colonial architecture.",
+            "district": "galle",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/maritime-museum.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.0279,
+                "lng": 80.2185
+            },
+            "slug": "maritime-museum-galle",
+            "category": "Heritage"
+        },
+        {
+            "id": "kabalana-beach",
+            "name": "Kabalana Beach (The Rock)",
+            "description": "Kabalana Beach is a hidden gem in Ahangama, renowned among the surfing community for 'The Rock'—one of the best A-frame reef breaks in the country. With its deep blue waters and pristine golden sands, it offers a more laid-back and authentic atmosphere than its busier neighbors, making it a favorite for those seeking both world-class surf and ultimate seclusion.",
+            "district": "galle",
+            "province": "Western",
+            "categories": [
+                "Adventure & Sports",
+                "Beach & Coastal"
+            ],
+            "image": "/images/destinations/kabalana.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 5.9818,
+                "lng": 80.3662
+            },
+            "slug": "kabalana-beach",
+            "category": "Adventure & Sports"
+        },
+        {
+            "id": "koggala-lagoon",
+            "name": "Koggala Lagoon Kayaking",
+            "description": "Koggala Lagoon is a serene, bird-filled expanse of water dotted with several lush islands, including the famous 'Cinnamon Island'. A boat safari here allows visitors to witness traditional cinnamon processing, explore ancient hermitages, and spot native wildlife among the mangroves. The lagoon is also famous for the iconic stilt fishermen who cast their lines nearby.",
+            "district": "galle",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology",
+                "Adventure & Sports"
+            ],
+            "image": "/images/destinations/koggala-lagoon.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 5.9926,
+                "lng": 80.3441
+            },
+            "slug": "koggala-lagoon",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "mirissa-whale-watching",
+            "name": "Mirissa Whale Watching",
+            "description": "Mirissa is the premier destination in the Indian Ocean for whale and dolphin watching. Departing from its picturesque harbor, boat tours take visitors into deep waters where magnificent Blue Whales—the largest animals on earth—can be frequently spotted alongside pods of acrobatic Spinner Dolphins and Sperm Whales, particularly during the peak season from November to April.",
+            "district": "matara",
+            "province": "Western",
+            "categories": [
+                "Wildlife & Safari",
+                "Adventure & Sports"
+            ],
+            "image": "/images/destinations/mirissa-whales.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 5.9439,
+                "lng": 80.4578
+            },
+            "slug": "mirissa-whale-watching",
+            "category": "Wildlife & Safari"
+        },
+        {
+            "id": "polhena-beach",
+            "name": "Polhena Beach",
+            "description": "Polhena Beach is a tranquil, semi-circular bay protected by a natural coral reef that creates a calm, shallow swimming pool perfect for families. It is one of the best spots in Sri Lanka to snorkel with resident Giant Sea Turtles in crystal-clear water. The beach is a popular local weekend retreat, offering a charming and authentic coastal experience.",
+            "district": "matara",
+            "province": "Western",
+            "categories": [
+                "Beach & Coastal",
+                "Wildlife & Safari"
+            ],
+            "image": "/images/destinations/polhena.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 5.9372,
+                "lng": 80.5218
+            },
+            "slug": "polhena-beach",
+            "category": "Beach & Coastal"
+        },
+        {
+            "id": "weligama-surf",
+            "name": "Weligama Bay",
+            "description": "Weligama, meaning 'Sandy Village', is globally recognized as the best place in Sri Lanka for beginner surfers. Its long, sweeping bay features consistent sandy-bottom breaks that provide safe and forgiving waves. The shore is lined with numerous surf schools and vibrant beach clubs, creating a welcoming community for those catching their first waves.",
+            "district": "matara",
+            "province": "Western",
+            "categories": [
+                "Adventure & Sports",
+                "Beach & Coastal"
+            ],
+            "image": "/images/destinations/weligama.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 5.9734,
+                "lng": 80.4284
+            },
+            "slug": "weligama-surf",
+            "category": "Adventure & Sports"
+        },
+        {
+            "id": "dondra-lighthouse",
+            "name": "Dondra Head Lighthouse",
+            "description": "Standing at the southernmost tip of Sri Lanka, Dondra Head Lighthouse is the tallest lighthouse in the country and one of the tallest in Southeast Asia. Built by the British in 1889, the pristine white octagonal tower is surrounded by lush coconut groves and overlooks the vast, unobstructed Indian Ocean, marking the point where there is no land until Antarctica.",
+            "district": "matara",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/dondra-lighthouse.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 5.922,
+                "lng": 80.5891
+            },
+            "slug": "dondra-lighthouse",
+            "category": "Heritage"
+        },
+        {
+            "id": "star-fort-matara",
+            "name": "Star Fort",
+            "description": "The Matara Star Fort is a unique and remarkably well-preserved fortification built by the Dutch in 1765. Its distinctive six-pointed star shape was designed to provide 360-degree defense against land-based attacks. Today, the fort houses a small museum and provides a quiet, historic atmosphere within its thick granite walls and surrounding moat.",
+            "district": "matara",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/star-fort.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 5.951,
+                "lng": 80.5435
+            },
+            "slug": "star-fort-matara",
+            "category": "Heritage"
+        },
+        {
+            "id": "weherahena-temple",
+            "name": "Weherahena Temple",
+            "description": "Weherahena Buddhist Temple is famous for having the first tunnel temple in Sri Lanka, adorned with over 200 vibrant paintings depicting the Jataka stories. The complex is dominated by an enormous, 39-meter-tall seated Buddha statue. Visitors can wander through the underground tunnels and climb the surrounding structure for a closer view of the colossal statue.",
+            "district": "matara",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/weherahena.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 5.9663,
+                "lng": 80.5786
+            },
+            "slug": "weherahena-temple",
+            "category": "Heritage"
+        },
+        {
+            "id": "kirala-kele-sanctuary",
+            "name": "Kirala Kele Sanctuary",
+            "description": "Kirala Kele is a sprawling 1,800-hectare wetland and mangrove sanctuary on the outskirts of Matara. It is a critical habitat for over 100 species of birds, including migratory waterbirds and elusive endemics. Navigating its canals by boat provides a silent, immersive nature experience among wild fruit trees and dense aquatic vegetation.",
+            "district": "matara",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology",
+                "Wildlife & Safari"
+            ],
+            "image": "/images/destinations/kirala-kele.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 5.9592,
+                "lng": 80.5312
+            },
+            "slug": "kirala-kele-sanctuary",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "midigama-surf",
+            "name": "Midigama Surf Point",
+            "description": "Midigama is a quiet, rustic village that serves as a sanctuary for experienced surfers. It boasts several powerful and challenging reef breaks, including Ramboda, Lazy Left, and Cheetah. Lacking the heavy commercialization of other surf towns, Midigama offers an authentic, focused surfing culture centered around simple guesthouses and high-performance waves.",
+            "district": "matara",
+            "province": "Western",
+            "categories": [
+                "Adventure & Sports",
+                "Beach & Coastal"
+            ],
+            "image": "/images/destinations/midigama.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 5.9696,
+                "lng": 80.3884
+            },
+            "slug": "midigama-surf",
+            "category": "Adventure & Sports"
+        },
+        {
+            "id": "yala-national-park",
+            "name": "Yala National Park",
+            "description": "Yala National Park is Sri Lanka's most celebrated wildlife destination, boasting the highest leopard density in the world. Its diverse landscape of dry monsoon forests and sandy dunes is home to majestic elephants, sloth bears, spotted deer, and water buffalo. The park's spectacular biodiversity and the dramatic backdrop of the Indian Ocean make it a world-class safari experience.",
+            "district": "hambantota",
+            "province": "Western",
+            "categories": [
+                "Wildlife & Safari"
+            ],
+            "image": "/images/destinations/yala.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.3725,
+                "lng": 81.5125
+            },
+            "slug": "yala-national-park",
+            "category": "Wildlife & Safari"
+        },
+        {
+            "id": "bundala-national-park",
+            "name": "Bundala National Park",
+            "description": "Bundala National Park is a globally recognized RAMSAR wetland and a paradise for birdwatchers. Located in the arid southeast, its complex network of lagoons and scrublands hosts thousands of migratory birds, including Greater Flamingos. It is also an important habitat for elephants and is the only park in Sri Lanka where both Marsh and Estuarine crocodiles coexist.",
+            "district": "hambantota",
+            "province": "Western",
+            "categories": [
+                "Wildlife & Safari"
+            ],
+            "image": "/images/destinations/bundala.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.1969,
+                "lng": 81.2187
+            },
+            "slug": "bundala-national-park",
+            "category": "Wildlife & Safari"
+        },
+        {
+            "id": "kumana-national-park",
+            "name": "Kumana National Park",
+            "description": "Formerly known as Yala East, Kumana National Park is world-renowned for its central mangrove swamp, a vital nesting ground for thousands of waterbirds. During the migratory season, the park comes alive with the calls of painted storks, herons, and egrets. Its rugged, remote terrain also offers a more secluded safari experience, frequently yielding sightings of leopards and elephants.",
+            "district": "hambantota",
+            "province": "Western",
+            "categories": [
+                "Wildlife & Safari"
+            ],
+            "image": "/images/destinations/kumana.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.5244,
+                "lng": 81.7051
+            },
+            "slug": "kumana-national-park",
+            "category": "Wildlife & Safari"
+        },
+        {
+            "id": "ussangoda",
+            "name": "Ussangoda National Park",
+            "description": "Ussangoda is a surreal, plateau-like landscape on the southern coast, striking for its unusual red soil and stunted vegetation. Legend and local folklore suggest it was a landing site for King Ravana's flying chariot, while scientists study it for its unique mineral composition. The area ends in dramatic cliffs that plunge into the Indian Ocean, offering breathtaking coastal views.",
+            "district": "hambantota",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology"
+            ],
+            "image": "/images/destinations/ussangoda.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.1011,
+                "lng": 80.9856
+            },
+            "slug": "ussangoda",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "hummanaya-blowhole",
+            "name": "Hummanaya Blowhole",
+            "description": "The Hummanaya Blowhole is the only natural blowhole in Sri Lanka and the second largest in the world. During the monsoon season, sea water is forced through a narrow subterranean cavern, erupting in a spectacular fountain that can reach heights of up to 30 meters. The sheer power of the spray and the thunderous roar make it a captivating natural spectacle.",
+            "district": "hambantota",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology",
+                "Adventure & Sports"
+            ],
+            "image": "/images/destinations/hummanaya.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 5.9897,
+                "lng": 80.7188
+            },
+            "slug": "hummanaya-blowhole",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "temple-of-tooth",
+            "name": "Temple of the Sacred Tooth Relic",
+            "description": "The Sri Dalada Maligawa, or Temple of the Sacred Tooth Relic, is the most sacred site in the Buddhist world, housing a dental relic of the Buddha. Located in the heart of the hill capital Kandy, the golden-roofed temple is a masterpiece of Kandyan architecture. Its daily rituals (Thevava) and the annual Esala Perahera festival draw thousands of devotees and visitors from across the globe.",
+            "district": "kandy",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/temple-of-tooth.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 7.2936,
+                "lng": 80.6413
+            },
+            "slug": "temple-of-tooth",
+            "category": "Heritage"
+        },
+        {
+            "id": "peradeniya-gardens",
+            "name": "Royal Botanic Gardens Peradeniya",
+            "description": "The Royal Botanic Gardens in Peradeniya is the largest and most beautifully landscaped botanical garden in Sri Lanka. Originally reserved for Kandyan royalty, it now covers 147 acres and features a world-renowned orchid house, a massive centuries-old Javan fig tree, and the iconic Avenue of Royal Palms. It is a tranquil haven of biodiversity near the Mahaweli River.",
+            "district": "kandy",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology"
+            ],
+            "image": "/images/destinations/peradeniya.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 7.2718,
+                "lng": 80.5968
+            },
+            "slug": "peradeniya-gardens",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "knuckles-range",
+            "name": "Knuckles Mountain Range",
+            "description": "The Knuckles Mountain Range is a UNESCO World Heritage site named for its resemblance to a clenched fist. This rugged Highland region features mist-covered peaks, hidden waterfalls, and trekker's paradises like Pitawala Pathana. It is a vital biodiversity hotspot, home to numerous endemic plants and animals found nowhere else on earth.",
+            "district": "kandy",
+            "province": "Western",
+            "categories": [
+                "Hiking & Trekking",
+                "Nature & Ecology"
+            ],
+            "image": "/images/destinations/knuckles.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 7.4331,
+                "lng": 80.7811
+            },
+            "slug": "knuckles-range",
+            "category": "Hiking & Trekking"
+        },
+        {
+            "id": "embekke-temple",
+            "name": "Embekke Devalaya",
+            "description": "The Embekke Devalaya is a 14th-century temple renowned for the most exquisite wood carvings in Sri Lanka. The ornate wooden pillars of the 'Drummers Hall' are intricately carved with figures of dancers, warriors, animals, and floral patterns. It stands as a pinnacle of ancient Sri Lankan craftsmanship and Gampola-period architecture.",
+            "district": "kandy",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/embekke.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 7.2181,
+                "lng": 80.5676
+            },
+            "slug": "embekke-temple",
+            "category": "Heritage"
+        },
+        {
+            "id": "hanthana-range",
+            "name": "Hanthana Mountain Range",
+            "description": "The Hanthana Mountain Range provides a scenic backdrop to the city of Kandy and is a popular destination for hikers and nature lovers. Its seven peaks offer varying levels of difficulty and reward climbers with panoramic views of the city and the central highlands. It also houses the Ceylon Tea Museum, celebrating the heritage of the region's famous export.",
+            "district": "kandy",
+            "province": "Western",
+            "categories": [
+                "Hiking & Trekking"
+            ],
+            "image": "/images/destinations/hanthana.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 7.2526,
+                "lng": 80.6277
+            },
+            "slug": "hanthana-range",
+            "category": "Hiking & Trekking"
+        },
+        {
+            "id": "sigiriya",
+            "name": "Sigiriya Rock Fortress",
+            "description": "Sigiriya, or Lion Rock, is a staggering 5th-century fortress and UNESCO World Heritage site built by King Kasyapa. This 200-meter-tall granite monolith features a palace on its summit, world-famous frescoes of 'Cloud Maidens', and a massive set of lion's paws guarding the entrance. Its symmetrical water gardens and complex irrigation systems are a marvel of ancient urban planning.",
+            "district": "matale",
+            "province": "Western",
+            "categories": [
+                "Heritage",
+                "Hiking & Trekking"
+            ],
+            "image": "/images/destinations/sigiriya.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
                 "lat": 7.957,
                 "lng": 80.7603
             },
-            "attractions": [
-                {
-                    "name": "Pidurangala Rock",
-                    "description": "Offers the best view of Sigiriya Rock."
-                },
-                {
-                    "name": "Sigiriya Museum",
-                    "description": "Describes the history and architecture."
-                }
-            ]
+            "slug": "sigiriya",
+            "category": "Heritage"
         },
         {
-            "id": "galle",
-            "name": "Galle",
-            "description": "A historic Dutch Fort and UNESCO World Heritage site. Galle is the best example of a fortified city built by Europeans in South and South East Asia.",
-            "category": "Culture",
-            "image": "/images/destinations/galle.webp",
-            "slug": "galle",
-            "highlights": [
-                "Dutch Fort",
-                "Lighthouse",
-                "Maritime Museum",
-                "Dutch Reformed Church"
+            "id": "dambulla-cave-temple",
+            "name": "Dambulla Cave Temple",
+            "description": "The Dambulla Royal Cave Temple is the largest and best-preserved cave temple complex in Sri Lanka. This UNESCO site consists of five separate caves carved into a massive rock, containing over 150 Buddha statues and roughly 2,100 square meters of intricate religious murals. The site has been a place of pilgrimage for over 22 centuries.",
+            "district": "matale",
+            "province": "Western",
+            "categories": [
+                "Heritage"
             ],
+            "image": "/images/destinations/dambulla.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
             "map": {
-                "x": 30,
-                "y": 85,
-                "lat": 6.0535,
-                "lng": 80.221
+                "x": 50,
+                "y": 50,
+                "lat": 7.8561,
+                "lng": 80.6483
             },
-            "attractions": [
-                {
-                    "name": "Unawatuna Beach",
-                    "description": "A popular beach just minutes away."
-                },
-                {
-                    "name": "Jungle Beach",
-                    "description": "A secluded bay perfect for snorkeling."
-                }
-            ]
+            "slug": "dambulla-cave-temple",
+            "category": "Heritage"
         },
         {
-            "id": "kandy",
-            "name": "Kandy",
-            "description": "The cultural capital and home to the Temple of the Tooth. Kandy is a major city in Sri Lanka located in the Central Province.",
-            "category": "Culture",
-            "image": "/images/destinations/kandy.webp",
-            "slug": "kandy",
-            "highlights": [
-                "Temple of the Tooth Relic",
-                "Kandy Lake",
-                "Peradeniya Botanical Gardens",
-                "Cultural Dance Show"
+            "id": "pidurangala",
+            "name": "Pidurangala Rock",
+            "description": "Pidurangala Rock is the rugged, neighboring brother of Sigiriya, offering a more adventurous climb and the most iconic panoramic view of the Lion Rock itself. The hike leads past an ancient reclining Buddha and ends on a vast summit of flat rock, providing an unparalleled 360-degree vista of the surrounding jungle and cultural triangle.",
+            "district": "matale",
+            "province": "Western",
+            "categories": [
+                "Hiking & Trekking"
             ],
+            "image": "/images/destinations/pidurangala.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
             "map": {
-                "x": 48,
-                "y": 55,
-                "lat": 7.2906,
-                "lng": 80.6337
+                "x": 50,
+                "y": 50,
+                "lat": 7.9654,
+                "lng": 80.7614
             },
-            "attractions": [
-                {
-                    "name": "Udawatta Kele Sanctuary",
-                    "description": "A historic forest reserve."
-                },
-                {
-                    "name": "Ceylon Tea Museum",
-                    "description": "Learn about the history of tea."
-                }
-            ]
+            "slug": "pidurangala",
+            "category": "Hiking & Trekking"
         },
         {
-            "id": "ella",
-            "name": "Ella",
-            "description": "A mountain village famous for its hiking trails and scenic views. Ella offers breathtaking views and a cool climate.",
-            "category": "Nature",
-            "image": "/images/destinations/ella.webp",
-            "slug": "ella",
-            "highlights": [
-                "Nine Arch Bridge",
-                "Little Adams Peak",
-                "Ella Rock",
-                "Ravana Falls"
+            "id": "riverston",
+            "name": "Riverston & Mini World's End",
+            "description": "Riverston, part of the Knuckles Range, is known for its mystical 'Mini World's End' cliff and spectacular views of the Thelgamuwa Valley. The area is frequently shrouded in mist and features a unique montane forest ecosystem. It's a favorite for trekking, offering cool temperatures and a dramatic mountain landscape that feels worlds away from the coast.",
+            "district": "matale",
+            "province": "Western",
+            "categories": [
+                "Hiking & Trekking",
+                "Nature & Ecology"
             ],
+            "image": "/images/destinations/riverston.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
             "map": {
-                "x": 55,
-                "y": 65,
-                "lat": 6.8667,
-                "lng": 81.0466
+                "x": 50,
+                "y": 50,
+                "lat": 7.5458,
+                "lng": 80.7236
             },
-            "attractions": [
-                {
-                    "name": "Lipton Seat",
-                    "description": "Where Sir Thomas Lipton surveyed his tea empire."
-                },
-                {
-                    "name": "Diyaluma Falls",
-                    "description": "The second highest waterfall in Sri Lanka."
-                }
-            ]
+            "slug": "riverston",
+            "category": "Hiking & Trekking"
         },
         {
-            "id": "nuwara-eliya",
-            "name": "Nuwara Eliya",
-            "description": "Often referred to as 'Little England', this city in the hill country is famous for its temperate climate and picturesque landscape of tea plantations.",
-            "category": "Nature",
-            "image": "/images/destinations/nuwara-eliya.webp",
-            "slug": "nuwara-eliya",
-            "highlights": [
-                "Gregory Lake",
-                "Victoria Park",
-                "Tea Factories",
-                "Horton Plains"
+            "id": "sembuwatta-lake",
+            "name": "Sembuwatta Lake",
+            "description": "Sembuwatta Lake is a breathtaking sapphire-blue man-made reservoir nestled within a lush tea estate in Elkaduwa. Surrounded by towering pine forests and rolling green hills, the lake's tranquil atmosphere and misty mornings give it a surreal, alpine feel. It is a popular spot for picnics, boat rides, and photography.",
+            "district": "matale",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology"
             ],
+            "image": "/images/destinations/sembuwatta.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
             "map": {
-                "x": 48,
-                "y": 60,
-                "lat": 6.9497,
-                "lng": 80.7891
+                "x": 50,
+                "y": 50,
+                "lat": 7.4428,
+                "lng": 80.6974
             },
-            "attractions": []
+            "slug": "sembuwatta-lake",
+            "category": "Nature & Ecology"
         },
         {
-            "id": "yala",
-            "name": "Yala National Park",
-            "description": "The most visited and second largest national park in Sri Lanka. It is best known for its variety of wild animals and holds the highest density of leopards in the world.",
-            "category": "Wildlife",
-            "image": "/images/destinations/yala.webp",
-            "slug": "yala",
-            "highlights": [
-                "Leopard Safari",
-                "Bear Sighting",
-                "Bird Watching",
-                "Camping"
+            "id": "horton-plains",
+            "name": "Horton Plains National Park",
+            "description": "Horton Plains National Park is a high-altitude plateau characterized by silent montane forests and windswept grasslands. It is home to the dramatic 'World's End' cliff, which drops vertically for nearly 880 meters, offering views that reach as far as the coast on clear days. The park is also famous for the beautiful Baker's Falls and its resident herds of Sambar deer.",
+            "district": "nuwara-eliya",
+            "province": "Western",
+            "categories": [
+                "Hiking & Trekking",
+                "Wildlife & Safari",
+                "Nature & Ecology"
             ],
+            "image": "/images/destinations/horton-plains.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
             "map": {
-                "x": 65,
-                "y": 80,
-                "lat": 6.381,
-                "lng": 81.3965
+                "x": 50,
+                "y": 50,
+                "lat": 6.8023,
+                "lng": 80.8028
             },
-            "attractions": []
+            "slug": "horton-plains",
+            "category": "Hiking & Trekking"
         },
         {
-            "id": "mirissa",
-            "name": "Mirissa",
-            "description": "A tropical paradise famous for whale watching and its stunning crescent beach. A laid-back atmosphere perfect for relaxation.",
-            "category": "Beach",
-            "image": "/images/destinations/mirissa.webp",
-            "slug": "mirissa",
-            "highlights": [
-                "Whale Watching",
-                "Coconut Tree Hill",
-                "Parrot Rock",
-                "Secret Beach"
+            "id": "moon-plains",
+            "name": "Moon Plains",
+            "description": "Moon Plains, or Sandathenna, is a recently opened eco-agricultural zone near Nuwara Eliya that offers a spectacular 360-degree view of the Central Highland peaks. A safari jeep ride through the plains allows visitors to see Kirigalpotha and Pidurutalagala mountains, while spotting buffalo, elk, and numerous species of endemic birds in a pristine, tranquil setting.",
+            "district": "nuwara-eliya",
+            "province": "Western",
+            "categories": [
+                "Hiking & Trekking",
+                "Nature & Ecology"
             ],
+            "image": "/images/destinations/moon-plains.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
             "map": {
-                "x": 35,
-                "y": 87,
-                "lat": 5.9482,
-                "lng": 80.4716
+                "x": 50,
+                "y": 50,
+                "lat": 6.9458,
+                "lng": 80.8112
             },
-            "attractions": []
+            "slug": "moon-plains",
+            "category": "Hiking & Trekking"
         },
         {
-            "id": "anuradhapura",
-            "name": "Anuradhapura",
-            "description": "One of the ancient capitals of Sri Lanka, famous for its well-preserved ruins of an ancient Sinhala civilization.",
-            "category": "Culture",
-            "image": "/images/destinations/anuradhapura.webp",
-            "slug": "anuradhapura",
-            "highlights": [
-                "Sri Maha Bodhi",
-                "Ruwanwelisaya",
-                "Jetavanaramaya",
-                "Isurumuniya"
+            "id": "victoria-park",
+            "name": "Victoria Park Nuwara Eliya",
+            "description": "Victoria Park, located in the heart of Nuwara Eliya, is one of the most beautiful and well-maintained urban parks in South Asia. Named in honor of Queen Victoria's Jubilee, the park is famous for its vibrant rose collections, rare birds, and exotic flowering plants that thrive in the cool mountain climate. It is a perfect spot for a peaceful stroll in 'Little England'.",
+            "district": "nuwara-eliya",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology"
             ],
+            "image": "/images/destinations/victoria-park.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
             "map": {
-                "x": 40,
-                "y": 25,
-                "lat": 8.3114,
-                "lng": 80.4037
+                "x": 50,
+                "y": 50,
+                "lat": 6.9652,
+                "lng": 80.7712
             },
-            "attractions": []
+            "slug": "victoria-park",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "sri-maha-bodhi",
+            "name": "Sri Maha Bodhi",
+            "description": "The Jaya Sri Maha Bodhi is a sacred fig tree that is the oldest human-planted tree in the world with a recorded history. It was grown from a sapling of the original Bodhi tree under which the Buddha attained enlightenment. For over 2,300 years, it has remained the heart of the ancient city of Anuradhapura and a primary site of Buddhist devotion.",
+            "district": "anuradhapura",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/sri-maha-bodhi.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 8.3448,
+                "lng": 80.3972
+            },
+            "slug": "sri-maha-bodhi",
+            "category": "Heritage"
+        },
+        {
+            "id": "ruwanwelisaya",
+            "name": "Ruwanwelisaya Stupa",
+            "description": "The Ruwanwelisaya is a colossal stupa and a masterpiece of ancient Sri Lankan engineering. Built by King Dutugemunu in 140 BC, its massive white dome is surrounded by a wall of hundreds of carved elephants. It remains one of the world's tallest ancient monuments and is deeply revered as a symbol of the resilience and artistry of the Anuradhapura Kingdom.",
+            "district": "anuradhapura",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/ruwanwelisaya.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 8.3501,
+                "lng": 80.3951
+            },
+            "slug": "ruwanwelisaya",
+            "category": "Heritage"
+        },
+        {
+            "id": "mihintale",
+            "name": "Mihintale",
+            "description": "Mihintale is a mountain peak regarded as the cradle of Buddhism in Sri Lanka. It is where the Buddhist monk Mahinda met King Devanampiya Tissa in the 3rd century BC. The site features several ancient monuments, including the Kantaka Cetiya and the Aradhana Gala, connected by a grand staircase of 1,840 stone steps leading to stunning views.",
+            "district": "anuradhapura",
+            "province": "Western",
+            "categories": [
+                "Heritage",
+                "Hiking & Trekking"
+            ],
+            "image": "/images/destinations/mihintale.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 8.3512,
+                "lng": 80.5168
+            },
+            "slug": "mihintale",
+            "category": "Heritage"
+        },
+        {
+            "id": "isurumuniya",
+            "name": "Isurumuniya Temple",
+            "description": "Isurumuniya is a charming rock temple built into a massive boulder near the Tisa Wewa reservoir. It is world-famous for its exquisite 5th-century stone carvings, most notably the 'Isurumuniya Lovers' and 'The Elephant Pond'. The temple's serene location and artistic sophistication make it a highlight of the ancient capital.",
+            "district": "anuradhapura",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/isurumuniya.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 8.3344,
+                "lng": 80.3899
+            },
+            "slug": "isurumuniya",
+            "category": "Heritage"
+        },
+        {
+            "id": "wilpattu",
+            "name": "Wilpattu National Park",
+            "description": "Wilpattu National Park is Sri Lanka's largest and oldest national park, unique for its 'Willus'—natural, sand-rimmed water basins that fill with rainwater. It is a premier destination for spotting leopards, sloth bears, and spotted deer in a dense dry-zone forest. Its relative seclusion compared to Yala offers a more peaceful and authentic wilderness experience.",
+            "district": "anuradhapura",
+            "province": "Western",
+            "categories": [
+                "Wildlife & Safari"
+            ],
+            "image": "/images/destinations/wilpattu.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 8.4411,
+                "lng": 80.0094
+            },
+            "slug": "wilpattu",
+            "category": "Wildlife & Safari"
+        },
+        {
+            "id": "gal-vihara",
+            "name": "Gal Vihara",
+            "description": "The Gal Vihara is a rock temple that represents the pinnacle of ancient Sri Lankan stone carving. It features four magnificent Buddha statues—including a 14-meter-long reclining Buddha—all carved from a single large granite cliff. The serenity, scale, and incredible detail of the sculptures make it an unforgettable site within the Polonnaruwa kingdom.",
+            "district": "polonnaruwa",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/gal-vihara.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 7.9519,
+                "lng": 81.0022
+            },
+            "slug": "gal-vihara",
+            "category": "Heritage"
+        },
+        {
+            "id": "polonnaruwa-ancient-city",
+            "name": "Polonnaruwa Ancient City",
+            "description": "The Ancient City of Polonnaruwa was the thriving second capital of Sri Lanka after the fall of Anuradhapura. This UNESCO site is home to remarkably well-preserved ruins, including the Royal Palace, the Vatadage (circular relic house), and the massive Parakrama Samudra reservoir. It is best explored by bicycle, allowing for an immersive journey through the golden age of medieval Sri Lanka.",
+            "district": "polonnaruwa",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/polonnaruwa.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 7.9403,
+                "lng": 81.0016
+            },
+            "slug": "polonnaruwa-ancient-city",
+            "category": "Heritage"
+        },
+        {
+            "id": "minneriya",
+            "name": "Minneriya National Park",
+            "description": "Minneriya National Park is world-famous for 'The Gathering'—the largest meeting of Asian elephants on earth. During the dry season (August to September), hundreds of elephants migrate to the receding shores of the ancient Minneriya Tank for water and fresh grass. It is a spectacular natural phenomenon and one of the best wildlife events in Asia.",
+            "district": "polonnaruwa",
+            "province": "Western",
+            "categories": [
+                "Wildlife & Safari"
+            ],
+            "image": "/images/destinations/minneriya.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 8.0192,
+                "lng": 80.8544
+            },
+            "slug": "minneriya",
+            "category": "Wildlife & Safari"
+        },
+        {
+            "id": "kaudulla",
+            "name": "Kaudulla National Park",
+            "description": "Kaudulla National Park is a vital wildlife corridor and an alternative site to witness the seasonal elephant gathering. Centered around the historic Kaudulla Tank, it provides a lush habitat for large herds of elephants, wild boar, and crocodiles. The park's open grasslands and scenic water bodies make it an excellent spot for safari photography.",
+            "district": "polonnaruwa",
+            "province": "Western",
+            "categories": [
+                "Wildlife & Safari"
+            ],
+            "image": "/images/destinations/kaudulla.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 8.1632,
+                "lng": 80.9026
+            },
+            "slug": "kaudulla",
+            "category": "Wildlife & Safari"
+        },
+        {
+            "id": "ethagala",
+            "name": "Ethagala (Elephant Rock)",
+            "description": "Ethagala, or Elephant Rock, is a massive granite monolith that towers over the city of Kurunegala. Named for its resemblance to a kneeling elephant, the rock's summit features an 88-foot-tall seated Buddha statue. Climbing Ethagala offers a peaceful atmosphere and a breathtaking panoramic view of the city and its surrounding lakes.",
+            "district": "kurunegala",
+            "province": "Western",
+            "categories": [
+                "Hiking & Trekking",
+                "Heritage"
+            ],
+            "image": "/images/destinations/ethagala.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 7.4856,
+                "lng": 80.3701
+            },
+            "slug": "ethagala",
+            "category": "Hiking & Trekking"
+        },
+        {
+            "id": "yapahuwa",
+            "name": "Yapahuwa Rock Fortress",
+            "description": "Yapahuwa was briefly the capital of Sri Lanka in the 13th century and is famous for its majestic stone staircase that led to the Temple of the Tooth. This 'Rock Fortress' is often compared to Sigiriya, featuring intricate carvings of lions and dancers on the steep steps. From the top, visitors are rewarded with sweeping views of the North Western plains.",
+            "district": "kurunegala",
+            "province": "Western",
+            "categories": [
+                "Heritage",
+                "Hiking & Trekking"
+            ],
+            "image": "/images/destinations/yapahuwa.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 7.8183,
+                "lng": 80.3015
+            },
+            "slug": "yapahuwa",
+            "category": "Heritage"
+        },
+        {
+            "id": "ridi-viharaya",
+            "name": "Ridi Viharaya (Silver Temple)",
+            "description": "Ridi Viharaya, or the Silver Temple, is an ancient Buddhist cave temple built on a site where silver ore was discovered during the reign of King Dutugemunu. It is famous for its 9-meter-long reclining Buddha and unique 18th-century porcelain tiles gifted by the Dutch. The temple's intricate murals and historic atmosphere are deeply captivating.",
+            "district": "kurunegala",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/ridi-viharaya.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 7.5342,
+                "lng": 80.5056
+            },
+            "slug": "ridi-viharaya",
+            "category": "Heritage"
+        },
+        {
+            "id": "arankele",
+            "name": "Arankele Monastery",
+            "description": "Arankele is a serene forest monastery that served as a retreat for austere Buddhist monks known as Pansakulikas. The site features ancient stone pathways, meditation platforms, and hot-water baths nestled within a dense forest. Its peaceful, untouched environment offers a rare glimpse into the ascetic monastic life of ancient Sri Lanka.",
+            "district": "kurunegala",
+            "province": "Western",
+            "categories": [
+                "Heritage",
+                "Nature & Ecology"
+            ],
+            "image": "/images/destinations/arankele.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 7.6971,
+                "lng": 80.3956
+            },
+            "slug": "arankele",
+            "category": "Heritage"
+        },
+        {
+            "id": "kalpitiya",
+            "name": "Kalpitiya Peninsula",
+            "description": "Kalpitiya is a premier coastal destination in the North Western province, renowned for being one of the best kite-surfing spots in the world. It is also famous for its large pods of Spinner Dolphins and seasonal sightings of Blue and Sperm whales. The area's tranquil lagoons, salt pans, and remote islands offer a unique, rugged adventure experience.",
+            "district": "puttalam",
+            "province": "Western",
+            "categories": [
+                "Adventure & Sports",
+                "Wildlife & Safari",
+                "Beach & Coastal"
+            ],
+            "image": "/images/destinations/kalpitiya.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 8.2325,
+                "lng": 79.7611
+            },
+            "slug": "kalpitiya",
+            "category": "Adventure & Sports"
+        },
+        {
+            "id": "pigeon-island",
+            "name": "Pigeon Island National Park",
+            "description": "Pigeon Island National Park, located off the coast of Nilaveli, is one of the two marine national parks in Sri Lanka. It consists of two islands surrounded by some of the best-preserved coral reefs in the country. Snorkelers and divers can explore crystal-clear waters filled with Blacktip Reef Sharks, sea turtles, and hundreds of species of colorful reef fish.",
+            "district": "trincomalee",
+            "province": "Western",
+            "categories": [
+                "Wildlife & Safari",
+                "Beach & Coastal",
+                "Adventure & Sports"
+            ],
+            "image": "/images/destinations/pigeon-island.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 8.7183,
+                "lng": 81.2017
+            },
+            "slug": "pigeon-island",
+            "category": "Wildlife & Safari"
+        },
+        {
+            "id": "nilaveli-beach",
+            "name": "Nilaveli Beach",
+            "description": "Nilaveli Beach is widely considered one of the most beautiful beaches in Sri Lanka, famous for its wide, pristine stretch of white sand and calm, turquoise waters. Located north of Trincomalee, it offers a peaceful retreat for sunbathing and swimming. It also serves as the main departure point for boats to the nearby Pigeon Island.",
+            "district": "trincomalee",
+            "province": "Western",
+            "categories": [
+                "Beach & Coastal"
+            ],
+            "image": "/images/destinations/nilaveli.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 8.6882,
+                "lng": 81.1895
+            },
+            "slug": "nilaveli-beach",
+            "category": "Beach & Coastal"
+        },
+        {
+            "id": "koneswaram-temple",
+            "name": "Koneswaram Temple",
+            "description": "The Koneswaram Temple is a magnificent Hindu temple complex perched on Swami Rock, a cliff overlooking the Trincomalee harbor. Known as the 'Temple of a Thousand Pillars', it is one of the five most sacred Shiva temples in Sri Lanka. The vibrant architecture, dramatic cliffside location, and deep historical roots make it a spiritual and visual landmark.",
+            "district": "trincomalee",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/koneswaram.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 8.588,
+                "lng": 81.2449
+            },
+            "slug": "koneswaram-temple",
+            "category": "Heritage"
+        },
+        {
+            "id": "kanniya-hot-springs",
+            "name": "Kanniya Hot Springs",
+            "description": "The Kanniya Hot Springs consist of seven square-shaped wells, each with a slightly different water temperature. Local legend associates the springs with King Ravana of the Ramayana. The water is believed to have various therapeutic and healing properties, making it a popular ritual bathing spot for both locals and tourists visiting Trincomalee.",
+            "district": "trincomalee",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology"
+            ],
+            "image": "/images/destinations/kanniya.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 8.5862,
+                "lng": 81.1764
+            },
+            "slug": "kanniya-hot-springs",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "pasikudah-beach",
+            "name": "Pasikudah Beach",
+            "description": "Pasikudah Beach is famous for its exceptionally shallow and calm bay, allowing visitors to walk out for hundreds of meters into the turquoise ocean. The golden sand and gentle waves make it one of the safest swimming spots in the country. The area has recently developed into a luxury resort hub, perfect for a high-end beach getaway.",
+            "district": "batticaloa",
+            "province": "Western",
+            "categories": [
+                "Beach & Coastal"
+            ],
+            "image": "/images/destinations/pasikudah.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 7.9255,
+                "lng": 81.5645
+            },
+            "slug": "pasikudah-beach",
+            "category": "Beach & Coastal"
+        },
+        {
+            "id": "batticaloa-lagoon",
+            "name": "Batticaloa Lagoon",
+            "description": "The Batticaloa Lagoon is a massive estuarine lagoon famous for its 'Singing Fish'—a unique musical sound produced by marine life during full moon nights. A boat ride through its tranquil waters allows visitors to see the historic Dutch Fort of Batticaloa, explore mangrove islands, and witness traditional lagoon fishing in the Eastern province.",
+            "district": "batticaloa",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology"
+            ],
+            "image": "/images/destinations/batticaloa-lagoon.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 7.7121,
+                "lng": 81.6964
+            },
+            "slug": "batticaloa-lagoon",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "arugam-bay",
+            "name": "Arugam Bay",
+            "description": "Arugam Bay is a world-class surfing destination and the only location in Sri Lanka that consistently hosts international competitions. Famous for its long, peeling right-hand point breaks like Main Point and Whiskey Point, it has a laid-back, surf-centric vibe. Beyond the waves, the nearby Kumana National Park offers exceptional wildlife viewing.",
+            "district": "ampara",
+            "province": "Western",
+            "categories": [
+                "Adventure & Sports",
+                "Beach & Coastal"
+            ],
+            "image": "/images/destinations/arugam-bay.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.8415,
+                "lng": 81.8324
+            },
+            "slug": "arugam-bay",
+            "category": "Adventure & Sports"
+        },
+        {
+            "id": "gal-oya",
+            "name": "Gal Oya National Park",
+            "description": "Gal Oya National Park is one of Sri Lanka's most untouched wilderness areas, centered around the massive Senanayake Samudra reservoir. It is the only park in the country where you can take a boat safari to see elephants swimming between islands. Its rugged, hilly terrain provides a truly remote and adventurous nature experience.",
+            "district": "ampara",
+            "province": "Western",
+            "categories": [
+                "Wildlife & Safari",
+                "Adventure & Sports"
+            ],
+            "image": "/images/destinations/gal-oya.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 7.2215,
+                "lng": 81.4589
+            },
+            "slug": "gal-oya",
+            "category": "Wildlife & Safari"
+        },
+        {
+            "id": "lahugala",
+            "name": "Lahugala Kitulana National Park",
+            "description": "Lahugala Kitulana National Park is a small but vital sanctuary famous for its large herds of elephants that congregate around the Lahugala Tank to feed on 'Beru' grass. It is one of the most reliable places in Sri Lanka to see herds of 50 or more elephants throughout the year, set against the backdrop of an ancient dry-zone forest.",
+            "district": "ampara",
+            "province": "Western",
+            "categories": [
+                "Wildlife & Safari"
+            ],
+            "image": "/images/destinations/lahugala.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.8925,
+                "lng": 81.7169
+            },
+            "slug": "lahugala",
+            "category": "Wildlife & Safari"
+        },
+        {
+            "id": "nallur-temple",
+            "name": "Nallur Kandaswamy Kovil",
+            "description": "The Nallur Kandaswamy Kovil in Jaffna is one of the most significant and magnificent Hindu temple complexes in Sri Lanka. Rebuilt in its current form in 1749, it features a towering golden Gopuram and a massive courtyard. The temple is famous for its elaborate daily rituals and its vibrant 25-day annual festival, which is a pinnacle of Tamil cultural expression.",
+            "district": "jaffna",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/nallur.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 9.6745,
+                "lng": 80.0294
+            },
+            "slug": "nallur-temple",
+            "category": "Heritage"
+        },
+        {
+            "id": "jaffna-fort",
+            "name": "Jaffna Fort",
+            "description": "The Jaffna Fort is a massive pentagonal fortification originally built by the Portuguese in 1618 and later expanded by the Dutch. It is considered one of the best examples of military architecture in the region. Recently restored, its sturdy ramparts offer panoramic views of the Jaffna lagoon and provide a historic space to explore the city's colonial past.",
+            "district": "jaffna",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/jaffna-fort.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 9.6611,
+                "lng": 80.0101
+            },
+            "slug": "jaffna-fort",
+            "category": "Heritage"
+        },
+        {
+            "id": "delft-island",
+            "name": "Delft Island (Neduntheevu)",
+            "description": "Delft Island, or Neduntheevu, is a remote and rugged island in the Palk Strait, famous for its wild horses left behind by the Portuguese and Dutch. The island features unique coral stone walls, a massive ancient Baobab tree, and the ruins of a Dutch fort. Its dry, windswept landscape and traditional way of life offer a surreal, step-back-in-time experience.",
+            "district": "jaffna",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology",
+                "Heritage"
+            ],
+            "image": "/images/destinations/delft.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 9.5167,
+                "lng": 79.6833
+            },
+            "slug": "delft-island",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "casuarina-beach",
+            "name": "Casuarina Beach",
+            "description": "Casuarina Beach, located on Karaitivu Island, is famous for its powdery white sand and shallow, crystal-clear waters. Named after the Casuarina trees that fringe the shore, it is one of the best swimming beaches in the Jaffna peninsula. Its tranquil atmosphere and beautiful sunset views make it a favorite local retreat.",
+            "district": "jaffna",
+            "province": "Western",
+            "categories": [
+                "Beach & Coastal"
+            ],
+            "image": "/images/destinations/casuarina.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 9.7571,
+                "lng": 79.8856
+            },
+            "slug": "casuarina-beach",
+            "category": "Beach & Coastal"
+        },
+        {
+            "id": "nagadeepa",
+            "name": "Nagadeepa Purana Vihara",
+            "description": "Nagadeepa Purana Vihara is an ancient Buddhist temple located on the island of Nainativu. It is recognized as one of the Solosmasthana (sixteen sacred sites) where the Buddha is said to have visited during his second trip to Sri Lanka to settle a dispute between two Naga kings. The island is also home to the vibrant Nagapooshani Amman Hindu Kovil.",
+            "district": "jaffna",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/nagadeepa.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 9.6133,
+                "lng": 79.7745
+            },
+            "slug": "nagadeepa",
+            "category": "Heritage"
+        },
+        {
+            "id": "adams-bridge",
+            "name": "Adam's Bridge (Rama Setu)",
+            "description": "Adam's Bridge, also known as Rama's Bridge, is a chain of limestone shoals that once connected Sri Lanka to India. Visible from the Mannar peninsula, these sandbanks are steeped in legend, particularly in the Ramayana. For nature lovers, it is an important habitat for migratory birds and offers a rugged, end-of-the-world feel at the northwestern tip of the country.",
+            "district": "mannar",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology",
+                "Heritage"
+            ],
+            "image": "/images/destinations/adams-bridge.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 9.1235,
+                "lng": 79.4447
+            },
+            "slug": "adams-bridge",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "vankalai-sanctuary",
+            "name": "Vankalai Sanctuary",
+            "description": "The Vankalai Sanctuary in Mannar is a globally recognized RAMSAR wetland consisting of mangroves, salt marshes, and lagoons. It is a critical stopover for thousands of migratory birds, including Greater Flamingos, Pintailed Ducks, and various plovers. Its pristine, vast landscape provides an exceptional birdwatching experience in the undisturbed North.",
+            "district": "mannar",
+            "province": "Western",
+            "categories": [
+                "Wildlife & Safari"
+            ],
+            "image": "/images/destinations/vankalai.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 8.8786,
+                "lng": 79.9324
+            },
+            "slug": "vankalai-sanctuary",
+            "category": "Wildlife & Safari"
+        },
+        {
+            "id": "mannar-baobabs",
+            "name": "Mannar Baobab Trees",
+            "description": "Mannar is home to a collection of ancient, massive Baobab trees, believed to have been brought to Sri Lanka by Arab traders over 700 years ago. The most famous 'Bio-tree' at Pallimunai is over 7.5 meters in circumference and is a living monument to the region's ancient maritime trading links with Africa and the Middle East.",
+            "district": "mannar",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology"
+            ],
+            "image": "/images/destinations/mannar-baobabs.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 8.9812,
+                "lng": 79.9142
+            },
+            "slug": "mannar-baobabs",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "thiruketheeswaram",
+            "name": "Thiruketheeswaram Temple",
+            "description": "Thiruketheeswaram is one of the five most sacred Shiva temples in Sri Lanka, located in the historic port city of Mantai in Mannar. Associated with the legend of the Ramayana and the sage Agastya, it has been a major pilgrimage site for millennia. The temple complex is known for its beautiful architecture and its sacred 'Palavi' tank.",
+            "district": "mannar",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/thiruketheeswaram.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 8.9567,
+                "lng": 79.9856
+            },
+            "slug": "thiruketheeswaram",
+            "category": "Heritage"
+        },
+        {
+            "id": "madhu-shrine",
+            "name": "Shrine of Our Lady of Madhu",
+            "description": "The Shrine of Our Lady of Madhu is the most revered Roman Catholic shrine in Sri Lanka, with a history spanning over 400 years. Set within a deep forest in the Mannar district, it served as a refuge for Christians during colonial persecutions. Today, it remains a symbol of peace and reconciliation, drawing pilgrims of all faiths from across the country.",
+            "district": "mannar",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/madhu-shrine.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 8.8519,
+                "lng": 80.1706
+            },
+            "slug": "madhu-shrine",
+            "category": "Heritage"
+        },
+        {
+            "id": "iranamadu-tank",
+            "name": "Iranamadu Tank",
+            "description": "The Iranamadu Tank is one of the largest irrigation reservoirs in the Northern Province, vital for the region's agriculture. Surrounded by a scenic landscape of forests and fields, it is a peaceful spot for birdwatching and photography. The tank's massive dam and vast expanse of water are a testament to the engineering and agricultural heritage of the Vanni region.",
+            "district": "kilinochchi",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology"
+            ],
+            "image": "/images/destinations/iranamadu.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 9.3021,
+                "lng": 80.4682
+            },
+            "slug": "iranamadu-tank",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "elephant-pass",
+            "name": "Elephant Pass",
+            "description": "Elephant Pass is the narrow strip of land that connects the Jaffna peninsula to the rest of the mainland. Historically named because elephants would use it to cross to the peninsula, it has been a strategically vital area for centuries. Today, it features several war memorials and offers a dramatic, windswept landscape as you travel north.",
+            "district": "kilinochchi",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/elephant-pass.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 9.5312,
+                "lng": 80.3985
+            },
+            "slug": "elephant-pass",
+            "category": "Heritage"
+        },
+        {
+            "id": "nanthikadal-lagoon",
+            "name": "Nanthikadal Lagoon",
+            "description": "Nanthikadal Lagoon is a large, shallow estuarine lagoon in the Mullaitivu district. Its tranquil waters and surrounding mangroves are a haven for numerous species of fish and waterbirds. The area is also significant for its recent history, and a journey around the lagoon provides a somber and reflective look at the resilience of the region.",
+            "district": "mullaitivu",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology",
+                "Wildlife & Safari"
+            ],
+            "image": "/images/destinations/nanthikadal.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 9.2845,
+                "lng": 80.7634
+            },
+            "slug": "nanthikadal-lagoon",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "kokkilai-sanctuary",
+            "name": "Kokkilai Bird Sanctuary",
+            "description": "Kokkilai Lagoon and its surrounding sanctuary are a paradise for birdwatchers in the northeastern tip of the country. It is famous for its massive seasonal population of migratory birds, particularly the rare Black-necked Stork and Greater Flamingo. Its remote location and undisturbed ecosystems offer a truly wild nature experience.",
+            "district": "mullaitivu",
+            "province": "Western",
+            "categories": [
+                "Wildlife & Safari"
+            ],
+            "image": "/images/destinations/kokkilai.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 9.0012,
+                "lng": 80.9156
+            },
+            "slug": "kokkilai-sanctuary",
+            "category": "Wildlife & Safari"
+        },
+        {
+            "id": "vavuniya-museum",
+            "name": "Archaeological Museum Vavuniya",
+            "description": "The Vavuniya Archaeological Museum houses an impressive collection of artifacts recovered from the Northern and North Central provinces. Its exhibits include ancient stone statues of the Buddha and Hindu deities, clay pots, and traditional agricultural tools, providing a valuable cultural and historical link between the ancient kingdoms and the Jaffna peninsula.",
+            "district": "vavuniya",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/vavuniya-museum.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 8.7532,
+                "lng": 80.4981
+            },
+            "slug": "vavuniya-museum",
+            "category": "Heritage"
+        },
+        {
+            "id": "madukanda-vihara",
+            "name": "Madukanda Vihara",
+            "description": "Madukanda Vihara is an ancient Buddhist temple near Vavuniya, believed to be the site where the sacred Tooth Relic was kept for its first night in Sri Lanka on its way to Anuradhapura. The temple features beautiful stone ruins, ancient ponds, and a serene atmosphere, making it an important historical landmark in the Vanni region.",
+            "district": "vavuniya",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/madukanda.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 8.7245,
+                "lng": 80.5367
+            },
+            "slug": "madukanda-vihara",
+            "category": "Heritage"
+        },
+        {
+            "id": "ella-rock",
+            "name": "Ella Rock",
+            "description": "Ella Rock is a challenging but deeply rewarding hike that offers one of the most spectacular cliffside views in the Central Highlands. The trail winds through eucalyptus forests and tea plantations before reaching a massive granite summit. From the top, you are rewarded with a breathtaking panorama of the Ella Gap and the distant coastal plains.",
+            "district": "badulla",
+            "province": "Western",
+            "categories": [
+                "Hiking & Trekking"
+            ],
+            "image": "/images/destinations/ella-rock.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.8524,
+                "lng": 81.0416
+            },
+            "slug": "ella-rock",
+            "category": "Hiking & Trekking"
+        },
+        {
+            "id": "little-adams-peak",
+            "name": "Little Adam's Peak",
+            "description": "Little Adam's Peak is an easy and highly popular hike in Ella, named for its resemblance to the more famous Adam's Peak. A brisk 45-minute walk through lush green tea estates leads to a series of beautiful peaks. The summit offers stunning views of the Ella Gap and the 98 Acres resort, particularly at sunrise or sunset.",
+            "district": "badulla",
+            "province": "Western",
+            "categories": [
+                "Hiking & Trekking"
+            ],
+            "image": "/images/destinations/little-adams-peak.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.8642,
+                "lng": 81.0631
+            },
+            "slug": "little-adams-peak",
+            "category": "Hiking & Trekking"
+        },
+        {
+            "id": "nine-arch-bridge",
+            "name": "Nine Arch Bridge",
+            "description": "The Nine Arch Bridge, or the 'Bridge in the Sky', is an architectural marvel of the colonial era located between Ella and Demodara stations. Built entirely from stone, brick, and cement without a single piece of steel, the massive 30-meter-high bridge is best experienced when one of the colorful trains slowly crosses its elegant arches amidst the dense jungle.",
+            "district": "badulla",
+            "province": "Western",
+            "categories": [
+                "Heritage",
+                "Hiking & Trekking"
+            ],
+            "image": "/images/destinations/nine-arch-bridge.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.8768,
+                "lng": 81.0608
+            },
+            "slug": "nine-arch-bridge",
+            "category": "Heritage"
+        },
+        {
+            "id": "diyaluma-falls",
+            "name": "Diyaluma Falls",
+            "description": "Diyaluma Falls is the second highest waterfall in Sri Lanka, cascading for 220 meters in a spectacular white veil. The real adventure lies at the top of the falls, where a series of natural infinity pools and smaller waterfalls offer a safe and surreal place to swim while overlooking the sheer drop into the valley below.",
+            "district": "badulla",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology",
+                "Hiking & Trekking"
+            ],
+            "image": "/images/destinations/diyaluma.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.7212,
+                "lng": 81.0315
+            },
+            "slug": "diyaluma-falls",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "bambarakanda-falls",
+            "name": "Bambarakanda Falls",
+            "description": "Bambarakanda Falls holds the title of the tallest waterfall in Sri Lanka, standing at a majestic 263 meters. Located in the Kalupahana area, the thin silver stream of water cascades down a dark granite cliff surrounded by towering pine forests. The best time to visit is after a rain when the falls are at their most powerful.",
+            "district": "badulla",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology"
+            ],
+            "image": "/images/destinations/bambarakanda.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.7725,
+                "lng": 80.8335
+            },
+            "slug": "bambarakanda-falls",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "dunhinda-falls",
+            "name": "Dunhinda Falls",
+            "description": "Dunhinda Falls is one of the most beautiful and iconic waterfalls in Sri Lanka, named for the misty spray (Dun) it creates at its base. A scenic 1.5km trek through a jungle path leads to a viewing platform where you can witness the massive volume of water crashing into the pool below, creating a permanent mist and frequent rainbows.",
+            "district": "badulla",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology",
+                "Hiking & Trekking"
+            ],
+            "image": "/images/destinations/dunhinda.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.9926,
+                "lng": 81.0645
+            },
+            "slug": "dunhinda-falls",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "kataragama",
+            "name": "Kataragama Sacred City",
+            "description": "Kataragama is one of the few places in the world where Buddhists, Hindus, Muslims, and Indigenous Vedda people all worship together. The sacred forest shrine is dedicated to the deity Skanda-Murukan. Its vibrant nightly rituals, fire-walking ceremonies, and the massive annual Perahera festival make it the most spiritual and diverse site in southern Sri Lanka.",
+            "district": "monaragala",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/kataragama.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.4144,
+                "lng": 81.3326
+            },
+            "slug": "kataragama",
+            "category": "Heritage"
+        },
+        {
+            "id": "maligawila",
+            "name": "Maligawila Buddha Statue",
+            "description": "Maligawila is home to the largest free-standing monolithic Buddha statue in Sri Lanka. Carved from a single large limestone block in the 7th century, the statue stands at nearly 11 meters tall. The site also features a magnificent statue of the Avalokiteshvara Bodhisattva, both set within a tranquil, forested archaeological park in the Monaragala district.",
+            "district": "monaragala",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/maligawila.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.7335,
+                "lng": 81.3412
+            },
+            "slug": "maligawila",
+            "category": "Heritage"
+        },
+        {
+            "id": "buduruwagala",
+            "name": "Buduruwagala",
+            "description": "Buduruwagala, meaning 'Rock of Buddhist Sculptures', features seven magnificent 10th-century Mahayana Buddhist figures carved in high relief on a massive cliff in the jungle. The central Buddha statue is the tallest on the island at 16 meters. The isolation of the site and the exquisite detail of the ancient carvings create a deeply spiritual and quiet atmosphere.",
+            "district": "monaragala",
+            "province": "Western",
+            "categories": [
+                "Heritage"
+            ],
+            "image": "/images/destinations/buduruwagala.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.6859,
+                "lng": 81.0825
+            },
+            "slug": "buduruwagala",
+            "category": "Heritage"
+        },
+        {
+            "id": "sinharaja",
+            "name": "Sinharaja Forest Reserve",
+            "description": "Sinharaja Forest Reserve is a UNESCO World Heritage site and the last viable area of primary tropical rainforest in Sri Lanka. It is a treasure trove of endemic species, including birds, butterflies, and amphibians. Walking through its dense, misty canopy, you can witness the famous 'Mixed-Species Bird Flocks' and discover rare medicinal plants found nowhere else on earth.",
+            "district": "ratnapura",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology",
+                "Hiking & Trekking",
+                "Wildlife & Safari"
+            ],
+            "image": "/images/destinations/sinharaja.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.3991,
+                "lng": 80.4161
+            },
+            "slug": "sinharaja",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "adams-peak",
+            "name": "Adam's Peak (Sri Pada)",
+            "description": "Adam's Peak, or Sri Pada, is a sacred mountain of immense spiritual importance to four major religions. It is famous for the 'sacred footprint' at its summit. Most pilgrims climb the 5,000+ stone steps at night to reach the 2,243-meter peak in time for a spectacular sunrise, which often casts a perfect triangular shadow of the mountain across the surrounding plains.",
+            "district": "ratnapura",
+            "province": "Western",
+            "categories": [
+                "Hiking & Trekking",
+                "Heritage"
+            ],
+            "image": "/images/destinations/adams-peak.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.8096,
+                "lng": 80.4994
+            },
+            "slug": "adams-peak",
+            "category": "Hiking & Trekking"
+        },
+        {
+            "id": "bopath-ella",
+            "name": "Bopath Ella",
+            "description": "Bopath Ella is a unique waterfall in the Ratnapura district, so named because its shape resembles the leaf of a sacred Bo tree (Ficus religiosa). The Kururu Ganga falls from a height of 30 meters, creating a wide, beautiful cascade. It is a popular spot for weekend outings and is surrounded by lush green vegetation and diverse local birdlife.",
+            "district": "ratnapura",
+            "province": "Western",
+            "categories": [
+                "Nature & Ecology"
+            ],
+            "image": "/images/destinations/bopath-ella.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.6432,
+                "lng": 80.3645
+            },
+            "slug": "bopath-ella",
+            "category": "Nature & Ecology"
+        },
+        {
+            "id": "udawalawe",
+            "name": "Udawalawe National Park",
+            "description": "Udawalawe National Park is arguably the best place in Asia to see wild elephants throughout the year. Located on the boundary of the wet and dry zones, its vast open grasslands around the Udawalawe reservoir provide a landscape that resembles an African savanna. The park is also famous for its Elephant Transit Home, which rehabilitates orphaned elephant calves.",
+            "district": "ratnapura",
+            "province": "Western",
+            "categories": [
+                "Wildlife & Safari"
+            ],
+            "image": "/images/destinations/udawalawe.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.4741,
+                "lng": 80.8872
+            },
+            "slug": "udawalawe",
+            "category": "Wildlife & Safari"
+        },
+        {
+            "id": "pinnawala",
+            "name": "Pinnawala Elephant Orphanage",
+            "description": "Pinnawala Elephant Orphanage is one of Sri Lanka's most famous attractions, providing a sanctuary for orphaned and injured elephants. Visitors can witness the heart-warming sight of the entire herd walking through the village to the Ma Oya river for their daily bath, and observe babies being bottle-fed by dedicated mahouts.",
+            "district": "kegalle",
+            "province": "Western",
+            "categories": [
+                "Wildlife & Safari"
+            ],
+            "image": "/images/destinations/pinnawala.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 7.3005,
+                "lng": 80.3872
+            },
+            "slug": "pinnawala",
+            "category": "Wildlife & Safari"
+        },
+        {
+            "id": "kitulgala",
+            "name": "Kitulgala",
+            "description": "Kitulgala is the undisputed adventure capital of Sri Lanka, famous for being the filming location of 'The Bridge on the River Kwai'. The Kelani River provides world-class white-water rafting, while the surrounding rainforest is perfect for canyoning, jungle trekking, and birdwatching. Its cool, wet-zone climate makes it a refreshing escape for thrill-seekers.",
+            "district": "kegalle",
+            "province": "Western",
+            "categories": [
+                "Adventure & Sports"
+            ],
+            "image": "/images/destinations/kitulgala.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 6.9932,
+                "lng": 80.4167
+            },
+            "slug": "kitulgala",
+            "category": "Adventure & Sports"
+        },
+        {
+            "id": "bible-rock",
+            "name": "Bible Rock (Bathalegala)",
+            "description": "Bible Rock, or Bathalegala, is a spectacular square-shaped mountain in the Kegalle district that resembles an open book. It towers over the surrounding landscape, providing a landmark visible from the main Kandy road. The relatively short trek to the summit offers panoramic views of the central hills and the dramatic Kadugannawa pass.",
+            "district": "kegalle",
+            "province": "Western",
+            "categories": [
+                "Hiking & Trekking"
+            ],
+            "image": "/images/destinations/bible-rock.webp",
+            "highlights": [],
+            "bestTime": "",
+            "entryFee": "",
+            "map": {
+                "x": 50,
+                "y": 50,
+                "lat": 7.1856,
+                "lng": 80.4354
+            },
+            "slug": "bible-rock",
+            "category": "Hiking & Trekking"
         }
     ],
     "posts": [

@@ -9,14 +9,23 @@ export async function GET() {
         const fileBuffer = await fs.readFile(filePath, 'utf-8')
         const data = JSON.parse(fileBuffer)
 
-        // 1. Fetch Fleet from DB
+        // 1. Fetch Fleet and Tours from DB
         try {
             const [fleetRows] = await pool.query('SELECT * FROM fleet')
             if ((fleetRows as any[]).length > 0) {
                 data.fleet = fleetRows
             }
+
+            const [tourRows] = await pool.query('SELECT * FROM tours')
+            if ((tourRows as any[]).length > 0) {
+                data.tours = (tourRows as any[]).map(t => ({
+                    ...t,
+                    highlights: typeof t.highlights === 'string' ? JSON.parse(t.highlights) : (t.highlights || []),
+                    itinerary: typeof t.itinerary === 'string' ? JSON.parse(t.itinerary) : (t.itinerary || [])
+                }))
+            }
         } catch (dbErr) {
-            console.error('DB Fetch Error (Fleet):', dbErr)
+            console.error('DB Fetch Error (Fleet/Tours):', dbErr)
         }
 
         // 2. Fetch Destinations from Unified JSON (destinations-data.json)

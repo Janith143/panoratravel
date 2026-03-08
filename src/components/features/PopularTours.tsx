@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
-import { getTours } from '@/lib/content'
+import { getToursDB } from '@/lib/db-content'
 import TourCard from './TourCard'
 
-export default function PopularTours() {
-    const tours = getTours()
+export default async function PopularTours() {
+    const tours = await getToursDB()
     return (
         <section className="py-16 md:py-24 bg-muted/50">
             <div className="container max-w-7xl px-4 md:px-8">
