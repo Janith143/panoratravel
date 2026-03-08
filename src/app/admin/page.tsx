@@ -101,7 +101,7 @@ export default function AdminDashboard() {
                 {/* Main Editor */}
                 <main className="bg-white rounded-xl shadow-sm border border-slate-100 p-6 min-h-[500px]">
                     {activeTab === 'attractions' && <AttractionsAdmin globalCategories={content?.categories || []} />}
-                    {activeTab === 'tours' && <ToursAdmin globalCategories={content?.categories || []} />}
+                    {activeTab === 'tours' && <ToursAdmin globalCategories={content?.categories || []} initialTours={content?.tours || []} />}
                     {activeTab === 'blog' && <BlogEditor content={content.posts || []} setContent={(posts) => setContent({ ...content, posts })} />}
                     {activeTab === 'faq' && <FAQEditor content={content.faq || []} setContent={(faq) => setContent({ ...content, faq })} />}
                     {activeTab === 'reviews' && <ReviewsAdmin />}

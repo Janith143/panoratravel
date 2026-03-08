@@ -3,7 +3,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { Save, Plus, Trash2, Image as ImageIcon, Loader2, ChevronDown, ChevronUp, X, Star, Clock, Tag } from 'lucide-react'
 import Image from 'next/image'
-import contentData from '@/data/content.json'
 
 type ItineraryDay = {
     day: number
@@ -26,8 +25,8 @@ type Tour = {
     itinerary: ItineraryDay[]
 }
 
-export default function ToursAdmin({ globalCategories }: { globalCategories: string[] }) {
-    const [tours, setTours] = useState<Tour[]>(contentData.tours || [])
+export default function ToursAdmin({ globalCategories, initialTours }: { globalCategories: string[], initialTours: Tour[] }) {
+    const [tours, setTours] = useState<Tour[]>(initialTours || [])
     const [isSaving, setIsSaving] = useState(false)
     const [feedback, setFeedback] = useState('')
     const [expandedId, setExpandedId] = useState<string | null>(null)

@@ -8,14 +8,19 @@ export async function POST(request: Request) {
     try {
         const data = await request.json()
 
-        // 0. Update content.json file with new siteConfig (since frontend relies on static JSON import instead of DB)
-        if (data.siteConfig) {
+        // 0. Update content.json file with new data (since frontend relies on static JSON import instead of DB)
+        if (data.siteConfig || data.tours || data.faq || data.destinations || data.posts || data.inquiries) {
             try {
                 const filePath = path.join(process.cwd(), 'src', 'data', 'content.json')
                 const fileBuffer = await fs.readFile(filePath, 'utf-8')
                 const fileData = JSON.parse(fileBuffer)
 
-                fileData.siteConfig = data.siteConfig
+                if (data.siteConfig) fileData.siteConfig = data.siteConfig
+                if (data.tours) fileData.tours = data.tours
+                if (data.faq) fileData.faq = data.faq
+                if (data.destinations) fileData.destinations = data.destinations
+                if (data.posts) fileData.posts = data.posts
+                if (data.inquiries) fileData.inquiries = data.inquiries
 
                 await fs.writeFile(filePath, JSON.stringify(fileData, null, 4))
             } catch (err) {
