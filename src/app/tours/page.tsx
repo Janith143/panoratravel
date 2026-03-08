@@ -2,6 +2,8 @@ import { getTourCategories } from '@/lib/content'
 import { getToursDB } from '@/lib/db-content'
 import ToursClientList from './ToursClientList'
 
+export const dynamic = 'force-dynamic'
+
 export default async function ToursPage() {
     const tours = await getToursDB()
     const categories = getTourCategories()

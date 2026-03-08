@@ -11,13 +11,7 @@ interface TourPageProps {
     }>
 }
 
-// Generate Static Params for SSG
-export async function generateStaticParams() {
-    const tours = await getToursDB()
-    return tours.map((tour: any) => ({
-        slug: tour.slug,
-    }))
-}
+export const dynamic = 'force-dynamic'
 
 export async function generateMetadata({ params }: TourPageProps): Promise<Metadata> {
     const { slug } = await params

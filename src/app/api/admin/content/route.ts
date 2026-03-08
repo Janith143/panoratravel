@@ -3,6 +3,8 @@ import path from 'path'
 import { promises as fs } from 'fs'
 import pool from '@/lib/db'
 
+export const dynamic = 'force-dynamic'
+
 export async function GET() {
     try {
         const filePath = path.join(process.cwd(), 'src', 'data', 'content.json')
